@@ -26,7 +26,8 @@
   "item.bladesedge.magma_knife": "Magma Knife",
 
 
-  "block.bladesedge.block_of_charcoal": "Block of Charcoal",
+  "block.bladesedge.charcoal_block": "Block of Charcoal",
+  "block.bladesedge.flaming_copper_block": "Flaming Copper Block",
 
 
   "enchantment.bladesedge.blazing": "Blazing",

@@ -13,7 +13,7 @@
       "item": "minecraft:charcoal"
     },
     "B": {
-      "item": "bladesedge:block_of_charcoal"
+      "item": "bladesedge:charcoal_block"
     },
     "R": {
       "item": "minecraft:furnace"

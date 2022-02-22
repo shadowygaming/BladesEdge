@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:charcoal"
+      "item": "bladesedge:flaming_copper_ingot"
     }
   },
   "result": {
-    "item": "bladesedge:charcoal_block",
+    "item": "bladesedge:flaming_copper_block",
     "count": 1
   }
 }

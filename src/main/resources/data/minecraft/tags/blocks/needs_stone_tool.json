@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "bladesedge:block_of_charcoal"
+    "bladesedge:charcoal_block",
+    "bladesedge:flaming_copper_block"
   ]
 }

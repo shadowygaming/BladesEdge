@@ -20,8 +20,11 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, BladesEdge.MOD_ID);
 
-    public static final RegistryObject<Block> BLOCK_OF_CHARCOAL = registerBlock("block_of_charcoal",
+    public static final RegistryObject<Block> CHARCOAL_BLOCK = registerBlock("charcoal_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(3.5f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLADESEDGE);
+
+    public static final RegistryObject<Block> FLAMING_COPPER_BLOCK = registerBlock("flaming_copper_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(6).requiresCorrectToolForDrops()), ModCreativeModeTab.BLADESEDGE);
 
     public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

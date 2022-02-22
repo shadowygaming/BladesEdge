@@ -1,23 +1,12 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "#L#",
-    "LIL",
-    "#L#"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:lapis_lazuli"
-    },
-    "L": {
-      "item": "minecraft:lapis_block"
-    },
-    "I": {
-      "item": "bladesedge:redstone_sword"
-    }
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "bladesedge:redstone_sword"
+  },
+  "addition": {
+    "item": "bladesedge:lapis_core"
   },
   "result": {
-    "item": "bladesedge:lapis_sword",
-    "count": 1
+    "item": "bladesedge:lapis_sword"
   }
 }

@@ -10,7 +10,7 @@
       "item": "minecraft:string"
     },
     "R": {
-      "item": "minecraft:redstone_torch"
+      "item": "bladesedge:redstone_core"
     },
     "L": {
       "item": "minecraft:leather"
@@ -21,6 +21,6 @@
   },
   "result": {
     "item": "bladesedge:tool_handle",
-    "count": 1
+    "count": 4
   }
 }
