@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "gRg",
+    " G "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:smooth_stone"
+    },
+    "g": {
+      "item": "minecraft:gold_ingot"
+    },
+    "R": {
+      "item": "bladesedge:redstone_pickaxe"
+    },
+    "G": {
+      "item": "minecraft:gold_block"
+    }
+  },
+  "result": {
+    "item": "bladesedge:haste_artifact",
+    "count": 1
+  }
+}

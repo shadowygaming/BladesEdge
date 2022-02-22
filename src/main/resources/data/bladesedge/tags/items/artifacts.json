@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "bladesedge:experience_artifact",
+    "bladesedge:haste_artifact",
+    "bladesedge:charcoal_artifact",
+    "bladesedge:fire_artifact"
+  ]
+}

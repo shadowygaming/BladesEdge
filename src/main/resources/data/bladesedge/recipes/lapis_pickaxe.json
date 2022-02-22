@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#L#",
+    "LIL",
+    "#L#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "L": {
+      "item": "minecraft:lapis_block"
+    },
+    "I": {
+      "item": "bladesedge:redstone_pickaxe"
+    }
+  },
+  "result": {
+    "item": "bladesedge:lapis_pickaxe",
+    "count": 1
+  }
+}

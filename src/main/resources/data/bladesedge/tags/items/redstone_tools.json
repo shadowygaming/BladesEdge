@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "bladesedge:redstone_sword",
+    "bladesedge:redstone_shovel",
+    "bladesedge:redstone_pickaxe",
+    "bladesedge:redstone_axe",
+    "bladesedge:redstone_hoe"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "bladesedge:redstone_sword"
+    },
+    "title": "Redstone Tool",
+    "description": "Acquire your first Redstone Tool",
+    "background": "bladesedge:block_of_charcoal",
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "bladesedge:bladesedge",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "bladesedge:redstone_tools"
+          }
+        ]
+      }
+    }
+  }
+}

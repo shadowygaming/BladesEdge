@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "bladesedge:knife"
+  },
+  "addition": {
+    "item": "bladesedge:flaming_copper_ingot"
+  },
+  "result": {
+    "item": "bladesedge:magma_knife"
+  }
+}

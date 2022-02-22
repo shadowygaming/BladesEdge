@@ -1,0 +1,37 @@
+{
+  "item.bladesedge.charcoal_artifact": "Charcoal Artifact",
+  "item.bladesedge.haste_artifact": "Haste Artifact",
+  "item.bladesedge.experience_artifact": "Experience Artifact",
+  "item.bladesedge.fire_artifact": "Fire Artifact",
+
+  "item.bladesedge.tool_handle": "Tool Handle",
+  "item.bladesedge.flesh": "Flesh",
+  "item.bladesedge.flaming_copper_ingot": "Flaming Copper Ingot",
+  "item.bladesedge.charred_carrot": "Charred Carrot",
+  "item.bladesedge.redstone_heart": "Redstone Heart",
+
+  "item.bladesedge.redstone_sword": "Redstone Sword",
+  "item.bladesedge.redstone_axe": "Redstone Axe",
+  "item.bladesedge.redstone_pickaxe": "Redstone Pickaxe",
+  "item.bladesedge.redstone_shovel": "Redstone Shovel",
+  "item.bladesedge.redstone_hoe": "Redstone Hoe",
+  "item.bladesedge.lapis_sword": "Lapis Sword",
+  "item.bladesedge.lapis_axe": "Lapis Axe",
+  "item.bladesedge.lapis_pickaxe": "Lapis Pickaxe",
+  "item.bladesedge.lapis_shovel": "Lapis Shovel",
+  "item.bladesedge.lapis_hoe": "Lapis Hoe",
+  "item.bladesedge.knife": "Knife",
+  "item.bladesedge.magma_knife": "Magma Knife",
+
+
+  "block.bladesedge.block_of_charcoal": "Block of Charcoal",
+
+
+  "enchantment.bladesedge.blazing": "Blazing",
+  "enchantment.bladesedge.wither_aspect": "Wither Aspect",
+  "enchantment.bladesedge.combo": "Combo",
+  "enchantment.bladesedge.last_stand": "Last Stand",
+
+
+  "itemGroup.bladesedge":"BladesEdge"
+}

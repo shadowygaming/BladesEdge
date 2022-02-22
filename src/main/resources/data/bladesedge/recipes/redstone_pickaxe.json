@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    " / ",
+    " / "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:redstone_block"
+    },
+    "/": {
+      "item": "bladesedge:tool_handle"
+    }
+  },
+  "result": {
+    "item": "bladesedge:redstone_pickaxe",
+    "count": 1
+  }
+}

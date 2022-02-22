@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "bladesedge:lapis_sword",
+    "bladesedge:lapis_shovel",
+    "bladesedge:lapis_pickaxe",
+    "bladesedge:lapis_axe",
+    "bladesedge:lapis_hoe"
+  ]
+}
