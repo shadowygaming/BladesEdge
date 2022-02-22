@@ -8,7 +8,9 @@
   "item.bladesedge.flesh": "Flesh",
   "item.bladesedge.flaming_copper_ingot": "Flaming Copper Ingot",
   "item.bladesedge.charred_carrot": "Charred Carrot",
-  "item.bladesedge.redstone_heart": "Redstone Heart",
+  "item.bladesedge.redstone_core": "Redstone Heart",
+  "item.bladesedge.lapis_core": "Lapis Crystal",
+  "item.bladesedge.magma_core": "Magma Stone",
 
   "item.bladesedge.redstone_sword": "Redstone Sword",
   "item.bladesedge.redstone_axe": "Redstone Axe",

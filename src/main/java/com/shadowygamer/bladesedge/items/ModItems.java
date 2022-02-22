@@ -16,10 +16,10 @@ public class ModItems {
     }
 
     //cores
-    public static final RegistryObject<CoreItem> REDSTONE_HEART = ITEMS.register("redstone_heart",
+    public static final RegistryObject<CoreItem> REDSTONE_CORE = ITEMS.register("redstone_core",
             () -> new CoreItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).defaultDurability(32).rarity(Rarity.EPIC)));
 
-    public static final RegistryObject<CoreItem> LAPIS_CRYSTAL = ITEMS.register("lapis_crystal",
+    public static final RegistryObject<CoreItem> LAPIS_CORE = ITEMS.register("lapis_core",
             () -> new CoreItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).defaultDurability(32).rarity(Rarity.EPIC)));
 
     public static final RegistryObject<CoreItem> MAGMA_CORE = ITEMS.register("magma_core",
