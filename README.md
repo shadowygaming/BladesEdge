@@ -3,7 +3,7 @@ A 1.18.1 mod for Forge
 
 Current Features include:
 
-3 Upgrade cores (no uses yet)
+3 Upgrade cores
 
 4 Custom Enchants
 
@@ -13,4 +13,4 @@ Current Features include:
 
 4 Artifacts each with special uses
 
-New Items and block
+New Items and blocks
