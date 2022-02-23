@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:iron_pickaxe"
+  },
+  "addition": {
+    "item": "bladesedge:magma_core"
+  },
+  "result": {
+    "item": "bladesedge:magma_pickaxe"
+  }
+}
