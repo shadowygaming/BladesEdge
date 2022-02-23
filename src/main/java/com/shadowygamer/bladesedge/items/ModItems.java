@@ -77,22 +77,42 @@ public class ModItems {
 
     public static final RegistryObject<Item> LAPIS_SWORD = ITEMS.register("lapis_sword",
             () -> new SwordItem(ModTiers.LAPIS, 4,-1.8f,
-                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> LAPIS_AXE = ITEMS.register("lapis_axe",
             () -> new AxeItem(ModTiers.LAPIS, 6,-2.4f,
-                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> LAPIS_PICKAXE = ITEMS.register("lapis_pickaxe",
             () -> new PickaxeItem(ModTiers.LAPIS, 1,-3f,
-                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> LAPIS_SHOVEL = ITEMS.register("lapis_shovel",
             () -> new ShovelItem(ModTiers.LAPIS, 4, -3f,
-                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> LAPIS_HOE = ITEMS.register("lapis_hoe",
             () -> new HoeItem(ModTiers.LAPIS, -3, 5f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+    
+    public static final RegistryObject<Item> MAGMA_SWORD = ITEMS.register("magma_sword",
+            () -> new SwordItem(ModTiers.MAGMA, 8,-2.4f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
+
+    public static final RegistryObject<Item> MAGMA_AXE = ITEMS.register("magma_axe",
+            () -> new AxeItem(ModTiers.MAGMA, 11,-2.6f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
+
+    public static final RegistryObject<Item> MAGMA_PICKAXE = ITEMS.register("magma_pickaxe",
+            () -> new PickaxeItem(ModTiers.MAGMA, 2,-3f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
+
+    public static final RegistryObject<Item> MAGMA_SHOVEL = ITEMS.register("magma_shovel",
+            () -> new ShovelItem(ModTiers.MAGMA, 4, -3f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
+
+    public static final RegistryObject<Item> MAGMA_HOE = ITEMS.register("magma_hoe",
+            () -> new HoeItem(ModTiers.MAGMA, -2, 6f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
 
     public static final RegistryObject<Item> KNIFE = ITEMS.register("knife",
