@@ -3,20 +3,20 @@
     "icon": {
       "item": "bladesedge:redstone_sword"
     },
-    "title": "Redstone Tool",
-    "description": "Acquire your first Redstone Tool",
+    "title": "Lapis Tools",
+    "description": "Upgrade a Tool from Redstone to Lapis",
     "background": "bladesedge:charcoal_block",
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "bladesedge:bladesedge/redstone_core",
+  "parent": "bladesedge:bladesedge/redstone_tool",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "tag": "bladesedge:redstone_tools"
+            "tag": "bladesedge:lapis_tools"
           }
         ]
       }

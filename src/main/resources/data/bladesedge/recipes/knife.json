@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "  i",
+    "   ",
     " i ",
     "/  "
   ],
@@ -10,7 +10,7 @@
       "item": "minecraft:iron_ingot"
     },
     "/": {
-      "item": "bladesedge:tool_handle"
+      "item": "minecraft:stick"
     }
   },
   "result": {

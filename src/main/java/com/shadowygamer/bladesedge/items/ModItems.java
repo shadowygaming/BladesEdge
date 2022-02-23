@@ -72,7 +72,7 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> REDSTONE_HOE = ITEMS.register("redstone_hoe",
-            () -> new HoeItem(ModTiers.REDSTONE, -3, 2f,
+            () -> new HoeItem(ModTiers.REDSTONE, -3, 4f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> LAPIS_SWORD = ITEMS.register("lapis_sword",
@@ -92,11 +92,11 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
 
     public static final RegistryObject<Item> LAPIS_HOE = ITEMS.register("lapis_hoe",
-            () -> new HoeItem(ModTiers.LAPIS, -3, 3f,
+            () -> new HoeItem(ModTiers.LAPIS, -3, 5f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
 
     public static final RegistryObject<Item> KNIFE = ITEMS.register("knife",
-            () -> new KnifeItem(Tiers.IRON, 1,2f,
+            () -> new KnifeItem(Tiers.IRON, 1,0f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).defaultDurability(128)));
 
     public static final RegistryObject<Item> MAGMA_KNIFE = ITEMS.register("magma_knife",

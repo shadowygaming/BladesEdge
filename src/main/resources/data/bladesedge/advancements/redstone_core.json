@@ -1,22 +1,22 @@
 {
   "display": {
     "icon": {
-      "item": "bladesedge:redstone_sword"
+      "item": "bladesedge:redstone_core"
     },
-    "title": "Redstone Tool",
-    "description": "Acquire your first Redstone Tool",
+    "title": "Redstone Heart",
+    "description": "Acquire The Redstone Heart from Zombified Piglin",
     "background": "bladesedge:charcoal_block",
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "bladesedge:bladesedge/redstone_core",
+  "parent": "bladesedge:bladesedge",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "tag": "bladesedge:redstone_tools"
+            "item": "bladesedge:redstone_core"
           }
         ]
       }

@@ -5,7 +5,7 @@
     },
     "title": "Trader",
     "description": "Kill a Wandering Trader",
-    "background": "bladesedge:block_of_charcoal",
+    "background": "bladesedge:charcoal_block",
     "announce_to_chat": true,
     "hidden": true
   },
