@@ -1,6 +1,7 @@
 package com.shadowygamer.bladesedge.items;
 
 import com.shadowygamer.bladesedge.BladesEdge;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -34,6 +35,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).food(ModFoods.FLESH)));
 
     public static final RegistryObject<Item> FLAMING_COPPER_INGOT = ITEMS.register("flaming_copper_ingot",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> MAGMA_SHARD = ITEMS.register("magma_shard",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> CHARRED_CARROT = ITEMS.register("charred_carrot",
@@ -122,4 +126,22 @@ public class ModItems {
     public static final RegistryObject<Item> MAGMA_KNIFE = ITEMS.register("magma_knife",
             () -> new MagmaKnife(Tiers.NETHERITE, 0,-2f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).defaultDurability(512).fireResistant()));
+
+
+    //Armor
+    public static final RegistryObject<Item> MAGMA_HELMET = ITEMS.register("magma_helmet",
+            () -> new ArmorItem(ModArmorMaterials.MAGMA, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
+
+    public static final RegistryObject<Item> MAGMA_CHESTPLATE = ITEMS.register("magma_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.MAGMA, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
+
+    public static final RegistryObject<Item> MAGMA_LEGGINGS = ITEMS.register("magma_leggings",
+            () -> new ArmorItem(ModArmorMaterials.MAGMA, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
+
+    public static final RegistryObject<Item> MAGMA_BOOTS = ITEMS.register("magma_boots",
+            () -> new ArmorItem(ModArmorMaterials.MAGMA, EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
 }

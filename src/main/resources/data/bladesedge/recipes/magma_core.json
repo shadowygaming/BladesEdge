@@ -1,12 +1,20 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "bladesedge:redstone_core"
-  },
-  "addition": {
-    "item": "bladesedge:flaming_copper_block"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#R#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "bladesedge:magma_shard"
+    },
+    "R": {
+      "item": "bladesedge:flaming_copper_block"
+    }
   },
   "result": {
-    "item": "bladesedge:magma_core"
+    "item": "bladesedge:magma_core",
+    "count": 1
   }
 }

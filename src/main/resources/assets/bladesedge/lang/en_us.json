@@ -8,7 +8,9 @@
   "item.bladesedge.flesh": "Flesh",
   "item.bladesedge.flaming_copper_ingot": "Flaming Copper Ingot",
   "item.bladesedge.charred_carrot": "Charred Carrot",
-  
+  "item.bladesedge.magma_shard": "Magma Shard",
+
+
   "item.bladesedge.redstone_core": "Redstone Heart",
   "item.bladesedge.lapis_core": "Lapis Crystal",
   "item.bladesedge.magma_core": "Magma Stone",
@@ -30,6 +32,12 @@
   "item.bladesedge.magma_pickaxe": "Magma Pickaxe",
   "item.bladesedge.magma_shovel": "Magma Shovel",
   "item.bladesedge.magma_hoe": "Magma Hoe",
+
+
+  "item.bladesedge.magma_helmet": "Magma Helmet",
+  "item.bladesedge.magma_chestplate": "Magma Chestplate",
+  "item.bladesedge.magma_leggings": "Magma Leggings",
+  "item.bladesedge.magma_boots": "Magma Boots",
 
 
   "block.bladesedge.charcoal_block": "Block of Charcoal",

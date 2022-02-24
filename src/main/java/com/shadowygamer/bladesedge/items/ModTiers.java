@@ -16,5 +16,5 @@ public class ModTiers {
 
     public static final ForgeTier MAGMA = new ForgeTier(4, 1200, 9.4f,
             3f, 32, BlockTags.NEEDS_IRON_TOOL,
-            () -> Ingredient.of(ModItems.MAGMA_CORE.getDefaultInstance()));
+            () -> Ingredient.of(ModItems.MAGMA_CORE.get()));
 }
