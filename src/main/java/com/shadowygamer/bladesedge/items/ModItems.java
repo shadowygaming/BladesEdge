@@ -130,7 +130,7 @@ public class ModItems {
 
     //Armor
     public static final RegistryObject<Item> MAGMA_HELMET = ITEMS.register("magma_helmet",
-            () -> new ArmorItem(ModArmorMaterials.MAGMA, EquipmentSlot.HEAD,
+            () -> new ModArmorItem(ModArmorMaterials.MAGMA, EquipmentSlot.HEAD,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
 
     public static final RegistryObject<Item> MAGMA_CHESTPLATE = ITEMS.register("magma_chestplate",
