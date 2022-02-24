@@ -11,8 +11,11 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    MAGMA("magma", 30, new int[]{3, 5, 9, 4}, 30, SoundEvents.ARMOR_EQUIP_GENERIC, 1.0F, 0.0F, () -> {
+    MAGMA("magma", 30, new int[]{3, 7, 9, 4}, 30, SoundEvents.ARMOR_EQUIP_GENERIC, 1.0F, 0.0F, () -> {
         return Ingredient.of(ModItems.MAGMA_CORE.get());
+    }),
+    LAPIS("lapis", 30, new int[]{3, 5, 7, 3}, 30, SoundEvents.ARMOR_EQUIP_GENERIC, 1.0F, 0.0F, () -> {
+        return Ingredient.of(ModItems.LAPIS_CORE.get());
     });
 
     private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};

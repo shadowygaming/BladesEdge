@@ -1,7 +1,6 @@
 package com.shadowygamer.bladesedge.items;
 
 import com.google.common.collect.ImmutableMap;
-import com.shadowygamer.bladesedge.items.ModArmorMaterials;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -13,13 +12,13 @@ import net.minecraft.world.level.Level;
 
 import java.util.Map;
 
-public class ModArmorItem extends ArmorItem {
+public class MagmaArmor extends ArmorItem {
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
                     .put(ModArmorMaterials.MAGMA,
                             new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 400, 0)).build();
 
-    public ModArmorItem(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
+    public MagmaArmor(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
         super(material, slot, settings);
     }
 

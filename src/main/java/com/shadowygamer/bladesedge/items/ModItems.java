@@ -130,7 +130,7 @@ public class ModItems {
 
     //Armor
     public static final RegistryObject<Item> MAGMA_HELMET = ITEMS.register("magma_helmet",
-            () -> new ModArmorItem(ModArmorMaterials.MAGMA, EquipmentSlot.HEAD,
+            () -> new MagmaArmor(ModArmorMaterials.MAGMA, EquipmentSlot.HEAD,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
 
     public static final RegistryObject<Item> MAGMA_CHESTPLATE = ITEMS.register("magma_chestplate",
@@ -144,4 +144,22 @@ public class ModItems {
     public static final RegistryObject<Item> MAGMA_BOOTS = ITEMS.register("magma_boots",
             () -> new ArmorItem(ModArmorMaterials.MAGMA, EquipmentSlot.FEET,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
+
+
+
+    public static final RegistryObject<Item> LAPIS_HELMET = ITEMS.register("lapis_helmet",
+            () -> new LapisArmor(ModArmorMaterials.LAPIS, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> LAPIS_CHESTPLATE = ITEMS.register("lapis_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> LAPIS_LEGGINGS = ITEMS.register("lapis_leggings",
+            () -> new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> LAPIS_BOOTS = ITEMS.register("lapis_boots",
+            () -> new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 }
