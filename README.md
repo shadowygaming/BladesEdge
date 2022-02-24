@@ -12,7 +12,7 @@ Current Features include:
 
 2 Knives
 
-4 Artifacts each with special uses
+4 Unique Artifacts
 
 Custom armor
 
