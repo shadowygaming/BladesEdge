@@ -45,7 +45,7 @@ public class LastStandEnchantment extends Enchantment {
                         ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.WITHER, 6000, 1));
                         ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.SATURATION, 120, 4));
                         ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 6000, 0));
-                        ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 400, 1));
+                        ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 400, 2));
                         ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 400, 0));
                     }
                 }

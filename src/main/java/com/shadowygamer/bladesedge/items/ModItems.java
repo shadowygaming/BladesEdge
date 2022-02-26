@@ -57,6 +57,12 @@ public class ModItems {
     public static final RegistryObject<FireArtifact> FIRE_ARTIFACT = ITEMS.register("fire_artifact",
             () -> new FireArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(16).rarity(Rarity.RARE)));
 
+//    public static final RegistryObject<NullingArtifact> NULLING_ARTIFACT = ITEMS.register("nulling_artifact",
+//            () -> new NullingArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(128).rarity(Rarity.RARE)));
+
+    public static final RegistryObject<BerserkerArtifact> BERSERKER_ARTIFACT = ITEMS.register("berserker_artifact",
+            () -> new BerserkerArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(4).rarity(Rarity.RARE)));
+
 
     //tools
     public static final RegistryObject<Item> REDSTONE_SWORD = ITEMS.register("redstone_sword",
@@ -100,7 +106,7 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
     
     public static final RegistryObject<Item> MAGMA_SWORD = ITEMS.register("magma_sword",
-            () -> new SwordItem(ModTiers.MAGMA, 8,-2.4f,
+            () -> new MagmaSword(ModTiers.MAGMA, 8,-2.4f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
 
     public static final RegistryObject<Item> MAGMA_AXE = ITEMS.register("magma_axe",
@@ -148,7 +154,7 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> LAPIS_HELMET = ITEMS.register("lapis_helmet",
-            () -> new LapisArmor(ModArmorMaterials.LAPIS, EquipmentSlot.HEAD,
+            () -> new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.HEAD,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> LAPIS_CHESTPLATE = ITEMS.register("lapis_chestplate",
