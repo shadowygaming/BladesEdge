@@ -1,6 +1,6 @@
 # BladesEdge
 
-A 1.18.1 mod for Forge
+A 1.18.2 mod for Forge
 
 Current Features include:
 
