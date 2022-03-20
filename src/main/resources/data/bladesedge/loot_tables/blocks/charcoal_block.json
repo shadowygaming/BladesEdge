@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bladesedge:block_of_charcoal"
+          "name": "bladesedge:charcoal_block"
         }
       ],
       "conditions": [

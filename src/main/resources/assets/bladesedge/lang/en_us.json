@@ -3,17 +3,24 @@
   "item.bladesedge.haste_artifact": "Haste Artifact",
   "item.bladesedge.experience_artifact": "Experience Artifact",
   "item.bladesedge.fire_artifact": "Fire Artifact",
+  "item.bladesedge.berserker_artifact": "Shadow Artifact",
+
 
   "item.bladesedge.tool_handle": "Tool Handle",
   "item.bladesedge.flesh": "Flesh",
   "item.bladesedge.flaming_copper_ingot": "Flaming Copper Ingot",
   "item.bladesedge.charred_carrot": "Charred Carrot",
   "item.bladesedge.magma_shard": "Magma Shard",
+  "item.bladesedge.shiny_rock": "Shiny Rock",
 
+  "item.bladesedge.ender_bag": "Ender Bag",
+  "container.bladesedge.ender_bag": "Ender Bag",
 
   "item.bladesedge.redstone_core": "Redstone Heart",
   "item.bladesedge.lapis_core": "Lapis Crystal",
   "item.bladesedge.magma_core": "Magma Stone",
+
+  "item.bladesedge.end_catalyst": "End Catalyst",
 
   "item.bladesedge.redstone_sword": "Redstone Sword",
   "item.bladesedge.redstone_axe": "Redstone Axe",
@@ -32,7 +39,6 @@
   "item.bladesedge.magma_pickaxe": "Magma Pickaxe",
   "item.bladesedge.magma_shovel": "Magma Shovel",
   "item.bladesedge.magma_hoe": "Magma Hoe",
-
 
   "item.bladesedge.magma_helmet": "Magma Helmet",
   "item.bladesedge.magma_chestplate": "Magma Chestplate",

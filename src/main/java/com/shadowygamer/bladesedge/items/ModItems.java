@@ -2,6 +2,7 @@ package com.shadowygamer.bladesedge.items;
 
 import com.shadowygamer.bladesedge.BladesEdge;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -18,13 +19,18 @@ public class ModItems {
 
     //cores
     public static final RegistryObject<CoreItem> REDSTONE_CORE = ITEMS.register("redstone_core",
-            () -> new CoreItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).defaultDurability(32).rarity(Rarity.EPIC)));
+            () -> new CoreItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).defaultDurability(32).rarity(Rarity.RARE)));
 
     public static final RegistryObject<CoreItem> LAPIS_CORE = ITEMS.register("lapis_core",
-            () -> new CoreItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).defaultDurability(32).rarity(Rarity.EPIC)));
+            () -> new CoreItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).defaultDurability(32).rarity(Rarity.RARE)));
 
     public static final RegistryObject<CoreItem> MAGMA_CORE = ITEMS.register("magma_core",
-            () -> new CoreItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).defaultDurability(32).rarity(Rarity.EPIC)));
+            () -> new CoreItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).defaultDurability(32).rarity(Rarity.RARE)));
+
+
+    //cores
+    public static final RegistryObject<Item> END_CATALYST = ITEMS.register("end_catalyst",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).rarity(Rarity.EPIC)));
 
 
     //items
@@ -40,28 +46,33 @@ public class ModItems {
     public static final RegistryObject<Item> MAGMA_SHARD = ITEMS.register("magma_shard",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
+    public static final RegistryObject<Item> SHINY_ROCK = ITEMS.register("shiny_rock",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
     public static final RegistryObject<Item> CHARRED_CARROT = ITEMS.register("charred_carrot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).food(ModFoods.CHARRED_CARROT)));
 
 
+    //special items
+    public static final RegistryObject<EnderBag> ENDER_BAG = ITEMS.register("ender_bag",
+            () -> new EnderBag(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(128).rarity(Rarity.EPIC)));
+
+
     //artifacts
     public static final RegistryObject<ArtifactItem> CHARCOAL_ARTIFACT = ITEMS.register("charcoal_artifact",
-            () -> new ArtifactItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(32).rarity(Rarity.RARE)));
+            () -> new ArtifactItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(32).rarity(Rarity.UNCOMMON)));
 
     public static final RegistryObject<ExperienceArtifact> EXPERIENCE_ARTIFACT = ITEMS.register("experience_artifact",
-            () -> new ExperienceArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(8).rarity(Rarity.RARE)));
+            () -> new ExperienceArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(8).rarity(Rarity.UNCOMMON)));
 
     public static final RegistryObject<HasteArtifact> HASTE_ARTIFACT = ITEMS.register("haste_artifact",
-            () -> new HasteArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(8).rarity(Rarity.RARE)));
+            () -> new HasteArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(8).rarity(Rarity.UNCOMMON)));
 
     public static final RegistryObject<FireArtifact> FIRE_ARTIFACT = ITEMS.register("fire_artifact",
-            () -> new FireArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(16).rarity(Rarity.RARE)));
-
-//    public static final RegistryObject<NullingArtifact> NULLING_ARTIFACT = ITEMS.register("nulling_artifact",
-//            () -> new NullingArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(128).rarity(Rarity.RARE)));
+            () -> new FireArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(16).rarity(Rarity.UNCOMMON)));
 
     public static final RegistryObject<BerserkerArtifact> BERSERKER_ARTIFACT = ITEMS.register("berserker_artifact",
-            () -> new BerserkerArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(4).rarity(Rarity.RARE)));
+            () -> new BerserkerArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(4).rarity(Rarity.UNCOMMON)));
 
 
     //tools
