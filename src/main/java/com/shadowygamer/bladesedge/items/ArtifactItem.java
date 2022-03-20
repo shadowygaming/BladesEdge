@@ -46,5 +46,4 @@ public class ArtifactItem extends Item {
             stack.hurt(1, random, null);
         }
     }
-
 }

@@ -4,6 +4,8 @@ import com.shadowygamer.bladesedge.BladesEdge;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -46,11 +48,14 @@ public class ModItems {
     public static final RegistryObject<Item> MAGMA_SHARD = ITEMS.register("magma_shard",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
-    public static final RegistryObject<Item> SHINY_ROCK = ITEMS.register("shiny_rock",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+    public static final RegistryObject<Shiny> SHINY_ROCK = ITEMS.register("shiny_rock",
+            () -> new Shiny(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> CHARRED_CARROT = ITEMS.register("charred_carrot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).food(ModFoods.CHARRED_CARROT)));
+
+    public static final RegistryObject<Item> VOID_ATOM = ITEMS.register("void_atom",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
 
     //special items
@@ -164,19 +169,19 @@ public class ModItems {
 
 
 
-    public static final RegistryObject<Item> LAPIS_HELMET = ITEMS.register("lapis_helmet",
-            () -> new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.HEAD,
-                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
-
-    public static final RegistryObject<Item> LAPIS_CHESTPLATE = ITEMS.register("lapis_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.CHEST,
-                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
-
-    public static final RegistryObject<Item> LAPIS_LEGGINGS = ITEMS.register("lapis_leggings",
-            () -> new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.LEGS,
-                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
-
-    public static final RegistryObject<Item> LAPIS_BOOTS = ITEMS.register("lapis_boots",
-            () -> new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.FEET,
-                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+//    public static final RegistryObject<Item> LAPIS_HELMET = ITEMS.register("lapis_helmet",
+//            () -> new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.HEAD,
+//                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+//
+//    public static final RegistryObject<Item> LAPIS_CHESTPLATE = ITEMS.register("lapis_chestplate",
+//            () -> new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.CHEST,
+//                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+//
+//    public static final RegistryObject<Item> LAPIS_LEGGINGS = ITEMS.register("lapis_leggings",
+//            () -> new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.LEGS,
+//                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+//
+//    public static final RegistryObject<Item> LAPIS_BOOTS = ITEMS.register("lapis_boots",
+//            () -> new ArmorItem(ModArmorMaterials.LAPIS, EquipmentSlot.FEET,
+//                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 }

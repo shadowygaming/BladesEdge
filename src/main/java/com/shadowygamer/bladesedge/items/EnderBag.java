@@ -29,7 +29,8 @@ public class EnderBag extends Item {
                 return InteractionResultHolder.success(pPlayer.getItemInHand(pUsedHand));
             } else {
                 pPlayer.getItemInHand(pUsedHand).hurtAndBreak(1, pPlayer, (a) -> {a.broadcastBreakEvent(pUsedHand);});
-                pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.ENDER_CHEST_OPEN, SoundSource.PLAYERS, (float)0.9, (float)1);
+                pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.ARMOR_EQUIP_LEATHER, SoundSource.PLAYERS, (float)1, (float)1);
+                pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.ENDER_CHEST_OPEN, SoundSource.PLAYERS, (float)0.32, (float)1);
                 pPlayer.openMenu(new SimpleMenuProvider((p_53124_, p_53125_, p_53126_) -> {
                     return ChestMenu.threeRows(p_53124_, p_53125_, playerenderchestcontainer);
                 }, CONTAINER_TITLE));
