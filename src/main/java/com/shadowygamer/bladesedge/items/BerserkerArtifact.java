@@ -15,7 +15,7 @@ public class BerserkerArtifact extends ArtifactItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
-        if (pPlayer.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 0))) {
+        if (pPlayer.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 1))) {
             if (pPlayer.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 1))) {
                 if (pPlayer.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 600, 0))) {
                     hurtItem(pPlayer.getItemInHand(pUsedHand));
