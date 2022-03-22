@@ -2,6 +2,7 @@ package com.shadowygamer.bladesedge;
 
 import com.shadowygamer.bladesedge.block.ModBlocks;
 import com.shadowygamer.bladesedge.enchantment.ModEnchantments;
+import com.shadowygamer.bladesedge.entity.ModEntityTypes;
 import com.shadowygamer.bladesedge.items.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -34,6 +35,7 @@ public class BladesEdge
         eventBus.addListener(this::setup);
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
+        ModEntityTypes.register(eventBus);
         ModEnchantments.register(eventBus);
         MinecraftForge.EVENT_BUS.register(this);
     }

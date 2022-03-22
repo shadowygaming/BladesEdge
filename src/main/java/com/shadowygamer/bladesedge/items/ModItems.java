@@ -30,8 +30,11 @@ public class ModItems {
             () -> new CoreItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).defaultDurability(32).rarity(Rarity.RARE)));
 
 
-    //cores
+    //catalysts
     public static final RegistryObject<Item> END_CATALYST = ITEMS.register("end_catalyst",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).rarity(Rarity.EPIC)));
+
+    public static final RegistryObject<Item> HYPER_CATALYST = ITEMS.register("hyper_catalyst",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).rarity(Rarity.EPIC)));
 
 
@@ -60,7 +63,7 @@ public class ModItems {
 
     //special items
     public static final RegistryObject<EnderBag> ENDER_BAG = ITEMS.register("ender_bag",
-            () -> new EnderBag(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(128).rarity(Rarity.EPIC)));
+            () -> new EnderBag(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(256).rarity(Rarity.EPIC)));
 
 
     //artifacts
@@ -68,7 +71,7 @@ public class ModItems {
             () -> new ArtifactItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(32).rarity(Rarity.UNCOMMON)));
 
     public static final RegistryObject<ExperienceArtifact> EXPERIENCE_ARTIFACT = ITEMS.register("experience_artifact",
-            () -> new ExperienceArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(8).rarity(Rarity.UNCOMMON)));
+            () -> new ExperienceArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(4).rarity(Rarity.UNCOMMON)));
 
     public static final RegistryObject<HasteArtifact> HASTE_ARTIFACT = ITEMS.register("haste_artifact",
             () -> new HasteArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(8).rarity(Rarity.UNCOMMON)));
