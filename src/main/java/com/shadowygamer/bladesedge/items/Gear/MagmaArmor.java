@@ -1,6 +1,7 @@
-package com.shadowygamer.bladesedge.items;
+package com.shadowygamer.bladesedge.items.Gear;
 
 import com.google.common.collect.ImmutableMap;
+import com.shadowygamer.bladesedge.items.ModArmorMaterials;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;

@@ -1,4 +1,4 @@
-package com.shadowygamer.bladesedge.items;
+package com.shadowygamer.bladesedge.items.Artifacts;
 
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
@@ -15,25 +15,25 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class FireArtifact extends ArtifactItem {
-    public FireArtifact(Properties pProperties) {
+public class HasteArtifact extends ArtifactItem {
+    public HasteArtifact(Properties pProperties) {
         super(pProperties);
     }
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()) {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.fire_artifact.tooltip.shift"));
+            pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.haste_artifact.tooltip.shift"));
         }
         else{
-            pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.fire_artifact.tooltip"));
+            pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.haste_artifact.tooltip"));
         }
     }
 
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
-        if (pPlayer.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 600, 0))) {
+        if (pPlayer.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 1800, 1))) {
             hurtItem(pPlayer.getItemInHand(pUsedHand));
         }
         return InteractionResultHolder.success(pPlayer.getItemInHand(pUsedHand));

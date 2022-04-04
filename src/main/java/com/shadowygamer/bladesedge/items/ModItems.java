@@ -1,11 +1,16 @@
 package com.shadowygamer.bladesedge.items;
 
 import com.shadowygamer.bladesedge.BladesEdge;
+import com.shadowygamer.bladesedge.items.Artifacts.*;
+import com.shadowygamer.bladesedge.items.Cores.CoreItem;
+import com.shadowygamer.bladesedge.items.Sup.EnderBag;
+import com.shadowygamer.bladesedge.items.Sup.Shiny;
+import com.shadowygamer.bladesedge.items.Gear.KnifeItem;
+import com.shadowygamer.bladesedge.items.Gear.MagmaArmor;
+import com.shadowygamer.bladesedge.items.Gear.MagmaKnife;
+import com.shadowygamer.bladesedge.items.Gear.MagmaSword;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.entity.projectile.ThrowableItemProjectile;
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.enchantment.Enchantment;
-import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;

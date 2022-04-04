@@ -1,4 +1,4 @@
-package com.shadowygamer.bladesedge.items;
+package com.shadowygamer.bladesedge.items.Gear;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;

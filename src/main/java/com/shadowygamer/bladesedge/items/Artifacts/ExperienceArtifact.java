@@ -1,4 +1,4 @@
-package com.shadowygamer.bladesedge.items;
+package com.shadowygamer.bladesedge.items.Artifacts;
 
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
