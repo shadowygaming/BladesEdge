@@ -55,6 +55,7 @@
   "enchantment.bladesedge.wither_aspect": "Wither Aspect",
   "enchantment.bladesedge.combo": "Combo",
   "enchantment.bladesedge.last_stand": "Last Stand",
+  "enchantment.bladesedge.storm": "Storm",
 
   "tooltip.bladesedge.shadow_artifact.tooltip.shift": "Become one with the Shadows and become more powerful for 30 seconds",
   "tooltip.bladesedge.shadow_artifact.tooltip": "Artifact",
@@ -64,7 +65,9 @@
   "tooltip.bladesedge.haste_artifact.tooltip": "Artifact",
   "tooltip.bladesedge.fire_artifact.tooltip.shift": "Fire Resistance",
   "tooltip.bladesedge.fire_artifact.tooltip": "Artifact",
-  "tooltip.bladesedge.haste_artifact.tooltip": "Shiny...",
+  "tooltip.bladesedge.shiny.tooltip": "Shiny...",
+  "tooltip.bladesedge.shiny.tooltip.shift": "Shiny...",
+
 
   "itemGroup.bladesedge":"BladesEdge"
 }

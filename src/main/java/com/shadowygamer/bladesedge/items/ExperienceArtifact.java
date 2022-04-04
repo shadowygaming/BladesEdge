@@ -30,7 +30,7 @@ public class ExperienceArtifact extends ArtifactItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
-        pPlayer.giveExperiencePoints(6969);
+        pPlayer.giveExperiencePoints(1000);
         hurtItem(pPlayer.getItemInHand(pUsedHand));
 
         return InteractionResultHolder.success(pPlayer.getItemInHand(pUsedHand));

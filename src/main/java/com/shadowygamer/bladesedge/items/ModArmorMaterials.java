@@ -18,7 +18,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
 //        return Ingredient.of(ModItems.LAPIS_CORE.get());
 //    });
 
-    private static final int[] HEALTH_PER_SLOT = new int[]{13, 15, 16, 11};
+    private static final int[] HEALTH_PER_SLOT = new int[]{15, 20, 18, 12};
     private final String name;
     private final int durabilityMultiplier;
     private final int[] slotProtections;

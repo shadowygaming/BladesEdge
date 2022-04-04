@@ -30,6 +30,10 @@ public class ModEnchantments {
             ENCHANTMENTS.register("last_stand", () -> new LastStandEnchantment(
                     Enchantment.Rarity.VERY_RARE, EnchantmentCategory.ARMOR));
 
+    public static RegistryObject<Enchantment> STORM =
+            ENCHANTMENTS.register("storm", () -> new StormEnchantment(
+                    Enchantment.Rarity.UNCOMMON, EnchantmentCategory.WEAPON));
+
 
 
         public static void register(IEventBus eventBus) {

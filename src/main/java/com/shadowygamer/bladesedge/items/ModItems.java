@@ -85,7 +85,7 @@ public class ModItems {
 
     //tools
     public static final RegistryObject<Item> REDSTONE_SWORD = ITEMS.register("redstone_sword",
-            () -> new SwordItem(ModTiers.REDSTONE, 3,-2f,
+            () -> new SwordItem(ModTiers.REDSTONE, 4,-2f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> REDSTONE_AXE = ITEMS.register("redstone_axe",
@@ -93,11 +93,11 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> REDSTONE_PICKAXE = ITEMS.register("redstone_pickaxe",
-            () -> new PickaxeItem(ModTiers.REDSTONE, 1,-3f,
+            () -> new PickaxeItem(ModTiers.REDSTONE, 2,-3f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> REDSTONE_SHOVEL = ITEMS.register("redstone_shovel",
-            () -> new ShovelItem(ModTiers.REDSTONE, 4, -3f,
+            () -> new ShovelItem(ModTiers.REDSTONE, 1, -3f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> REDSTONE_HOE = ITEMS.register("redstone_hoe",
