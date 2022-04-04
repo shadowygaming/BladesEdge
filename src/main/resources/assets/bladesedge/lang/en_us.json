@@ -58,15 +58,17 @@
   "enchantment.bladesedge.storm": "Storm",
 
   "tooltip.bladesedge.shadow_artifact.tooltip.shift": "Become one with the Shadows and become more powerful for 30 seconds",
-  "tooltip.bladesedge.shadow_artifact.tooltip": "Artifact",
+  "tooltip.bladesedge.shadow_artifact.tooltip": "Press Shift for more details",
   "tooltip.bladesedge.exp_artifact.tooltip.shift": "Gives Exp",
-  "tooltip.bladesedge.exp_artifact.tooltip": "Artifact",
+  "tooltip.bladesedge.exp_artifact.tooltip": "Press Shift for more details",
   "tooltip.bladesedge.haste_artifact.tooltip.shift": "sup",
-  "tooltip.bladesedge.haste_artifact.tooltip": "Artifact",
+  "tooltip.bladesedge.haste_artifact.tooltip": "Press Shift for more details",
   "tooltip.bladesedge.fire_artifact.tooltip.shift": "Fire Resistance",
-  "tooltip.bladesedge.fire_artifact.tooltip": "Artifact",
-  "tooltip.bladesedge.shiny.tooltip": "Shiny...",
+  "tooltip.bladesedge.fire_artifact.tooltip": "Press Shift for more details",
+  "tooltip.bladesedge.shiny.tooltip": "Press Shift for more details",
   "tooltip.bladesedge.shiny.tooltip.shift": "Shiny...",
+  "tooltip.bladesedge.magma_core.tooltip": "Press Shift for more details",
+  "tooltip.bladesedge.magma_core.tooltip.shift": "Legend says the Stones Flame is undying",
 
 
   "itemGroup.bladesedge":"BladesEdge"

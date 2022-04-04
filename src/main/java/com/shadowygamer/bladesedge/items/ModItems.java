@@ -3,8 +3,9 @@ package com.shadowygamer.bladesedge.items;
 import com.shadowygamer.bladesedge.BladesEdge;
 import com.shadowygamer.bladesedge.items.Artifacts.*;
 import com.shadowygamer.bladesedge.items.Cores.CoreItem;
+import com.shadowygamer.bladesedge.items.Cores.MagmaCore;
 import com.shadowygamer.bladesedge.items.Sup.EnderBag;
-import com.shadowygamer.bladesedge.items.Sup.Shiny;
+import com.shadowygamer.bladesedge.items.Modifiers.Shiny;
 import com.shadowygamer.bladesedge.items.Gear.KnifeItem;
 import com.shadowygamer.bladesedge.items.Gear.MagmaArmor;
 import com.shadowygamer.bladesedge.items.Gear.MagmaKnife;
@@ -31,8 +32,8 @@ public class ModItems {
     public static final RegistryObject<CoreItem> LAPIS_CORE = ITEMS.register("lapis_core",
             () -> new CoreItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).defaultDurability(32).rarity(Rarity.RARE)));
 
-    public static final RegistryObject<CoreItem> MAGMA_CORE = ITEMS.register("magma_core",
-            () -> new CoreItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).defaultDurability(32).rarity(Rarity.RARE)));
+    public static final RegistryObject<MagmaCore> MAGMA_CORE = ITEMS.register("magma_core",
+            () -> new MagmaCore(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).defaultDurability(32).rarity(Rarity.RARE)));
 
 
     //catalysts
