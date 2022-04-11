@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "bladesedge:light_oak_log",
+    "bladesedge:light_oak_wood",
+    "bladesedge:stripped_light_oak_log",
+    "bladesedge:stripped_light_oak_wood"
+  ]
+}
