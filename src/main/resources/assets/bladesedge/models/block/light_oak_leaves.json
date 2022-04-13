@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "bladesedge:block/light_oak_leaves"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bladesedge:block/light_oak_sapling"
+  }
+}

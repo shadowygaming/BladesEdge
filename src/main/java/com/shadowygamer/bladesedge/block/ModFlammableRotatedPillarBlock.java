@@ -47,5 +47,4 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
 
         return super.getToolModifiedState(state, world, pos, player, stack, toolAction);
     }
-
 }
