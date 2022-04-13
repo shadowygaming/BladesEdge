@@ -66,7 +66,7 @@ public class ModBlocks {
                 }
             }, ModCreativeModeTab.BLADESEDGE);
 
-    public static final RegistryObject<Block> LIGHT_OAK_LEAVES = registerBlock("light_oak_Leaves",
+    public static final RegistryObject<Block> LIGHT_OAK_LEAVES = registerBlock("light_oak_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)) {
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
