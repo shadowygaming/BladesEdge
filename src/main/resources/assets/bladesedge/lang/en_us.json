@@ -56,6 +56,11 @@
   "block.bladesedge.charcoal_block": "Block of Charcoal",
   "block.bladesedge.flaming_copper_block": "Flaming Copper Block",
 
+  "block.bladesedge.void_pepper": "Void Pepper",
+  "item.bladesedge.void_pepper_seeds": "Void Pepper Seed",
+  "item.bladesedge.void_pepper": "Void Pepper",
+
+
   "block.bladesedge.light_oak_log": "Light Oak Log",
   "block.bladesedge.light_oak_planks": "Light Oak Plank",
   "block.bladesedge.light_oak_wood": "Light Oak Wood",

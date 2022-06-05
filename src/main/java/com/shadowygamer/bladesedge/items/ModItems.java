@@ -1,6 +1,7 @@
 package com.shadowygamer.bladesedge.items;
 
 import com.shadowygamer.bladesedge.BladesEdge;
+import com.shadowygamer.bladesedge.block.ModBlocks;
 import com.shadowygamer.bladesedge.items.Artifacts.*;
 import com.shadowygamer.bladesedge.items.Cores.CoreItem;
 import com.shadowygamer.bladesedge.items.Cores.MagmaCore;
@@ -24,6 +25,15 @@ public class ModItems {
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
+
+    //nature
+
+    public static final RegistryObject<Item> VOID_PEPPER_SEEDS = ITEMS.register("void_pepper_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.VOID_PEPPER.get(),
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> VOID_PEPPER = ITEMS.register("void_pepper",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).food(ModFoods.VOID_PEPPER)));
 
     //cores
     public static final RegistryObject<CoreItem> REDSTONE_CORE = ITEMS.register("redstone_core",

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "bladesedge:block/void_pepper_stage3"
+  }
+}
