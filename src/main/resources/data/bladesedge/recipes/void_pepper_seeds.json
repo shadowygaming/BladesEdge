@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    " i ",
+    " / "
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:wheat_seeds"
+    },
+    "/": {
+      "item": "bladesedge:shiny_rock"
+    }
+  },
+  "result": {
+    "item": "bladesedge:void_pepper_seeds",
+    "count": 1
+  }
+}

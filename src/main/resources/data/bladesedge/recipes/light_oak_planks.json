@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "bladesedge:light_oak_logs"
+    }
+  ],
+  "result": {
+    "item": "bladesedge:light_oak_planks",
+    "count": 4
+  }
+}
