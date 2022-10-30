@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "bladesedge:block/stripped_light_oak_log_top",
+    "side": "bladesedge:block/stripped_light_oak_log"
+  }
+}

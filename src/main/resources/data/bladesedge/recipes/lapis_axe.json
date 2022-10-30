@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "bladesedge:redstone_axe"
+  },
+  "addition": {
+    "item": "bladesedge:lapis_core"
+  },
+  "result": {
+    "item": "bladesedge:lapis_axe"
+  }
+}

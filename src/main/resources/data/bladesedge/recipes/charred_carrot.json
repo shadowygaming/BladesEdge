@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "bladesedge:charcoal_artifact"
+    }
+  ],
+  "result": {
+    "item": "bladesedge:charred_carrot",
+    "count": 1
+  }
+}

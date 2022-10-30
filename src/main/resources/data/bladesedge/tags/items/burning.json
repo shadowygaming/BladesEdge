@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:magma_block",
+    "bladesedge:magma_knife",
+    "bladesedge:charcoal_artifact",
+    "minecraft:lava_bucket",
+    "minecraft:magma_cream"
+  ]
+}

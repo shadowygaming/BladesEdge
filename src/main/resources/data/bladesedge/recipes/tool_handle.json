@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #R",
+    "#L#",
+    "/# "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:string"
+    },
+    "R": {
+      "item": "bladesedge:redstone_core"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "bladesedge:tool_handle",
+    "count": 4
+  }
+}

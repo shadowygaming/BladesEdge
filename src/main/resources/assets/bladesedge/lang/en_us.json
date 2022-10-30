@@ -1,0 +1,97 @@
+{
+  "item.bladesedge.charcoal_artifact": "Charcoal Artifact",
+  "item.bladesedge.haste_artifact": "Haste Artifact",
+  "item.bladesedge.experience_artifact": "Experience Artifact",
+  "item.bladesedge.fire_artifact": "Fire Artifact",
+  "item.bladesedge.berserker_artifact": "Berserker Artifact",
+
+
+
+  "item.bladesedge.tool_handle": "Tool Handle",
+  "item.bladesedge.flesh": "Flesh",
+  "item.bladesedge.flaming_copper_ingot": "Flaming Copper Ingot",
+  "item.bladesedge.charred_carrot": "Charred Carrot",
+  "item.bladesedge.magma_shard": "Magma Shard",
+  "item.bladesedge.shiny_rock": "Shiny Rock",
+  "item.bladesedge.void_atom": "Void Atom",
+
+  "item.bladesedge.ender_bag": "Ender Bag",
+  "container.bladesedge.ender_bag": "Ender Bag",
+
+
+
+  "item.bladesedge.redstone_core": "Redstone Heart",
+  "item.bladesedge.lapis_core": "Lapis Crystal",
+  "item.bladesedge.magma_core": "Magma Stone",
+
+  "item.bladesedge.end_catalyst": "End Catalyst",
+
+
+
+  "item.bladesedge.redstone_sword": "Redstone Sword",
+  "item.bladesedge.redstone_axe": "Redstone Axe",
+  "item.bladesedge.redstone_pickaxe": "Redstone Pickaxe",
+  "item.bladesedge.redstone_shovel": "Redstone Shovel",
+  "item.bladesedge.redstone_hoe": "Redstone Hoe",
+  "item.bladesedge.lapis_sword": "Lapis Sword",
+  "item.bladesedge.lapis_axe": "Lapis Axe",
+  "item.bladesedge.lapis_pickaxe": "Lapis Pickaxe",
+  "item.bladesedge.lapis_shovel": "Lapis Shovel",
+  "item.bladesedge.lapis_hoe": "Lapis Hoe",
+  "item.bladesedge.knife": "Knife",
+  "item.bladesedge.magma_knife": "Magma Knife",
+  "item.bladesedge.magma_sword": "Magma Sword",
+  "item.bladesedge.magma_axe": "Magma Axe",
+  "item.bladesedge.magma_pickaxe": "Magma Pickaxe",
+  "item.bladesedge.magma_shovel": "Magma Shovel",
+  "item.bladesedge.magma_hoe": "Magma Hoe",
+
+  "item.bladesedge.magma_helmet": "Magma Helmet",
+  "item.bladesedge.magma_chestplate": "Magma Chestplate",
+  "item.bladesedge.magma_leggings": "Magma Leggings",
+  "item.bladesedge.magma_boots": "Magma Boots",
+
+
+
+  "block.bladesedge.charcoal_block": "Block of Charcoal",
+  "block.bladesedge.flaming_copper_block": "Flaming Copper Block",
+
+  "block.bladesedge.void_pepper": "Void Pepper",
+  "item.bladesedge.void_pepper_seeds": "Void Pepper Seed",
+  "item.bladesedge.void_pepper": "Void Pepper",
+
+
+  "block.bladesedge.light_oak_log": "Light Oak Log",
+  "block.bladesedge.light_oak_planks": "Light Oak Planks",
+  "block.bladesedge.light_oak_wood": "Light Oak Wood",
+  "block.bladesedge.stripped_light_oak_log": "Stripped Light Oak Log",
+  "block.bladesedge.stripped_light_oak_wood": "Stripped Light Oak Wood",
+  "block.bladesedge.light_oak_sapling": "Light Oak Sapling",
+  "block.bladesedge.light_oak_leaves": "Light Oak Leaves",
+
+
+
+
+  "enchantment.bladesedge.blazing": "Blazing",
+  "enchantment.bladesedge.wither_aspect": "Wither Aspect",
+  "enchantment.bladesedge.combo": "Combo",
+  "enchantment.bladesedge.last_stand": "Last Stand",
+  "enchantment.bladesedge.storm": "Storm",
+
+
+  "tooltip.bladesedge.shadow_artifact.tooltip.shift": "Become one with the Shadows and become more powerful for 30 seconds",
+  "tooltip.bladesedge.shadow_artifact.tooltip": "Press Shift for more details",
+  "tooltip.bladesedge.exp_artifact.tooltip.shift": "Gives Exp",
+  "tooltip.bladesedge.exp_artifact.tooltip": "Press Shift for more details",
+  "tooltip.bladesedge.haste_artifact.tooltip.shift": "sup",
+  "tooltip.bladesedge.haste_artifact.tooltip": "Press Shift for more details",
+  "tooltip.bladesedge.fire_artifact.tooltip.shift": "Fire Resistance",
+  "tooltip.bladesedge.fire_artifact.tooltip": "Press Shift for more details",
+  "tooltip.bladesedge.shiny.tooltip": "Press Shift for more details",
+  "tooltip.bladesedge.shiny.tooltip.shift": "Shiny...",
+  "tooltip.bladesedge.magma_core.tooltip": "Press Shift for more details",
+  "tooltip.bladesedge.magma_core.tooltip.shift": "Legend says the Stones Flame is undying",
+
+
+  "itemGroup.bladesedge":"BladesEdge"
+}

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "bladesedge:block/stripped_light_oak_log_top",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "bladesedge:block/stripped_light_oak_log"
+    },
+    "axis=z": {
+      "model": "bladesedge:block/stripped_light_oak_log_top",
+      "x": 90
+    }
+  }
+}

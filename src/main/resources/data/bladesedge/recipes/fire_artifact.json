@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "McM",
+    " I "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:nether_wart_block"
+    },
+    "M": {
+      "item": "minecraft:magma_cream"
+    },
+    "c": {
+      "item": "bladesedge:flaming_copper_ingot"
+    },
+    "I": {
+      "item": "minecraft:magma_block"
+    }
+  },
+  "result": {
+    "item": "bladesedge:fire_artifact",
+    "count": 1
+  }
+}

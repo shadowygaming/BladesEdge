@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "bladesedge:redstone_core",
+    "bladesedge:lapis_core",
+    "bladesedge:magma_core"
+  ]
+}

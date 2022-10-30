@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "bladesedge:knife"
+    },
+    "title": "Trader",
+    "description": "Kill a Wandering Trader",
+    "background": "bladesedge:charcoal_block",
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "bladesedge:bladesedge",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": [],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:wandering_trader"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

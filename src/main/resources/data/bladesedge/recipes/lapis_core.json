@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "bladesedge:redstone_core"
+  },
+  "addition": {
+    "item": "bladesedge:experience_artifact"
+  },
+  "result": {
+    "item": "bladesedge:lapis_core"
+  }
+}

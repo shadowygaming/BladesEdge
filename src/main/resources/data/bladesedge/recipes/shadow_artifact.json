@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "DCD",
+    " E "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:end_crystal"
+    },
+    "D": {
+      "item": "bladesedge:shiny_rock"
+    },
+    "C": {
+      "item": "bladesedge:void_atom"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    }
+  },
+  "result": {
+    "item": "bladesedge:berserker_artifact",
+    "count": 1
+  }
+}

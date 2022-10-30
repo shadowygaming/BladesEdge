@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#S#",
+    "#D#",
+    "#E#"
+  ],
+  "key": {
+    "#": {
+      "item": "bladesedge:shiny_rock"
+    },
+    "S": {
+      "item": "minecraft:shulker_shell"
+    },
+    "D": {
+      "item": "bladesedge:end_catalyst"
+    },
+    "E": {
+      "item": "minecraft:ender_chest"
+    }
+  },
+  "result": {
+    "item": "bladesedge:ender_bag",
+    "count": 1
+  }
+}

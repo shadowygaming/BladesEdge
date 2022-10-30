@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#G#",
+    " b "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:experience_bottle"
+    },
+    "G": {
+      "item": "minecraft:golden_apple"
+    },
+    "b": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "bladesedge:experience_artifact",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "bladesedge:haste_artifact"
+    },
+    "title": "BladesEdge",
+    "description": "Your First Artifact",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "bladesedge:textures/block/charcoal_block.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "bladesedge:artifacts"
+          }
+        ]
+      }
+    }
+  }
+}

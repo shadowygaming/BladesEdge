@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "cMc",
+    "MDM",
+    "cMc"
+  ],
+  "key": {
+    "c": {
+      "item": "minecraft:copper_ingot"
+    },
+    "M": {
+      "item": "minecraft:magma_cream"
+    },
+    "D": {
+      "item": "bladesedge:charcoal_artifact"
+    }
+  },
+  "result": {
+    "item": "bladesedge:flaming_copper_ingot",
+    "count": 4
+  }
+}

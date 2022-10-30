@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "CRC",
+    " B "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stripped_oak_log"
+    },
+    "C": {
+      "item": "minecraft:charcoal"
+    },
+    "B": {
+      "item": "bladesedge:charcoal_block"
+    },
+    "R": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "result": {
+    "item": "bladesedge:charcoal_artifact",
+    "count": 1
+  }
+}
