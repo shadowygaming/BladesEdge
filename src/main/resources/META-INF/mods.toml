@@ -29,7 +29,9 @@ displayName="BladesEdge" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="bladesedge.png" #optional
 # A text field displayed in the mod UI
-credits="Thanks to Codescripter for improving efficiency and helping with errors ---  https://github.com/CodeScripterSD" #optional
+credits='''
+Thanks to Codescripter for improving efficiency and helping with errors ---  https://github.com/CodeScripterSD
+Improved Brewing Recipe format from --- https://github.com/CAS-ual-TY/Extra-Potions/blob/8980c5484a3b181eda0c66f77f031b5f9fb89efd/src/main/java/de/cas_ual_ty/extrapotions/EPBrewingRecipe.java''' #optional
 # A text field displayed in the mod UI
 authors="Shadowygamer (me)" #optional
 # The description text for the mod (multi line!) (#mandatory)

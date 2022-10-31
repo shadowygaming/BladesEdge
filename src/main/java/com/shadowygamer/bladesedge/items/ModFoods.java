@@ -13,12 +13,12 @@ public class ModFoods {
             .meat()
             .build();
     public static final FoodProperties CHARRED_CARROT = (new FoodProperties.Builder())
-            .nutrition(6)
-            .saturationMod(0.9f)
+            .nutrition(5)
+            .saturationMod(0.85f)
             .fast()
             .build();
     public static final FoodProperties VOID_PEPPER = (new FoodProperties.Builder())
-            .nutrition(8)
-            .saturationMod(0.7f)
+            .nutrition(7)
+            .saturationMod(0.9f)
             .build();
 }

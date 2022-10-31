@@ -1,5 +1,6 @@
-package com.shadowygamer.bladesedge.items.Gear;
+package com.shadowygamer.bladesedge.items.Gear.Magma;
 
+import com.shadowygamer.bladesedge.items.Gear.KnifeItem;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;

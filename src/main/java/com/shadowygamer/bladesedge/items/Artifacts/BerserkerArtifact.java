@@ -23,10 +23,10 @@ public class BerserkerArtifact extends ArtifactItem {
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()) {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.shadow_artifact.tooltip.shift"));
+            pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.berserker_artifact.tooltip.shift"));
         }
         else{
-            pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.shadow_artifact.tooltip"));
+            pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.artifact.tooltip"));
         }
     }
 

@@ -26,14 +26,14 @@ public class FireArtifact extends ArtifactItem {
             pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.fire_artifact.tooltip.shift"));
         }
         else{
-            pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.fire_artifact.tooltip"));
+            pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.artifact.tooltip"));
         }
     }
 
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
-        if (pPlayer.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 600, 0))) {
+        if (pPlayer.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 2400, 0))) {
             hurtItem(pPlayer.getItemInHand(pUsedHand));
         }
         return InteractionResultHolder.success(pPlayer.getItemInHand(pUsedHand));

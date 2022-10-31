@@ -4,6 +4,7 @@
   "item.bladesedge.experience_artifact": "Experience Artifact",
   "item.bladesedge.fire_artifact": "Fire Artifact",
   "item.bladesedge.berserker_artifact": "Berserker Artifact",
+  "item.bladesedge.gold_altar": "Altar of Gold",
 
 
 
@@ -70,6 +71,9 @@
   "block.bladesedge.light_oak_leaves": "Light Oak Leaves",
 
 
+  "item.minecraft.potion.effect.golden_potion": "Golden Potion",
+  "item.minecraft.splash_potion.effect.golden_potion": "Unused",
+  "item.minecraft.lingering_potion.effect.golden_potion": "Unused",
 
 
   "enchantment.bladesedge.blazing": "Blazing",
@@ -78,19 +82,19 @@
   "enchantment.bladesedge.last_stand": "Last Stand",
   "enchantment.bladesedge.storm": "Storm",
 
+  "tooltip.bladesedge.artifact.tooltip": "Hold Shift for a Hint",
+  "tooltip.bladesedge.berserker_artifact.tooltip.shift": "Your rage burns through any foes (for 30 seconds)",
+  "tooltip.bladesedge.char_artifact.tooltip.shift": "Burns longer then lava",
+  "tooltip.bladesedge.exp_artifact.tooltip.shift": "Lets Enchant",
+  "tooltip.bladesedge.haste_artifact.tooltip.shift": "No Beacon Required",
+  "tooltip.bladesedge.fire_artifact.tooltip.shift": "Useful in the Nether",
+  "tooltip.bladesedge.gold_altar.tooltip.shift": "Compact Golden Apple",
 
-  "tooltip.bladesedge.shadow_artifact.tooltip.shift": "Become one with the Shadows and become more powerful for 30 seconds",
-  "tooltip.bladesedge.shadow_artifact.tooltip": "Press Shift for more details",
-  "tooltip.bladesedge.exp_artifact.tooltip.shift": "Gives Exp",
-  "tooltip.bladesedge.exp_artifact.tooltip": "Press Shift for more details",
-  "tooltip.bladesedge.haste_artifact.tooltip.shift": "sup",
-  "tooltip.bladesedge.haste_artifact.tooltip": "Press Shift for more details",
-  "tooltip.bladesedge.fire_artifact.tooltip.shift": "Fire Resistance",
-  "tooltip.bladesedge.fire_artifact.tooltip": "Press Shift for more details",
   "tooltip.bladesedge.shiny.tooltip": "Press Shift for more details",
   "tooltip.bladesedge.shiny.tooltip.shift": "Shiny...",
   "tooltip.bladesedge.magma_core.tooltip": "Press Shift for more details",
   "tooltip.bladesedge.magma_core.tooltip.shift": "Legend says the Stones Flame is undying",
+
 
 
   "itemGroup.bladesedge":"BladesEdge"

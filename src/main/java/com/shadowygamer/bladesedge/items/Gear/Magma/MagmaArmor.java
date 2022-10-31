@@ -1,4 +1,4 @@
-package com.shadowygamer.bladesedge.items.Gear;
+package com.shadowygamer.bladesedge.items.Gear.Magma;
 
 import com.google.common.collect.ImmutableMap;
 import com.shadowygamer.bladesedge.items.ModArmorMaterials;

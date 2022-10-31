@@ -4,11 +4,16 @@ import com.shadowygamer.bladesedge.block.ModBlocks;
 import com.shadowygamer.bladesedge.enchantment.ModEnchantments;
 import com.shadowygamer.bladesedge.entity.ModEntityTypes;
 import com.shadowygamer.bladesedge.items.ModItems;
+import com.shadowygamer.bladesedge.potion.ModPotions;
 import com.shadowygamer.bladesedge.sound.ModSounds;
+import com.shadowygamer.bladesedge.util.BetterBrewingRecipe;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -32,6 +37,7 @@ public class BladesEdge
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
         ModEntityTypes.register(eventBus);
+        ModPotions.register(eventBus);
         ModSounds.register(eventBus);
         ModEnchantments.register(eventBus);
         MinecraftForge.EVENT_BUS.register(this);
@@ -47,8 +53,10 @@ public class BladesEdge
 
     private void setup(final FMLCommonSetupEvent event)
     {
-        // some preinit code
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+
+        BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
+                Items.GOLDEN_APPLE, ModPotions.GOLDEN_POTION.get()));
     }
 }
