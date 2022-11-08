@@ -6,6 +6,7 @@ import com.shadowygamer.bladesedge.items.Artifacts.*;
 import com.shadowygamer.bladesedge.items.Cores.CoreItem;
 import com.shadowygamer.bladesedge.items.Cores.MagmaCore;
 import com.shadowygamer.bladesedge.items.Gear.Magma.*;
+import com.shadowygamer.bladesedge.items.Sup.Darkness;
 import com.shadowygamer.bladesedge.items.Sup.EnderBag;
 import com.shadowygamer.bladesedge.items.Modifiers.Shiny;
 import com.shadowygamer.bladesedge.items.Gear.KnifeItem;
@@ -74,6 +75,8 @@ public class ModItems {
     public static final RegistryObject<Item> VOID_ATOM = ITEMS.register("void_atom",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
+    public static final RegistryObject<Darkness> DARKNESS = ITEMS.register("darkness",
+            () -> new Darkness(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     //special items
     public static final RegistryObject<EnderBag> ENDER_BAG = ITEMS.register("ender_bag",
@@ -81,7 +84,7 @@ public class ModItems {
 
 
     //artifacts
-    public static final RegistryObject<ArtifactItem> CHARCOAL_ARTIFACT = ITEMS.register("charcoal_artifact",
+    public static final RegistryObject<CharcoalArtifact> CHARCOAL_ARTIFACT = ITEMS.register("charcoal_artifact",
             () -> new CharcoalArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(64).rarity(Rarity.UNCOMMON)));
 
     public static final RegistryObject<ExperienceArtifact> EXPERIENCE_ARTIFACT = ITEMS.register("experience_artifact",
@@ -98,8 +101,11 @@ public class ModItems {
 
     //Artifacts t2
 
-    public static final RegistryObject<ArtifactItem> GOLD_ALTAR = ITEMS.register("gold_altar",
+    public static final RegistryObject<GoldArtifact> GOLD_ALTAR = ITEMS.register("gold_altar",
             () -> new GoldArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(3).rarity(Rarity.RARE)));
+
+    public static final RegistryObject<ShadowArtifact> SHADOW_ALTAR = ITEMS.register("shadow_altar",
+            () -> new ShadowArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(1).rarity(Rarity.RARE)));
 
 
     //tools

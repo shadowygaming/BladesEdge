@@ -5,9 +5,12 @@
   "item.bladesedge.fire_artifact": "Fire Artifact",
   "item.bladesedge.berserker_artifact": "Berserker Artifact",
   "item.bladesedge.gold_altar": "Altar of Gold",
+  "item.bladesedge.shadow_altar": "Altar of Darkness",
 
 
 
+
+  "item.bladesedge.darkness": "Darkness",
   "item.bladesedge.tool_handle": "Tool Handle",
   "item.bladesedge.flesh": "Flesh",
   "item.bladesedge.flaming_copper_ingot": "Flaming Copper Ingot",
@@ -16,8 +19,8 @@
   "item.bladesedge.shiny_rock": "Shiny Rock",
   "item.bladesedge.void_atom": "Void Atom",
 
-  "item.bladesedge.ender_bag": "Ender Bag",
-  "container.bladesedge.ender_bag": "Ender Bag",
+  "item.bladesedge.ender_bag": "Ender Pouch",
+  "container.bladesedge.ender_bag": "Ender Pouch",
 
 
 
@@ -89,9 +92,13 @@
   "tooltip.bladesedge.haste_artifact.tooltip.shift": "No Beacon Required",
   "tooltip.bladesedge.fire_artifact.tooltip.shift": "Useful in the Nether",
   "tooltip.bladesedge.gold_altar.tooltip.shift": "Compact Golden Apple",
+  "tooltip.bladesedge.shadow_altar.tooltip.shift": "Better Berserker Artifact",
+
 
   "tooltip.bladesedge.shiny.tooltip": "Press Shift for more details",
   "tooltip.bladesedge.shiny.tooltip.shift": "Shiny...",
+  "tooltip.bladesedge.darkness.tooltip": "Hold Shift to learn more about the darkness",
+  "tooltip.bladesedge.darkness.tooltip.shift": "§khtruhaiozpqiuenrgft",
   "tooltip.bladesedge.magma_core.tooltip": "Press Shift for more details",
   "tooltip.bladesedge.magma_core.tooltip.shift": "Legend says the Stones Flame is undying",
 
