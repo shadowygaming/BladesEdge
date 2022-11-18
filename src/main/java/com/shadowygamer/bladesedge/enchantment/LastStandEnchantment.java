@@ -23,29 +23,20 @@ public class LastStandEnchantment extends Enchantment {
             ServerPlayer player = ((ServerPlayer) pAttacker);
             BlockPos position = pTarget.blockPosition();
 
-            boolean effect = (pAttacker.hasEffect(MobEffects.WITHER));
             float hp = (pAttacker.getHealth());
-
+            boolean used = false;
             if (pLevel == 1) {
+                if (player.isDeadOrDying()) {
+                    used = false;
+                }
                 if (hp <= 3) {
-                    if (effect == false) {
+                    if (used == false) {
+                        used = true;
                         pAttacker.setHealth(5);
                         ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.WITHER, 6000, 2));
                         ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.SATURATION, 120, 1));
-                        ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 6000, 0));
-                        ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 400, 1));
-                        ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 400, 0));
-                    }
-                }
-            }
-            if (pLevel == 2) {
-                if (hp <= 3) {
-                    if (effect == false) {
-                        pAttacker.setHealth(8);
-                        ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.WITHER, 6000, 1));
-                        ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.SATURATION, 120, 4));
                         ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 400, 0));
-                        ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 400, 2));
+                        ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 400, 0));
                         ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 400, 0));
                     }
                 }
@@ -54,6 +45,6 @@ public class LastStandEnchantment extends Enchantment {
     }
             @Override
             public int getMaxLevel () {
-                return 2;
+                return 1;
             }
         }

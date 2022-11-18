@@ -7,7 +7,7 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:redstone_block"
+      "item": "bladesedge:hardened_redstone"
     },
     "/": {
       "item": "bladesedge:tool_handle"

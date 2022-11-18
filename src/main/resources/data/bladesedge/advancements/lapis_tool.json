@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "bladesedge:redstone_sword"
+      "item": "bladesedge:lapis_sword"
     },
     "title": "Lapis Tools",
     "description": "Upgrade a Tool from Redstone to Lapis",
@@ -9,7 +9,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "bladesedge:bladesedge/redstone_tool",
+  "parent": "bladesedge:redstone_tool",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",

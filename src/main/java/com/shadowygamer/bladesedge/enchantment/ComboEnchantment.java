@@ -38,50 +38,44 @@ public class ComboEnchantment extends Enchantment {
             ServerPlayer player = ((ServerPlayer) pAttacker);
             BlockPos position = pTarget.blockPosition();
 
+
+            boolean swing = pAttacker.swinging;
+            int count = 0;
+            if (swing = true) {
+                swing = false;
+                count = +1;
+            }
             if (pLevel == 1) {
-                if (pAttacker instanceof LivingEntity) {
-                    ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 320, 0));
+                if (count == 3) {
+                    count = 0;
+                    if (pAttacker instanceof LivingEntity) {
+                        ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 0));
+                    }
                 }
             }
             if (pLevel == 2) {
-                if (pAttacker instanceof LivingEntity) {
-                    ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 0));
-                }
-                if (pAttacker instanceof LivingEntity) {
-                    ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 400, 0));
+                if (count == 3) {
+                    count = 0;
+                    if (pAttacker instanceof LivingEntity) {
+                        ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 500, 1));
+                        ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 100, 0));
+                    }
                 }
             }
             if (pLevel == 3) {
-                if (pAttacker instanceof LivingEntity) {
-                    ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 400, 0));
-                }
-                if (pAttacker instanceof LivingEntity) {
-                    ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 400, 1));
-                }
-            }
-            if (pLevel == 4) {
-                if (pAttacker instanceof LivingEntity) {
-                    ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 480, 1));
-                }
-                if (pAttacker instanceof LivingEntity) {
-                    ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 480, 1));
-                }
-            }
-            if (pLevel == 5) {
-                if (pAttacker instanceof LivingEntity) {
-                    ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 500, 1));
-                }
-                if (pAttacker instanceof LivingEntity) {
-                    ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 500, 1));
-                }
-                if (pAttacker instanceof LivingEntity) {
-                    ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 200, 0));
+                if (count == 3) {
+                    count = 0;
+                    if (pAttacker instanceof LivingEntity) {
+                        ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1000, 1));
+                        ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 250, 0));
+                        ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 40, 0));
+                    }
                 }
             }
         }
     }
     @Override
     public int getMaxLevel() {
-        return 5;
+        return 3;
     }
 }

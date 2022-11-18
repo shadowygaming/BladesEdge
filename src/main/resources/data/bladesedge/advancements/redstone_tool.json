@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "bladesedge:redstone_sword"
+      "item": "bladesedge:redstone_pickaxe"
     },
     "title": "Redstone Tool",
     "description": "Acquire your first Redstone Tool",
@@ -9,7 +9,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "bladesedge:bladesedge/redstone_core",
+  "parent": "bladesedge:bladesedge",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",

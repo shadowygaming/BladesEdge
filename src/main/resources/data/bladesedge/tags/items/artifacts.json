@@ -4,6 +4,9 @@
     "bladesedge:experience_artifact",
     "bladesedge:haste_artifact",
     "bladesedge:charcoal_artifact",
+    "bladesedge:berserker_artifact",
+    "bladesedge:gold_altar",
+    "bladesedge:shadow_altar",
     "bladesedge:fire_artifact"
   ]
 }

@@ -1,16 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " #R",
+    " #/",
     "#L#",
     "/# "
   ],
   "key": {
     "#": {
       "item": "minecraft:string"
-    },
-    "R": {
-      "item": "bladesedge:redstone_core"
     },
     "L": {
       "item": "minecraft:leather"

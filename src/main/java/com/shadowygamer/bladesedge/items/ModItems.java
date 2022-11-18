@@ -40,7 +40,6 @@ public class ModItems {
 
     public static final RegistryObject<CoreItem> LAPIS_CORE = ITEMS.register("lapis_core",
             () -> new CoreItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).defaultDurability(32).rarity(Rarity.RARE)));
-
     public static final RegistryObject<MagmaCore> MAGMA_CORE = ITEMS.register("magma_core",
             () -> new MagmaCore(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).defaultDurability(32).rarity(Rarity.RARE)));
 
@@ -56,7 +55,6 @@ public class ModItems {
     //items
     public static final RegistryObject<Item> TOOL_HANDLE = ITEMS.register("tool_handle",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16)));
-
     public static final RegistryObject<Item> FLESH = ITEMS.register("flesh",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).food(ModFoods.FLESH)));
 
@@ -77,6 +75,11 @@ public class ModItems {
 
     public static final RegistryObject<Darkness> DARKNESS = ITEMS.register("darkness",
             () -> new Darkness(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> HARDENED_REDSTONE = ITEMS.register("hardened_redstone",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+
 
     //special items
     public static final RegistryObject<EnderBag> ENDER_BAG = ITEMS.register("ender_bag",
@@ -170,7 +173,7 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
 
     public static final RegistryObject<Item> KNIFE = ITEMS.register("knife",
-            () -> new KnifeItem(Tiers.IRON, 1,0f,
+            () -> new KnifeItem(Tiers.IRON, 1,-2.2f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).defaultDurability(128)));
 
     public static final RegistryObject<Item> MAGMA_KNIFE = ITEMS.register("magma_knife",

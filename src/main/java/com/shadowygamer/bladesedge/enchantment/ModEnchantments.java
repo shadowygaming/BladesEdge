@@ -16,11 +16,11 @@ public class ModEnchantments {
 
     public static RegistryObject<Enchantment> BLAZING =
             ENCHANTMENTS.register("blazing", () -> new BlazingEnchantment(
-                Enchantment.Rarity.RARE, EnchantmentCategory.ARMOR_CHEST));
+                Enchantment.Rarity.COMMON, EnchantmentCategory.ARMOR_CHEST));
 
     public static RegistryObject<Enchantment> WITHER_ASPECT =
             ENCHANTMENTS.register("wither_aspect", () -> new WitherAspectEnchantment(
-                    Enchantment.Rarity.RARE, EnchantmentCategory.WEAPON));
+                    Enchantment.Rarity.UNCOMMON, EnchantmentCategory.WEAPON));
 
     public static RegistryObject<Enchantment> COMBO =
             ENCHANTMENTS.register("combo", () -> new ComboEnchantment(

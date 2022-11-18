@@ -24,17 +24,17 @@ public class WitherAspectEnchantment extends Enchantment {
 
             if (pLevel == 1) {
                 if (pAttacker instanceof LivingEntity) {
-                    ((LivingEntity) pTarget).addEffect(new MobEffectInstance(MobEffects.WITHER, 160, 0));
+                    ((LivingEntity) pTarget).addEffect(new MobEffectInstance(MobEffects.WITHER, 100, 0));
                 }
             }
             if (pLevel == 2) {
                 if (pAttacker instanceof LivingEntity) {
-                    ((LivingEntity) pTarget).addEffect(new MobEffectInstance(MobEffects.WITHER, 180, 1));
+                    ((LivingEntity) pTarget).addEffect(new MobEffectInstance(MobEffects.WITHER, 100, 1));
                 }
             }
             if (pLevel == 3) {
                 if (pAttacker instanceof LivingEntity) {
-                    ((LivingEntity) pTarget).addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 2));
+                    ((LivingEntity) pTarget).addEffect(new MobEffectInstance(MobEffects.WITHER, 120, 2));
                 }
             }
         }
