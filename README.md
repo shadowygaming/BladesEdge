@@ -2,18 +2,4 @@
 
 A 1.18.2 mod for Forge
 
-Current Features include:
-
-3 Upgrade cores
-
-4 Custom Enchants
-
-3 Craftable Toolsets
-
-2 Knives
-
-4 Unique Artifacts
-
-Custom armor
-
-New Items and blocks
+Hello, if your returning to this page from a time before you may notice that in commit history, all of the old commits are gone. That is because i deleted this github in a fit of rage when trying to get intellij to upload it to the existing one on my new pc. if you really care for some reason i have all of the old versions of bladesedge and you can contact me through somewhere idk where.
