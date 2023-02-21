@@ -79,6 +79,10 @@ public class ModItems {
     public static final RegistryObject<Item> HARDENED_REDSTONE = ITEMS.register("hardened_redstone",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
+    public static final RegistryObject<Item> GRASS_FIBER = ITEMS.register("grass_fiber",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).food(ModFoods.GRASS_FIBER)));
+
+
 
 
     //special items

@@ -2,10 +2,13 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "bladesedge:burning"
+      "item": "bladesedge:grass_fiber"
     },
     {
-      "tag": "minecraft:wool"
+      "item": "bladesedge:grass_fiber"
+    },
+    {
+      "item": "bladesedge:grass_fiber"
     }
   ],
   "result": {

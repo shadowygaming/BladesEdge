@@ -20,6 +20,11 @@ public class ModFoods {
     public static final FoodProperties VOID_PEPPER = (new FoodProperties.Builder())
             .nutrition(7)
             .saturationMod(0.9f)
-            .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 100, 0), 0.95F)
+            .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 100, 0), 0.75F)
+            .build();
+    public static final FoodProperties GRASS_FIBER = (new FoodProperties.Builder())
+            .nutrition(1)
+            .saturationMod(0.24f)
+            .fast()
             .build();
 }
