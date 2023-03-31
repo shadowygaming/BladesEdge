@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bladesedge:light_oak_plank"
+          "name": "bladesedge:stripped_light_oak_log"
         }
       ],
       "conditions": [

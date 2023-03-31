@@ -7,24 +7,24 @@ import net.minecraft.world.food.FoodProperties;
 public class ModFoods {
 
     public static final FoodProperties FLESH = (new FoodProperties.Builder())
-            .nutrition(5)
-            .saturationMod(0.3f)
+            .nutrition(3)
+            .saturationMod(0.12f)
             .effect(new MobEffectInstance(MobEffects.CONFUSION, 500, 0), 0.4F)
             .meat()
             .build();
     public static final FoodProperties CHARRED_CARROT = (new FoodProperties.Builder())
             .nutrition(5)
-            .saturationMod(0.85f)
+            .saturationMod(0.62f)
             .fast()
             .build();
     public static final FoodProperties VOID_PEPPER = (new FoodProperties.Builder())
             .nutrition(7)
-            .saturationMod(0.9f)
-            .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 100, 0), 0.75F)
+            .saturationMod(0.8f)
+            .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1), 0.75F)
             .build();
     public static final FoodProperties GRASS_FIBER = (new FoodProperties.Builder())
-            .nutrition(1)
-            .saturationMod(0.24f)
+            .nutrition(2)
+            .saturationMod(0.2f)
             .fast()
             .build();
 }

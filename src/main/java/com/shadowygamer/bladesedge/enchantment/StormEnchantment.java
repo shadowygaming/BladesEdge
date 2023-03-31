@@ -26,29 +26,9 @@ public class StormEnchantment extends Enchantment {
                         MobSpawnType.TRIGGERED, true, true);
                 EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
                         MobSpawnType.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
-                        MobSpawnType.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
-                        MobSpawnType.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
-                        MobSpawnType.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
-                        MobSpawnType.TRIGGERED, true, true);
             }
 
             if(pLevel == 2) {
-                EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
-                        MobSpawnType.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
-                        MobSpawnType.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
-                        MobSpawnType.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
-                        MobSpawnType.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
-                        MobSpawnType.TRIGGERED, true, true);
-                EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
-                        MobSpawnType.TRIGGERED, true, true);
                 EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
                         MobSpawnType.TRIGGERED, true, true);
                 EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,

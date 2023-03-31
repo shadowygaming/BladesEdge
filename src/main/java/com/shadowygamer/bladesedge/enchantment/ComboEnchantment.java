@@ -41,11 +41,13 @@ public class ComboEnchantment extends Enchantment {
 
             boolean swing = pAttacker.swinging;
             int count = 0;
-            if (swing = true) {
-                swing = false;
-                count = +1;
-            }
+
             if (pLevel == 1) {
+                swing = pAttacker.swinging;
+                if (swing = true) {
+                    swing = false;
+                    count = count + 1;
+                }
                 if (count == 3) {
                     count = 0;
                     if (pAttacker instanceof LivingEntity) {
@@ -54,6 +56,11 @@ public class ComboEnchantment extends Enchantment {
                 }
             }
             if (pLevel == 2) {
+                swing = pAttacker.swinging;
+                if (swing = true) {
+                    swing = false;
+                    count = count + 1;
+                }
                 if (count == 3) {
                     count = 0;
                     if (pAttacker instanceof LivingEntity) {
@@ -63,6 +70,11 @@ public class ComboEnchantment extends Enchantment {
                 }
             }
             if (pLevel == 3) {
+                swing = pAttacker.swinging;
+                if (swing = true) {
+                    swing = false;
+                    count = count + 1;
+                }
                 if (count == 3) {
                     count = 0;
                     if (pAttacker instanceof LivingEntity) {

@@ -10,13 +10,13 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "bladesedge:grass_fiber",
+              "name": "minecraft:grass",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
                   "predicate": {
                     "items": [
-                      "bladesedge:knife"
+                      "minecraft:shears"
                     ]
                   }
                 }
@@ -42,6 +42,20 @@
                 {
                   "condition": "minecraft:random_chance",
                   "chance": 0.125
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "bladesedge:grass_fiber",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": [
+                      "bladesedge:knife"
+                    ]
+                  }
                 }
               ]
             }
