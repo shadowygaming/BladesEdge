@@ -3,6 +3,8 @@ package com.shadowygamer.bladesedge.items.Artifacts;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -36,6 +38,8 @@ public class BerserkerArtifact extends ArtifactItem {
             if (pPlayer.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 1))) {
                 if (pPlayer.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 600, 0))) {
                     hurtItem(pPlayer.getItemInHand(pUsedHand));
+                    pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.VEX_CHARGE, SoundSource.PLAYERS, (float) 0.9, (float) 1);
+                    pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.ANVIL_LAND, SoundSource.PLAYERS, (float) 0.25, (float) 1);
                 }
             }
         }

@@ -3,6 +3,8 @@ package com.shadowygamer.bladesedge.items.Artifacts;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -35,6 +37,7 @@ public class FireArtifact extends ArtifactItem {
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
         if (pPlayer.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 2400, 0))) {
             hurtItem(pPlayer.getItemInHand(pUsedHand));
+            pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.FIRECHARGE_USE, SoundSource.PLAYERS, (float) 1, (float) 1);
         }
         return InteractionResultHolder.success(pPlayer.getItemInHand(pUsedHand));
     }

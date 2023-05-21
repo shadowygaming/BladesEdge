@@ -20,10 +20,10 @@ public class BlazingEnchantment extends Enchantment {
             BlockPos position = pTarget.blockPosition();
 
             if(pLevel == 1) {
-                pTarget.setSecondsOnFire(4);
+                pTarget.setSecondsOnFire(3);
             }
             if(pLevel == 2) {
-                pTarget.setSecondsOnFire(12);
+                pTarget.setSecondsOnFire(10);
             }
         }
     }

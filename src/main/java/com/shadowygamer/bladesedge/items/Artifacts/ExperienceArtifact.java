@@ -3,6 +3,8 @@ package com.shadowygamer.bladesedge.items.Artifacts;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -30,9 +32,10 @@ public class ExperienceArtifact extends ArtifactItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
-        pPlayer.giveExperiencePoints(768);
+        pPlayer.giveExperiencePoints(1400);
         hurtItem(pPlayer.getItemInHand(pUsedHand));
-
+        pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.PLAYERS, (float) 1, (float) 1);
+        pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.EXPERIENCE_BOTTLE_THROW, SoundSource.PLAYERS, (float) 0.1, (float) 1);
         return InteractionResultHolder.success(pPlayer.getItemInHand(pUsedHand));
     }
 }

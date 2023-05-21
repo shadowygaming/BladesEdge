@@ -15,6 +15,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
 public class EnderBag extends Item {
+
+    //Code made by KirumaCoder/CodescripterSD https://github.com/CodeScripterSD
     private static final Component CONTAINER_TITLE = new TranslatableComponent("Ender Bag");
 
     public EnderBag(Properties pProperties) {
