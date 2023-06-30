@@ -27,4 +27,9 @@ public class ModFoods {
             .saturationMod(0.2f)
             .fast()
             .build();
+    public static final FoodProperties GOLD_ALTAR = (new FoodProperties.Builder())
+            .nutrition(0)
+            .saturationMod(20f)
+            .fast()
+            .build();
 }

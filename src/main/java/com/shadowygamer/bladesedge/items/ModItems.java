@@ -109,7 +109,7 @@ public class ModItems {
     //Artifacts t2
 
     public static final RegistryObject<GoldArtifact> GOLD_ALTAR = ITEMS.register("gold_altar",
-            () -> new GoldArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(3).rarity(Rarity.RARE)));
+            () -> new GoldArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(3).rarity(Rarity.RARE).food(ModFoods.GOLD_ALTAR)));
 
     public static final RegistryObject<ShadowArtifact> SHADOW_ALTAR = ITEMS.register("shadow_altar",
             () -> new ShadowArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(1).rarity(Rarity.RARE)));

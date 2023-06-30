@@ -11,7 +11,7 @@ public class ModTiers {
             () -> Ingredient.of(Items.REDSTONE.getDefaultInstance()));
 
     public static final ForgeTier LAPIS = new ForgeTier(3, 512, 8.2f,
-            2f, 144, BlockTags.NEEDS_IRON_TOOL,
+            2f, 72, BlockTags.NEEDS_IRON_TOOL,
             () -> Ingredient.of(Items.LAPIS_LAZULI.getDefaultInstance()));
 
     public static final ForgeTier MAGMA = new ForgeTier(4, 2048, 10f,

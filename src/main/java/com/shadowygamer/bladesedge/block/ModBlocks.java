@@ -49,6 +49,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> STRIPPED_LIGHT_OAK_WOOD = registerBlock("stripped_light_oak_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)), ModCreativeModeTab.BLADESEDGE);
 
+    public static final RegistryObject<DoorBlock> LIGHT_OAK_DOOR = registerBlock("light_oak_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion()), ModCreativeModeTab.BLADESEDGE);
+
     public static final RegistryObject<Block> LIGHT_OAK_SAPLING = registerBlock("light_oak_sapling",
             () -> new SaplingBlock(new LightOakTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModeTab.BLADESEDGE);
 

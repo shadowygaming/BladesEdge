@@ -22,9 +22,9 @@ public class ModEnchantments {
             ENCHANTMENTS.register("wither_aspect", () -> new WitherAspectEnchantment(
                     Enchantment.Rarity.UNCOMMON, EnchantmentCategory.ARMOR));
 
-//    public static RegistryObject<Enchantment> COMBO =
-//            ENCHANTMENTS.register("combo", () -> new ComboEnchantment(
-//                    Enchantment.Rarity.VERY_RARE, EnchantmentCategory.WEAPON));
+    public static RegistryObject<Enchantment> COMBO =
+            ENCHANTMENTS.register("combo", () -> new ComboEnchantment(
+                    Enchantment.Rarity.VERY_RARE, EnchantmentCategory.WEAPON));
 
     public static RegistryObject<Enchantment> LAST_STAND =
             ENCHANTMENTS.register("last_stand", () -> new LastStandEnchantment(

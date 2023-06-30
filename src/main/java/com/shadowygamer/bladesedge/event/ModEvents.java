@@ -4,10 +4,14 @@ import com.shadowygamer.bladesedge.BladesEdge;
 import com.shadowygamer.bladesedge.items.ModItems;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.MerchantOffer;
+import net.minecraft.world.level.block.OreBlock;
+import net.minecraftforge.event.entity.living.LivingExperienceDropEvent;
 import net.minecraftforge.event.village.VillagerTradesEvent;
+import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -47,4 +51,19 @@ public class ModEvents {
                     stack,17,18,0.05F));
         }
     }
+
+    @SubscribeEvent
+    public static void blockBreak(BlockEvent.BreakEvent event) {
+        Player player = event.getPlayer();
+        if ((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_PICKAXE.get().getRegistryName()) && event.getState().getBlock() instanceof OreBlock)
+            event.setExpToDrop(event.getExpToDrop()*(player.getMainHandItem().getDamageValue()/10));
+    }
+    @SubscribeEvent
+    public static void entityKill(LivingExperienceDropEvent event) {
+        Player player = event.getAttackingPlayer();
+        if((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_SWORD.get().getRegistryName())) {
+            event.setDroppedExperience(event.getDroppedExperience()*5);
+        }
+    }
+
 }
