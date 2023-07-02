@@ -22,10 +22,6 @@ public class ModEnchantments {
             ENCHANTMENTS.register("wither_aspect", () -> new WitherAspectEnchantment(
                     Enchantment.Rarity.UNCOMMON, EnchantmentCategory.ARMOR));
 
-    public static RegistryObject<Enchantment> COMBO =
-            ENCHANTMENTS.register("combo", () -> new ComboEnchantment(
-                    Enchantment.Rarity.VERY_RARE, EnchantmentCategory.WEAPON));
-
     public static RegistryObject<Enchantment> LAST_STAND =
             ENCHANTMENTS.register("last_stand", () -> new LastStandEnchantment(
                     Enchantment.Rarity.VERY_RARE, EnchantmentCategory.ARMOR_LEGS));
@@ -33,6 +29,10 @@ public class ModEnchantments {
     public static RegistryObject<Enchantment> STORM =
             ENCHANTMENTS.register("storm", () -> new StormEnchantment(
                     Enchantment.Rarity.UNCOMMON, EnchantmentCategory.BOW));
+
+    public static RegistryObject<Enchantment> STORM_CROSSBOW =
+            ENCHANTMENTS.register("storm_crossbow", () -> new StormEnchantment(
+                    Enchantment.Rarity.UNCOMMON, EnchantmentCategory.CROSSBOW));
 
 
 

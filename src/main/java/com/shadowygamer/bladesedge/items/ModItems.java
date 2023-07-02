@@ -6,16 +6,24 @@ import com.shadowygamer.bladesedge.items.Artifacts.*;
 import com.shadowygamer.bladesedge.items.Cores.CoreItem;
 import com.shadowygamer.bladesedge.items.Cores.MagmaCore;
 import com.shadowygamer.bladesedge.items.Gear.Magma.*;
-import com.shadowygamer.bladesedge.items.Sup.Darkness;
-import com.shadowygamer.bladesedge.items.Sup.EnderBag;
+import com.shadowygamer.bladesedge.items.Modifiers.Darkness;
+import com.shadowygamer.bladesedge.items.Special.EnderBag;
 import com.shadowygamer.bladesedge.items.Modifiers.Shiny;
 import com.shadowygamer.bladesedge.items.Gear.KnifeItem;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.Level;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class ModItems {
 
@@ -36,19 +44,16 @@ public class ModItems {
 
     //cores
     public static final RegistryObject<CoreItem> REDSTONE_CORE = ITEMS.register("redstone_core",
-            () -> new CoreItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).defaultDurability(32).rarity(Rarity.RARE)));
+            () -> new CoreItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).rarity(Rarity.RARE)));
 
     public static final RegistryObject<CoreItem> LAPIS_CORE = ITEMS.register("lapis_core",
-            () -> new CoreItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).defaultDurability(32).rarity(Rarity.RARE)));
+            () -> new CoreItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).rarity(Rarity.RARE)));
     public static final RegistryObject<MagmaCore> MAGMA_CORE = ITEMS.register("magma_core",
-            () -> new MagmaCore(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).defaultDurability(32).rarity(Rarity.RARE)));
+            () -> new MagmaCore(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).rarity(Rarity.RARE)));
 
 
     //catalysts
     public static final RegistryObject<Item> END_CATALYST = ITEMS.register("end_catalyst",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).rarity(Rarity.EPIC)));
-
-    public static final RegistryObject<Item> HYPER_CATALYST = ITEMS.register("hyper_catalyst",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).rarity(Rarity.EPIC)));
 
 
@@ -62,7 +67,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> MAGMA_SHARD = ITEMS.register("magma_shard",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
 
     public static final RegistryObject<Shiny> SHINY_ROCK = ITEMS.register("shiny_rock",
             () -> new Shiny(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
@@ -79,6 +84,9 @@ public class ModItems {
     public static final RegistryObject<Item> HARDENED_REDSTONE = ITEMS.register("hardened_redstone",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
+    public static final RegistryObject<Item> BLUESTONE = ITEMS.register("bluestone",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
     public static final RegistryObject<Item> GRASS_FIBER = ITEMS.register("grass_fiber",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).food(ModFoods.GRASS_FIBER)));
 
@@ -90,6 +98,7 @@ public class ModItems {
             () -> new EnderBag(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(256).rarity(Rarity.EPIC)));
 
 
+
     //artifacts
     public static final RegistryObject<CharcoalArtifact> CHARCOAL_ARTIFACT = ITEMS.register("charcoal_artifact",
             () -> new CharcoalArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(64).rarity(Rarity.UNCOMMON)));
@@ -98,7 +107,7 @@ public class ModItems {
             () -> new ExperienceArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(1).rarity(Rarity.UNCOMMON)));
 
     public static final RegistryObject<HasteArtifact> HASTE_ARTIFACT = ITEMS.register("haste_artifact",
-            () -> new HasteArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(6).rarity(Rarity.UNCOMMON)));
+            () -> new HasteArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(1).rarity(Rarity.UNCOMMON)));
 
     public static final RegistryObject<FireArtifact> FIRE_ARTIFACT = ITEMS.register("fire_artifact",
             () -> new FireArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(2).rarity(Rarity.UNCOMMON)));
@@ -109,10 +118,10 @@ public class ModItems {
     //Artifacts t2
 
     public static final RegistryObject<GoldArtifact> GOLD_ALTAR = ITEMS.register("gold_altar",
-            () -> new GoldArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(3).rarity(Rarity.RARE).food(ModFoods.GOLD_ALTAR)));
+            () -> new GoldArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(3).rarity(Rarity.RARE)));
 
-    public static final RegistryObject<ShadowArtifact> SHADOW_ALTAR = ITEMS.register("shadow_altar",
-            () -> new ShadowArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(1).rarity(Rarity.RARE)));
+//    public static final RegistryObject<ShadowArtifact> SHADOW_ALTAR = ITEMS.register("shadow_altar",
+//            () -> new ShadowArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(1).rarity(Rarity.RARE)));
 
 
     //tools
@@ -138,15 +147,45 @@ public class ModItems {
 
     public static final RegistryObject<Item> LAPIS_SWORD = ITEMS.register("lapis_sword",
             () -> new SwordItem(ModTiers.LAPIS, 4,-1.8f,
-                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)){
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+                    if(Screen.hasShiftDown()) {
+                        pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_kill.tooltip.shift"));
+                    }
+                    else{
+                        pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_kill.tooltip"));
+                    }
+                }
+            });
 
     public static final RegistryObject<Item> LAPIS_AXE = ITEMS.register("lapis_axe",
             () -> new AxeItem(ModTiers.LAPIS, 6,-2.4f,
-                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)){
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+                    if(Screen.hasShiftDown()) {
+                        pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_kill.tooltip.shift"));
+                    }
+                    else{
+                        pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_kill.tooltip"));
+                    }
+                }
+            });
 
     public static final RegistryObject<Item> LAPIS_PICKAXE = ITEMS.register("lapis_pickaxe",
             () -> new PickaxeItem(ModTiers.LAPIS, 1,-3f,
-                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)){
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+                    if(Screen.hasShiftDown()) {
+                        pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_break.tooltip.shift"));
+                    }
+                    else{
+                        pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_break.tooltip"));
+                    }
+                }
+            });
 
     public static final RegistryObject<Item> LAPIS_SHOVEL = ITEMS.register("lapis_shovel",
             () -> new ShovelItem(ModTiers.LAPIS, 4, -3f,
@@ -157,24 +196,54 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
     
     public static final RegistryObject<Item> MAGMA_SWORD = ITEMS.register("magma_sword",
-            () -> new MagmaSword(ModTiers.MAGMA, 6,-2.2f,
-                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
+            () -> new SwordItem(ModTiers.MAGMA, 6,-2.2f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()){
+                @Override
+                public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
+                    pTarget.setSecondsOnFire(4);
+                    return super.hurtEnemy(pStack, pTarget, pAttacker);
+                }
+            });
 
     public static final RegistryObject<Item> MAGMA_AXE = ITEMS.register("magma_axe",
-            () -> new MagmaAxe(ModTiers.MAGMA, 11,-2.6f,
-                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
+            () -> new AxeItem(ModTiers.MAGMA, 11,-2.6f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()){
+                @Override
+                public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
+                    pTarget.setSecondsOnFire(4);
+                    return super.hurtEnemy(pStack, pTarget, pAttacker);
+                }
+            });
 
     public static final RegistryObject<Item> MAGMA_PICKAXE = ITEMS.register("magma_pickaxe",
-            () -> new MagmaPickaxe(ModTiers.MAGMA, 2,-3f,
-                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
+            () -> new PickaxeItem(ModTiers.MAGMA, 2,-3f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()){
+                @Override
+                public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
+                    pTarget.setSecondsOnFire(4);
+                    return super.hurtEnemy(pStack, pTarget, pAttacker);
+                }
+            });
 
     public static final RegistryObject<Item> MAGMA_SHOVEL = ITEMS.register("magma_shovel",
-            () -> new MagmaShovel(ModTiers.MAGMA, 4, -3f,
-                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
+            () -> new ShovelItem(ModTiers.MAGMA, 4, -3f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()){
+                @Override
+                public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
+                    pTarget.setSecondsOnFire(4);
+                    return super.hurtEnemy(pStack, pTarget, pAttacker);
+                }
+            });
 
     public static final RegistryObject<Item> MAGMA_HOE = ITEMS.register("magma_hoe",
-            () -> new MagmaHoe(ModTiers.MAGMA, -2, 6f,
-                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
+            () -> new HoeItem(ModTiers.MAGMA, -2, 6f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()){
+                @Override
+                public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
+                    pTarget.setSecondsOnFire(4);
+                    return super.hurtEnemy(pStack, pTarget, pAttacker);
+                }
+            });
 
     public static final RegistryObject<Item> KNIFE = ITEMS.register("knife",
             () -> new KnifeItem(Tiers.IRON, 1,-2.2f,

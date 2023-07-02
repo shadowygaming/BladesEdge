@@ -2,14 +2,21 @@ package com.shadowygamer.bladesedge.event;
 
 import com.shadowygamer.bladesedge.BladesEdge;
 import com.shadowygamer.bladesedge.items.ModItems;
+import com.shadowygamer.bladesedge.util.ModTags;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.MerchantOffer;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.OreBlock;
+import net.minecraft.world.level.block.SandBlock;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.event.entity.living.LivingExperienceDropEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -55,14 +62,46 @@ public class ModEvents {
     @SubscribeEvent
     public static void blockBreak(BlockEvent.BreakEvent event) {
         Player player = event.getPlayer();
-        if ((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_PICKAXE.get().getRegistryName()) && event.getState().getBlock() instanceof OreBlock)
+
+        int levelThirty;
+
+        if ((player.totalExperience) >= 1395){
+            levelThirty = 1;
+        } else {
+            levelThirty = 2;
+        }
+
+        if ((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_PICKAXE.get().getRegistryName())
+                && event.getState().getBlock() instanceof OreBlock)
             event.setExpToDrop(event.getExpToDrop()*(player.getMainHandItem().getDamageValue()/10));
+
+        if ((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_SHOVEL.get().getRegistryName()))
+            if (event.getState().getBlock() == Blocks.SAND ||
+                    event.getState().getBlock() == Blocks.GRAVEL ||
+                    event.getState().getBlock() == Blocks.RED_SAND ||
+                    event.getState().getBlock() == Blocks.SOUL_SAND ||
+                    event.getState().getBlock() == Blocks.DIRT ||
+                    event.getState().getBlock() == Blocks.GRASS_BLOCK ||
+                    event.getState().getBlock() == Blocks.CLAY) {
+                event.setExpToDrop(levelThirty*((512-player.getMainHandItem().getDamageValue())/256));
+            }
     }
+
     @SubscribeEvent
     public static void entityKill(LivingExperienceDropEvent event) {
         Player player = event.getAttackingPlayer();
-        if((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_SWORD.get().getRegistryName())) {
-            event.setDroppedExperience(event.getDroppedExperience()*5);
+
+        int levelThirty;
+
+        if ((player.totalExperience) >= 1395){
+            levelThirty = 1;
+        } else {
+            levelThirty = 2;
+        }
+
+        if((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_SWORD.get().getRegistryName())
+                || (player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_AXE.get().getRegistryName())) {
+            event.setDroppedExperience(levelThirty*((512-player.getMainHandItem().getDamageValue())/64));
         }
     }
 

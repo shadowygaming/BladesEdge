@@ -14,8 +14,8 @@ public class ModOreGeneration {
         List<Holder<PlacedFeature>> base =
                 event.getGeneration().getFeatures(GenerationStep.Decoration.UNDERGROUND_ORES);
 
-        if(event.getCategory() == Biome.BiomeCategory.THEEND) {
-            base.add(ModPlacedFeatures.VOIDIUM_ORE_PLACED);
-        }
+//        if(event.getCategory() == Biome.BiomeCategory.THEEND) {
+//            base.add(ModPlacedFeatures.VOIDIUM_ORE_PLACED);
+//        }
     }
 }

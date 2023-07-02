@@ -6,7 +6,11 @@
     },
     {
       "condition": "match_tool",
-      "match_tool": "bladesedge:knife"
+      "predicate": {
+        "items": [
+          "bladesedge:knife"
+        ]
+      }
     }
   ],
   "addition": "bladesedge:grass_fiber",

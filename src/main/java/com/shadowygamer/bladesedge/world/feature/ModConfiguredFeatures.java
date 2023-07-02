@@ -43,10 +43,10 @@ public class ModConfiguredFeatures {
                         new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(LIGHT_OAK_CHECKED,
                                 0.01F)), LIGHT_OAK_CHECKED));
 
-    public static final List<OreConfiguration.TargetBlockState> END_VOIDIUM_ORES = List.of(
-            OreConfiguration.target(new BlockMatchTest(Blocks.END_STONE), ModBlocks.VOIDIUM_ORE.get().defaultBlockState()));
-
-    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> VOIDIUM_ORE = FeatureUtils.register("voidium_ore",
-            Feature.ORE, new OreConfiguration(END_VOIDIUM_ORES, 20));
+//    public static final List<OreConfiguration.TargetBlockState> END_VOIDIUM_ORES = List.of(
+//            OreConfiguration.target(new BlockMatchTest(Blocks.END_STONE), ModBlocks.VOIDIUM_ORE.get().defaultBlockState()));
+//
+//    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> VOIDIUM_ORE = FeatureUtils.register("voidium_ore",
+//            Feature.ORE, new OreConfiguration(END_VOIDIUM_ORES, 20));
 
 }

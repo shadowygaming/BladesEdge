@@ -28,8 +28,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> CHARCOAL_BLOCK = registerBlock("charcoal_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(3.5f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLADESEDGE);
 
-    public static final RegistryObject<Block> VOIDIUM_ORE = registerBlock("voidium_ore",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLADESEDGE);
+//    public static final RegistryObject<Block> VOIDIUM_ORE = registerBlock("voidium_ore",
+//            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLADESEDGE);
 
     public static final RegistryObject<Block> FLAMING_COPPER_BLOCK = registerBlock("flaming_copper_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3.0F).requiresCorrectToolForDrops().sound(SoundType.COPPER)), ModCreativeModeTab.BLADESEDGE);
@@ -49,8 +49,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> STRIPPED_LIGHT_OAK_WOOD = registerBlock("stripped_light_oak_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)), ModCreativeModeTab.BLADESEDGE);
 
-    public static final RegistryObject<DoorBlock> LIGHT_OAK_DOOR = registerBlock("light_oak_door",
-            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion()), ModCreativeModeTab.BLADESEDGE);
+//    public static final RegistryObject<DoorBlock> LIGHT_OAK_DOOR = registerBlock("light_oak_door",
+//            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion()), ModCreativeModeTab.BLADESEDGE);
 
     public static final RegistryObject<Block> LIGHT_OAK_SAPLING = registerBlock("light_oak_sapling",
             () -> new SaplingBlock(new LightOakTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModeTab.BLADESEDGE);

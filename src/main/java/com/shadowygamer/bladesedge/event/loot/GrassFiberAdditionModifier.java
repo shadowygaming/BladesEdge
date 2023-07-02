@@ -31,7 +31,7 @@ public class GrassFiberAdditionModifier extends LootModifier {
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
         // generatedLoot is the loot that would be dropped, if we wouldn't add or replace
         // anything!
-        if(context.getRandom().nextFloat() > 0.5f) {
+        if(context.getRandom().nextFloat() > 0.25f) {
             generatedLoot.add(new ItemStack(addition, 1));
         }
         return generatedLoot;

@@ -1,4 +1,4 @@
-package com.shadowygamer.bladesedge.items.Sup;
+package com.shadowygamer.bladesedge.items.Modifiers;
 
 import com.shadowygamer.bladesedge.items.Modifiers.Shiny;
 import net.minecraft.client.gui.screens.Screen;

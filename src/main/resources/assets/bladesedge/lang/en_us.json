@@ -20,6 +20,8 @@
   "item.bladesedge.shiny_rock": "Shiny Rock",
   "item.bladesedge.void_atom": "Void Atom",
   "item.bladesedge.hardened_redstone": "Hardened Redstone",
+  "item.bladesedge.bluestone": "Bluestone",
+
 
   "item.bladesedge.ender_bag": "Ender Pouch",
   "container.bladesedge.ender_bag": "Ender Pouch",
@@ -86,6 +88,8 @@
   "enchantment.bladesedge.combo": "Combo",
   "enchantment.bladesedge.last_stand": "Last Stand",
   "enchantment.bladesedge.storm": "Storm",
+  "enchantment.bladesedge.storm_crossbow": "Storm",
+
 
   "tooltip.bladesedge.artifact.tooltip": "Hold Shift for a Hint",
   "tooltip.bladesedge.berserker_artifact.tooltip.shift": "Your rage burns through any foes (for 30 seconds)",
@@ -96,6 +100,11 @@
   "tooltip.bladesedge.gold_altar.tooltip.shift": "Compact Golden Apple",
   "tooltip.bladesedge.shadow_altar.tooltip.shift": "Better Berserker Artifact",
 
+
+  "tooltip.bladesedge.lapis_break.tooltip": "Press Shift for more details",
+  "tooltip.bladesedge.lapis_break.tooltip.shift": "The LOWER the tool durability, the more Exp from ores.",
+  "tooltip.bladesedge.lapis_kill.tooltip": "Press Shift for more details",
+  "tooltip.bladesedge.lapis_kill.tooltip.shift": "The HIGHER the tool durability, the more Exp from mobs.",
 
   "tooltip.bladesedge.shiny.tooltip": "Press Shift for more details",
   "tooltip.bladesedge.shiny.tooltip.shift": "Shiny...",

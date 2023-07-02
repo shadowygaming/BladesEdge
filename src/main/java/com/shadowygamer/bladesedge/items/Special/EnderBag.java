@@ -1,4 +1,4 @@
-package com.shadowygamer.bladesedge.items.Sup;
+package com.shadowygamer.bladesedge.items.Special;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;

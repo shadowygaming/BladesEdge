@@ -33,7 +33,7 @@ public class LastStandEnchantment extends Enchantment {
                     if (used == false) {
                         used = true;
                         pAttacker.setHealth(5);
-                        ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.WITHER, 6000, 2));
+                        ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.WITHER, 123456789, 2));
                         ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.SATURATION, 120, 1));
                         ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 400, 0));
                         ((LivingEntity) pAttacker).addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 400, 0));

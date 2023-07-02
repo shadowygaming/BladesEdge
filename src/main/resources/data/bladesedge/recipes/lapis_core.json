@@ -1,12 +1,23 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "bladesedge:redstone_core"
-  },
-  "addition": {
-    "item": "bladesedge:experience_artifact"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#L#",
+    "LEL",
+    "LLL"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glass"
+    },
+    "L": {
+      "item": "minecraft:lapis_block"
+    },
+    "E": {
+      "item": "minecraft:experience_bottle"
+    }
   },
   "result": {
-    "item": "bladesedge:lapis_core"
+    "item": "bladesedge:lapis_core",
+    "count": 1
   }
 }

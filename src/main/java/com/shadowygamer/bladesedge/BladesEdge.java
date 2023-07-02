@@ -58,7 +58,7 @@ public class BladesEdge
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIGHT_OAK_LEAVES.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIGHT_OAK_SAPLING.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.VOID_PEPPER.get(), RenderType.cutout());
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIGHT_OAK_DOOR.get(), RenderType.translucent());
+//        ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIGHT_OAK_DOOR.get(), RenderType.translucent());
 
     }
     private void setup(final FMLCommonSetupEvent event)
