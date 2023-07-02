@@ -179,6 +179,21 @@ public class ModItems {
                 @Override
                 public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
                     if(Screen.hasShiftDown()) {
+                        pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_pickaxe.tooltip.shift"));
+                    }
+                    else{
+                        pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_pickaxe.tooltip"));
+                    }
+                }
+            });
+
+    public static final RegistryObject<Item> LAPIS_SHOVEL = ITEMS.register("lapis_shovel",
+            () -> new ShovelItem(ModTiers.LAPIS, 4, -3f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE))
+            {
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+                    if(Screen.hasShiftDown()) {
                         pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_break.tooltip.shift"));
                     }
                     else{
@@ -186,10 +201,6 @@ public class ModItems {
                     }
                 }
             });
-
-    public static final RegistryObject<Item> LAPIS_SHOVEL = ITEMS.register("lapis_shovel",
-            () -> new ShovelItem(ModTiers.LAPIS, 4, -3f,
-                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> LAPIS_HOE = ITEMS.register("lapis_hoe",
             () -> new HoeItem(ModTiers.LAPIS, -3, 5f,

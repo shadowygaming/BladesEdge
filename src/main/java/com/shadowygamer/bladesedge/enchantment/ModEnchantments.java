@@ -20,7 +20,7 @@ public class ModEnchantments {
 
     public static RegistryObject<Enchantment> WITHER_ASPECT =
             ENCHANTMENTS.register("wither_aspect", () -> new WitherAspectEnchantment(
-                    Enchantment.Rarity.UNCOMMON, EnchantmentCategory.ARMOR));
+                    Enchantment.Rarity.UNCOMMON, EnchantmentCategory.WEAPON));
 
     public static RegistryObject<Enchantment> LAST_STAND =
             ENCHANTMENTS.register("last_stand", () -> new LastStandEnchantment(

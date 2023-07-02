@@ -6,7 +6,6 @@ import com.shadowygamer.bladesedge.enchantment.ModEnchantments;
 import com.shadowygamer.bladesedge.items.ModItems;
 import com.shadowygamer.bladesedge.potion.ModPotions;
 import com.shadowygamer.bladesedge.sound.ModSounds;
-import com.shadowygamer.bladesedge.util.BetterBrewingRecipe;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.BlockPos;
@@ -98,7 +97,5 @@ public class BladesEdge
             }
         });
 
-        BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
-                Items.GOLDEN_APPLE, ModPotions.GOLDEN_POTION.get()));
     }
 }

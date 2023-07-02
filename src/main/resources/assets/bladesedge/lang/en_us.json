@@ -101,8 +101,10 @@
   "tooltip.bladesedge.shadow_altar.tooltip.shift": "Better Berserker Artifact",
 
 
+  "tooltip.bladesedge.lapis_pickaxe.tooltip": "Press Shift for more details",
+  "tooltip.bladesedge.lapis_pickaxe.tooltip.shift": "The LOWER the tool durability, the more Exp from ores.",
   "tooltip.bladesedge.lapis_break.tooltip": "Press Shift for more details",
-  "tooltip.bladesedge.lapis_break.tooltip.shift": "The LOWER the tool durability, the more Exp from ores.",
+  "tooltip.bladesedge.lapis_break.tooltip.shift": "The HIGHER the tool durability, get Exp from Blocks.",
   "tooltip.bladesedge.lapis_kill.tooltip": "Press Shift for more details",
   "tooltip.bladesedge.lapis_kill.tooltip.shift": "The HIGHER the tool durability, the more Exp from mobs.",
 

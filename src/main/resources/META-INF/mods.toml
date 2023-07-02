@@ -31,15 +31,13 @@ logoFile="bladesedge.png" #optional
 # A text field displayed in the mod UI
 credits='''
 Thanks to Codescripter for improving efficiency and helping with errors ---  https://github.com/CodeScripterSD
-Improved Brewing Recipe format from --- https://github.com/CAS-ual-TY/Extra-Potions/blob/8980c5484a3b181eda0c66f77f031b5f9fb89efd/src/main/java/de/cas_ual_ty/extrapotions/EPBrewingRecipe.java''' #optional
-# A text field displayed in the mod UI
+'''# A text field displayed in the mod UI
 authors="Shadowygamer (me)" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Good Morning BladesEdge User. Thank you for playing the mod...........................
-
-
-Good night
+Hello,
+Thank you for playing BladesEdge, Please report any bugs you find on our official Github page.
+https://github.com/shadowygaming/BladesEdge/issues
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.bladesedge]] #optional
