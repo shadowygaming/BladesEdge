@@ -1,8 +1,6 @@
 package com.shadowygamer.bladesedge.world.gen;
 
-import com.shadowygamer.bladesedge.world.feature.ModPlacedFeatures;
 import net.minecraft.core.Holder;
-import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraftforge.event.world.BiomeLoadingEvent;

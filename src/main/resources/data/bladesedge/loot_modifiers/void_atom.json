@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/endermite"
+    }
+  ],
+  "addition": "bladesedge:void_atom",
+  "type": "bladesedge:void_atom"
+}

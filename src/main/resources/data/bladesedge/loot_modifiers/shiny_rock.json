@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "block_state_property",
+      "block": "minecraft:end_stone"
+    }
+  ],
+  "addition": "bladesedge:shiny_rock",
+  "type": "bladesedge:shiny_rock"
+}

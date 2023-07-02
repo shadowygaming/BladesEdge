@@ -11,8 +11,8 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    MAGMA("magma", 30, new int[]{3, 7, 9, 4}, 16, SoundEvents.ARMOR_EQUIP_GENERIC, 1.0F, 0.0F, () -> {
-        return Ingredient.of(ModItems.MAGMA_CORE.get());
+    MAGMA("magma", 30, new int[]{3, 7, 9, 4}, 24, SoundEvents.ARMOR_EQUIP_NETHERITE, 1.5F, 0.05F, () -> {
+        return Ingredient.of(ModItems.MAGMA_SHARD.get());
     });
 //    LAPIS("lapis", 30, new int[]{3, 5, 7, 3}, 30, SoundEvents.ARMOR_EQUIP_GENERIC, 1.0F, 0.0F, () -> {
 //        return Ingredient.of(ModItems.LAPIS_CORE.get());

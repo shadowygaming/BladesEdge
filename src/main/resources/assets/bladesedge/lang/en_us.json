@@ -78,9 +78,6 @@
   "block.bladesedge.light_oak_leaves": "Light Oak Leaves",
   "block.bladesedge.light_oak_door": "Light Oak Door",
 
-  "item.minecraft.potion.effect.golden_potion": "Golden Potion",
-  "item.minecraft.splash_potion.effect.golden_potion": "Unused",
-  "item.minecraft.lingering_potion.effect.golden_potion": "Unused",
 
 
   "enchantment.bladesedge.blazing": "Blazing",
@@ -92,12 +89,12 @@
 
 
   "tooltip.bladesedge.artifact.tooltip": "Hold Shift for a Hint",
-  "tooltip.bladesedge.berserker_artifact.tooltip.shift": "Your rage burns through any foes (for 30 seconds)",
-  "tooltip.bladesedge.char_artifact.tooltip.shift": "Burns longer then lava",
-  "tooltip.bladesedge.exp_artifact.tooltip.shift": "Lets Enchant",
+  "tooltip.bladesedge.berserker_artifact.tooltip.shift": "Get buffs to increase your effectiveness in combat",
+  "tooltip.bladesedge.char_artifact.tooltip.shift": "Burns longer than lava",
+  "tooltip.bladesedge.exp_artifact.tooltip.shift": "Gives the user a large sum of experience once",
   "tooltip.bladesedge.haste_artifact.tooltip.shift": "No Beacon Required",
   "tooltip.bladesedge.fire_artifact.tooltip.shift": "Useful in the Nether",
-  "tooltip.bladesedge.gold_altar.tooltip.shift": "Compact Golden Apple",
+  "tooltip.bladesedge.gold_altar.tooltip.shift": "Better Golden Apple",
   "tooltip.bladesedge.shadow_altar.tooltip.shift": "Better Berserker Artifact",
 
 
@@ -113,7 +110,7 @@
   "tooltip.bladesedge.darkness.tooltip": "Hold Shift to learn more about the darkness",
   "tooltip.bladesedge.darkness.tooltip.shift": "§khtruhaiozpqiuenrgft",
   "tooltip.bladesedge.magma_core.tooltip": "Press Shift for more details",
-  "tooltip.bladesedge.magma_core.tooltip.shift": "Legend says the Stones Flame is undying",
+  "tooltip.bladesedge.magma_core.tooltip.shift": "Unlimited flint and steel",
 
 
 

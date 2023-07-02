@@ -1,6 +1,12 @@
 {
   "replace": false,
   "entries": [
-    "bladesedge:grass_fiber"
+    "bladesedge:grass_fiber",
+    "bladesedge:end_catalyst",
+    "bladesedge:magma_shard",
+    "bladesedge:redstone_core_barter",
+    "bladesedge:redstone_core",
+    "bladesedge:shiny_rock",
+    "bladesedge:void_atom"
   ]
 }
