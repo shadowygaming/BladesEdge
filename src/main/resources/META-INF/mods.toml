@@ -30,8 +30,9 @@ displayName="BladesEdge" #mandatory
 logoFile="bladesedge.png" #optional
 # A text field displayed in the mod UI
 credits='''
-Thanks to Codescripter for improving efficiency and helping with errors ---  https://github.com/CodeScripterSD
-'''# A text field displayed in the mod UI
+Thanks to Codescripter for improving efficiency, helping with errors and completely coding some features. ---  https://github.com/CodeScripterSD
+'''
+# A text field displayed in the mod UI
 authors="Shadowygamer (me)" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''

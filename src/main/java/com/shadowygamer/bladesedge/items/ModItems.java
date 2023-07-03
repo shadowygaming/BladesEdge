@@ -63,7 +63,7 @@ public class ModItems {
     public static final RegistryObject<Item> FLESH = ITEMS.register("flesh",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).food(ModFoods.FLESH)));
 
-    public static final RegistryObject<Item> FLAMING_COPPER_INGOT = ITEMS.register("flaming_copper_ingot",
+    public static final RegistryObject<Item> HEATED_COPPER_INGOT = ITEMS.register("heated_copper_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> MAGMA_SHARD = ITEMS.register("magma_shard",

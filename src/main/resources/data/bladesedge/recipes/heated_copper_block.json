@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "bladesedge:flaming_copper_ingot"
+      "item": "bladesedge:heated_copper_ingot"
     }
   },
   "result": {
-    "item": "bladesedge:flaming_copper_block",
+    "item": "bladesedge:heated_copper_block",
     "count": 1
   }
 }

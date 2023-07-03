@@ -75,34 +75,28 @@ public class ModEvents {
                 && event.getState().getBlock() instanceof OreBlock)
             event.setExpToDrop(event.getExpToDrop()*(player.getMainHandItem().getDamageValue()/10));
 
-        if ((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_SHOVEL.get().getRegistryName()))
-            if (event.getState().getBlock() == Blocks.SAND ||
-                    event.getState().getBlock() == Blocks.GRAVEL ||
-                    event.getState().getBlock() == Blocks.RED_SAND ||
-                    event.getState().getBlock() == Blocks.SOUL_SAND ||
-                    event.getState().getBlock() == Blocks.DIRT ||
-                    event.getState().getBlock() == Blocks.GRASS_BLOCK ||
-                    event.getState().getBlock() == Blocks.CLAY) {
-                event.setExpToDrop(levelThirty*((512-player.getMainHandItem().getDamageValue())/256));
-            }
+        if ((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_SHOVEL.get().getRegistryName()
+                && event.getState().getBlock().defaultBlockState().is(BlockTags.MINEABLE_WITH_SHOVEL))) {
+            event.setExpToDrop(levelThirty*((512-player.getMainHandItem().getDamageValue())/256));
+        }
     }
 
     @SubscribeEvent
     public static void entityKill(LivingExperienceDropEvent event) {
-        Player player = event.getAttackingPlayer();
+        if (event.getAttackingPlayer()!= null) {
+            Player player = event.getAttackingPlayer();
+            int levelThirty;
 
-        int levelThirty;
+            if ((player.totalExperience) >= 1395) {
+                levelThirty = 1;
+            } else {
+                levelThirty = 2;
+            }
 
-        if ((player.totalExperience) >= 1395){
-            levelThirty = 1;
-        } else {
-            levelThirty = 2;
-        }
-
-        if((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_SWORD.get().getRegistryName())
-                || (player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_AXE.get().getRegistryName())) {
-            event.setDroppedExperience(levelThirty*((512-player.getMainHandItem().getDamageValue())/64));
+            if ((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_SWORD.get().getRegistryName())
+                    || (player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_AXE.get().getRegistryName())) {
+                event.setDroppedExperience(levelThirty * ((512 - player.getMainHandItem().getDamageValue()) / 64));
+            }
         }
     }
-
 }

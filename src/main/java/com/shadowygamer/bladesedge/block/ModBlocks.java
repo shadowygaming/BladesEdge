@@ -31,7 +31,7 @@ public class ModBlocks {
 //    public static final RegistryObject<Block> VOIDIUM_ORE = registerBlock("voidium_ore",
 //            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLADESEDGE);
 
-    public static final RegistryObject<Block> FLAMING_COPPER_BLOCK = registerBlock("flaming_copper_block",
+    public static final RegistryObject<Block> HEATED_COPPER_BLOCK = registerBlock("heated_copper_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3.0F).requiresCorrectToolForDrops().sound(SoundType.COPPER)), ModCreativeModeTab.BLADESEDGE);
 
     public static final RegistryObject<Block> VOID_PEPPER = BLOCKS.register("void_pepper",

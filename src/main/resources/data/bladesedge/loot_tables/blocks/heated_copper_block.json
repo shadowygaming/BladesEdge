@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bladesedge:flaming_copper_block"
+          "name": "bladesedge:heated_copper_block"
         }
       ],
       "conditions": [

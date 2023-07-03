@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "bladesedge:block/flaming_copper_block"
+    "all": "bladesedge:block/heated_copper_block"
   }
 }
