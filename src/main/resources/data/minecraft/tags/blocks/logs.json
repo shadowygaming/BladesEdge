@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "bladesedge:light_oak_logs"
+    "#bladesedge:light_oak_logs"
   ]
 }

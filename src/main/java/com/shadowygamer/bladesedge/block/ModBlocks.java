@@ -9,6 +9,8 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -19,20 +21,21 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import javax.annotation.Nullable;
 import java.util.function.Supplier;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, BladesEdge.MOD_ID);
 
-    public static final RegistryObject<Block> CHARCOAL_BLOCK = registerBlock("charcoal_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(3.5f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLADESEDGE);
+    public static final RegistryObject<Block> CHARCOAL_BLOCK = registerBlockFuel("charcoal_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(5.0f, 6.5f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLADESEDGE, 16000);
 
 //    public static final RegistryObject<Block> VOIDIUM_ORE = registerBlock("voidium_ore",
 //            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLADESEDGE);
 
     public static final RegistryObject<Block> HEATED_COPPER_BLOCK = registerBlock("heated_copper_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3.0F).requiresCorrectToolForDrops().sound(SoundType.COPPER)), ModCreativeModeTab.BLADESEDGE);
+            () -> new MagmaBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3.0F, 6.0f).requiresCorrectToolForDrops().sound(SoundType.COPPER)), ModCreativeModeTab.BLADESEDGE);
 
     public static final RegistryObject<Block> VOID_PEPPER = BLOCKS.register("void_pepper",
             () -> new VoidPepperBlock(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission().noOcclusion()));
@@ -97,13 +100,26 @@ public class ModBlocks {
         registerBlockItem(name, toReturn, tab);
         return toReturn;
     }
+    private static <T extends Block> RegistryObject<T> registerBlockFuel(String name, Supplier<T> block, CreativeModeTab tab, int burnTime) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        registerBlockFuelItem(name, toReturn, tab, burnTime);
+        return toReturn;
+    }
 
     public static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block,
                                                                           CreativeModeTab tab) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
                 new Item.Properties().tab(tab)));
     }
-
+    private static <T extends Block>RegistryObject<Item> registerBlockFuelItem(String name, RegistryObject<T> block, CreativeModeTab tab, int burnTime) {
+        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(),
+                new Item.Properties().tab(tab)) {
+            @Override
+            public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
+                return burnTime;
+            }
+        });
+    }
     public static void register(IEventBus eventBus) {
         BLOCKS.register((eventBus));
     }
