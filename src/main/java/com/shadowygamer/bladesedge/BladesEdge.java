@@ -13,6 +13,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.dispenser.OptionalDispenseItemBehavior;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
@@ -57,40 +58,12 @@ public class BladesEdge
     }
     private void setup(final FMLCommonSetupEvent event)
     {
-        LOGGER.info("HELLO FROM PREINIT");
-        LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        event.enqueueWork(() -> {ComposterBlock.COMPOSTABLES.put(ModItems.VOID_PEPPER.get(), 0.5F);});
+        event.enqueueWork(() -> {ComposterBlock.COMPOSTABLES.put(ModItems.VOID_PEPPER_SEEDS.get(), 0.3F);});
+        event.enqueueWork(() -> {ComposterBlock.COMPOSTABLES.put(ModItems.GRASS_FIBER.get(), 0.5F);});
+        event.enqueueWork(() -> {ComposterBlock.COMPOSTABLES.put(ModBlocks.LIGHT_OAK_LEAVES.get().asItem(), 0.3F);});
+        event.enqueueWork(() -> {ComposterBlock.COMPOSTABLES.put(ModBlocks.LIGHT_OAK_SAPLING.get().asItem(), 0.3F);});
 
-
-        DispenserBlock.registerBehavior(ModItems.MAGMA_CORE.get(), new OptionalDispenseItemBehavior() {
-            protected ItemStack execute(BlockSource p_123412_, ItemStack p_123413_) {
-                Level level = p_123412_.getLevel();
-                this.setSuccess(true);
-                Direction direction = p_123412_.getBlockState().getValue(DispenserBlock.FACING);
-                BlockPos blockpos = p_123412_.getPos().relative(direction);
-                BlockState blockstate = level.getBlockState(blockpos);
-                if (BaseFireBlock.canBePlacedAt(level, blockpos, direction)) {
-                    level.setBlockAndUpdate(blockpos, BaseFireBlock.getState(level, blockpos));
-                    level.gameEvent((Entity)null, GameEvent.BLOCK_PLACE, blockpos);
-                } else if (!CampfireBlock.canLight(blockstate) && !CandleBlock.canLight(blockstate) && !CandleCakeBlock.canLight(blockstate)) {
-                    if (blockstate.isFlammable(level, blockpos, p_123412_.getBlockState().getValue(DispenserBlock.FACING).getOpposite())) {
-                        blockstate.onCaughtFire(level, blockpos, p_123412_.getBlockState().getValue(DispenserBlock.FACING).getOpposite(), null);
-                        if (blockstate.getBlock() instanceof TntBlock)
-                            level.removeBlock(blockpos, false);
-                    } else {
-                        this.setSuccess(false);
-                    }
-                } else {
-                    level.setBlockAndUpdate(blockpos, blockstate.setValue(BlockStateProperties.LIT, Boolean.valueOf(true)));
-                    level.gameEvent((Entity)null, GameEvent.BLOCK_CHANGE, blockpos);
-                }
-
-                if (this.isSuccess() && p_123413_.hurt(1, level.random, (ServerPlayer)null)) {
-                    p_123413_.setCount(0);
-                }
-
-                return p_123413_;
-            }
-        });
 
     }
 }
