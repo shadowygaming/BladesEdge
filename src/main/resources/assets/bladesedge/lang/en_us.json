@@ -21,6 +21,7 @@
   "item.bladesedge.void_atom": "Void Atom",
   "item.bladesedge.hardened_redstone": "Hardened Redstone",
   "item.bladesedge.bluestone": "Bluestone",
+  "item.bladesedge.voidium": "Voidium",
 
 
   "item.bladesedge.ender_bag": "Ender Pouch",
@@ -63,6 +64,7 @@
 
   "block.bladesedge.charcoal_block": "Block of Charcoal",
   "block.bladesedge.heated_copper_block": "Heated Copper Block",
+  "block.bladesedge.voidium_ore" : "Voidium Ore",
 
   "block.bladesedge.void_pepper": "Void Pepper",
   "item.bladesedge.void_pepper_seeds": "Void Pepper Seed",

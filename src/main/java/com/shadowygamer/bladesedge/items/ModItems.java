@@ -48,6 +48,7 @@ public class ModItems {
 
     public static final RegistryObject<CoreItem> LAPIS_CORE = ITEMS.register("lapis_core",
             () -> new CoreItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).rarity(Rarity.RARE)));
+
     public static final RegistryObject<MagmaCore> MAGMA_CORE = ITEMS.register("magma_core",
             () -> new MagmaCore(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).rarity(Rarity.RARE)));
 
@@ -85,6 +86,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> BLUESTONE = ITEMS.register("bluestone",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> VOIDIUM = ITEMS.register("voidium",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> GRASS_FIBER = ITEMS.register("grass_fiber",

@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "bladesedge:charcoal_block",
-    "bladesedge:heated_copper_block"
+    "bladesedge:heated_copper_block",
+    "bladesedge:voidium_ore"
   ]
 }

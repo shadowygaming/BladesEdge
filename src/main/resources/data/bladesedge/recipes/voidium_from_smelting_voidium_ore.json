@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "bladesedge:voidium_ore"
+  },
+  "result": "bladesedge:voidium",
+  "experience": 1.0,
+  "cookingtime": 200
+}
