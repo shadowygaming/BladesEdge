@@ -119,6 +119,9 @@ public class ModItems {
     public static final RegistryObject<BerserkerArtifact> BERSERKER_ARTIFACT = ITEMS.register("berserker_artifact",
             () -> new BerserkerArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(1).rarity(Rarity.UNCOMMON)));
 
+    public static final RegistryObject<NullingArtifact> NULLING_ARTIFACT = ITEMS.register("nulling_artifact",
+            () -> new NullingArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(1).rarity(Rarity.UNCOMMON)));
+
     //Artifacts t2
 
     public static final RegistryObject<GoldArtifact> GOLD_ALTAR = ITEMS.register("gold_altar",
@@ -130,7 +133,7 @@ public class ModItems {
 
     //tools
     public static final RegistryObject<Item> REDSTONE_SWORD = ITEMS.register("redstone_sword",
-            () -> new SwordItem(ModTiers.REDSTONE, 4,-2f,
+            () -> new SwordItem(ModTiers.REDSTONE, 3,-2f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> REDSTONE_AXE = ITEMS.register("redstone_axe",
@@ -148,9 +151,29 @@ public class ModItems {
     public static final RegistryObject<Item> REDSTONE_HOE = ITEMS.register("redstone_hoe",
             () -> new HoeItem(ModTiers.REDSTONE, -3, 4f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+    
+    public static final RegistryObject<Item> VOIDIUM_SWORD = ITEMS.register("voidium_sword",
+            () -> new SwordItem(ModTiers.VOIDIUM, 4,-2.4f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> VOIDIUM_AXE = ITEMS.register("voidium_axe",
+            () -> new AxeItem(ModTiers.VOIDIUM, 6,-3.0f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> VOIDIUM_PICKAXE = ITEMS.register("voidium_pickaxe",
+            () -> new PickaxeItem(ModTiers.VOIDIUM, 2,-2.8f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> VOIDIUM_SHOVEL = ITEMS.register("voidium_shovel",
+            () -> new ShovelItem(ModTiers.VOIDIUM, 1, -3f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> VOIDIUM_HOE = ITEMS.register("voidium_hoe",
+            () -> new HoeItem(ModTiers.VOIDIUM, -3, 0f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> LAPIS_SWORD = ITEMS.register("lapis_sword",
-            () -> new SwordItem(ModTiers.LAPIS, 4,-1.8f,
+            () -> new SwordItem(ModTiers.LAPIS, 4,-2.4f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)){
                 @Override
                 public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
@@ -211,7 +234,7 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
     
     public static final RegistryObject<Item> MAGMA_SWORD = ITEMS.register("magma_sword",
-            () -> new SwordItem(ModTiers.MAGMA, 6,-2.2f,
+            () -> new SwordItem(ModTiers.MAGMA, 5,-2.4f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()){
                 @Override
                 public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {

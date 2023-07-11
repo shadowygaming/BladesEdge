@@ -1,12 +1,20 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "bladesedge:redstone_sword"
-  },
-  "addition": {
-    "item": "bladesedge:bluestone"
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    " # ",
+    " / "
+  ],
+  "key": {
+    "#": {
+      "item": "bladesedge:bluestone"
+    },
+    "/": {
+      "item": "bladesedge:tool_handle"
+    }
   },
   "result": {
-    "item": "bladesedge:lapis_sword"
+    "item": "bladesedge:lapis_sword",
+    "count": 1
   }
 }

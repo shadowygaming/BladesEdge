@@ -90,14 +90,16 @@
   "enchantment.bladesedge.storm_crossbow": "Storm",
 
 
-  "tooltip.bladesedge.artifact.tooltip": "Hold Shift for a Hint",
+  "tooltip.bladesedge.artifact.tooltip": "Hold Shift for a description",
   "tooltip.bladesedge.berserker_artifact.tooltip.shift": "Get buffs to increase your effectiveness in combat",
   "tooltip.bladesedge.char_artifact.tooltip.shift": "Burns longer than lava",
   "tooltip.bladesedge.exp_artifact.tooltip.shift": "Gives the user a large sum of experience once",
   "tooltip.bladesedge.haste_artifact.tooltip.shift": "No Beacon Required",
   "tooltip.bladesedge.fire_artifact.tooltip.shift": "Useful in the Nether",
+  "tooltip.bladesedge.null_artifact.tooltip.shift": "Fully blocks a single hit of damage",
   "tooltip.bladesedge.gold_altar.tooltip.shift": "Better Golden Apple",
   "tooltip.bladesedge.shadow_altar.tooltip.shift": "Better Berserker Artifact",
+
 
 
   "tooltip.bladesedge.lapis_pickaxe.tooltip": "Press Shift for more details",

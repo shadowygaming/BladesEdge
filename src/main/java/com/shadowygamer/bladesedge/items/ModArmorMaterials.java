@@ -13,10 +13,10 @@ import java.util.function.Supplier;
 public enum ModArmorMaterials implements ArmorMaterial {
     MAGMA("magma", 30, new int[]{3, 7, 9, 4}, 24, SoundEvents.ARMOR_EQUIP_NETHERITE, 1.5F, 0.05F, () -> {
         return Ingredient.of(ModItems.MAGMA_SHARD.get());
+    }),
+    VOIDIUM("voidium", 30, new int[]{3, 6, 6, 3}, 18, SoundEvents.ARMOR_EQUIP_IRON, 3.0F, 0.5F, () -> {
+        return Ingredient.of(ModItems.VOIDIUM.get());
     });
-//    LAPIS("lapis", 30, new int[]{3, 5, 7, 3}, 30, SoundEvents.ARMOR_EQUIP_GENERIC, 1.0F, 0.0F, () -> {
-//        return Ingredient.of(ModItems.LAPIS_CORE.get());
-//    });
 
     private static final int[] HEALTH_PER_SLOT = new int[]{15, 20, 18, 12};
     private final String name;

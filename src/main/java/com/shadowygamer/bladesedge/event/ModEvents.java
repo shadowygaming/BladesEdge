@@ -4,6 +4,7 @@ import com.shadowygamer.bladesedge.BladesEdge;
 import com.shadowygamer.bladesedge.items.ModItems;
 import com.shadowygamer.bladesedge.util.ModTags;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.entity.player.Player;
@@ -15,10 +16,14 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.OreBlock;
 import net.minecraft.world.level.block.SandBlock;
 import net.minecraftforge.common.Tags;
+import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.living.LivingExperienceDropEvent;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.minecraftforge.event.entity.living.ShieldBlockEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.event.world.BlockEvent;
+import net.minecraftforge.event.world.NoteBlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -72,14 +77,20 @@ public class ModEvents {
         }
 
         if ((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_PICKAXE.get().getRegistryName())
-                && event.getState().getBlock() instanceof OreBlock)
-            event.setExpToDrop(event.getExpToDrop()*(player.getMainHandItem().getDamageValue()/10));
-
+                && event.getState().getBlock() instanceof OreBlock) {
+            event.setExpToDrop(event.getExpToDrop() * (player.getMainHandItem().getDamageValue() / 10));
+        }
         if ((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_SHOVEL.get().getRegistryName()
                 && event.getState().getBlock().defaultBlockState().is(BlockTags.MINEABLE_WITH_SHOVEL))) {
             event.setExpToDrop(levelThirty*((512-player.getMainHandItem().getDamageValue())/256));
         }
+        if ((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_HOE.get().getRegistryName())){
+                if (event.getState().getBlock().defaultBlockState().is(BlockTags.MINEABLE_WITH_HOE)
+                || event.getState().getBlock().defaultBlockState().is(BlockTags.CROPS)) {
+                    event.setExpToDrop(levelThirty*((512-player.getMainHandItem().getDamageValue())/256));
+        }
     }
+}
 
     @SubscribeEvent
     public static void entityKill(LivingExperienceDropEvent event) {
@@ -96,6 +107,20 @@ public class ModEvents {
             if ((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_SWORD.get().getRegistryName())
                     || (player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_AXE.get().getRegistryName())) {
                 event.setDroppedExperience(levelThirty * ((512 - player.getMainHandItem().getDamageValue()) / 64));
+            }
+        }
+    }
+    @SubscribeEvent
+    public static void BlockHit(LivingDamageEvent event) {
+        if (event.getEntityLiving() instanceof Player){
+            Player player = (Player) event.getEntityLiving();
+            if ((player.getOffhandItem().getItem().getRegistryName() == ModItems.NULLING_ARTIFACT.get().getRegistryName())) {
+                event.setAmount(-1);
+                player.getOffhandItem().hurtAndBreak(1, player, (player1)->{player1.broadcastBreakEvent(player1.getUsedItemHand());});
+            }
+            if ((player.getMainHandItem().getItem().getRegistryName() == ModItems.NULLING_ARTIFACT.get().getRegistryName())) {
+                event.setAmount(-1);
+                player.getMainHandItem().hurtAndBreak(1, player, (player1)->{player1.broadcastBreakEvent(player1.getUsedItemHand());});
             }
         }
     }

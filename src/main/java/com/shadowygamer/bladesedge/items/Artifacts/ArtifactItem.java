@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class ArtifactItem extends Item {
 
-        //Code made by KirumaCoder/CodescripterSD https://github.com/CodeScripterSD
+    //Code made by KirumaCoder/CodescripterSD https://github.com/CodeScripterSD
     public ArtifactItem(Properties pProperties) {
         super(pProperties);
     }
