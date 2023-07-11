@@ -12,6 +12,7 @@ import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.Nonnull;
+import java.util.ArrayList;
 import java.util.List;
 
 public class RedstoneCoreFromBarterAdditionsModifier extends LootModifier {
@@ -25,7 +26,8 @@ public class RedstoneCoreFromBarterAdditionsModifier extends LootModifier {
     @Nonnull
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
-        if(context.getRandom().nextFloat() < 1f) {
+        if(context.getRandom().nextFloat() < 0.02f) {
+            generatedLoot.clear();
             generatedLoot.add(new ItemStack(addition, 1));
         }
         return generatedLoot;

@@ -1,22 +1,10 @@
 {
   "conditions": [
     {
-      "type": "minecraft:barter",
-      "pools": [
-        {
-          "rolls": 1,
-          "bonus_rolls": 0,
-          "entries": [
-            {
-              "type": "minecraft:item",
-              "weight": 20,
-              "name": "bladesedge:redstone_core"
-            }
-          ]
-        }
-      ]
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:gameplay/piglin_bartering"
     }
   ],
   "addition": "bladesedge:redstone_core",
-  "type": "bladesedge:redstone_core"
+  "type": "bladesedge:redstone_core_barter"
 }

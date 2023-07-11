@@ -32,7 +32,6 @@ public class RedstoneCoreFromPigmanAdditionsModifier extends LootModifier {
     }
 
     public static class Serializer extends GlobalLootModifierSerializer<RedstoneCoreFromPigmanAdditionsModifier> {
-
         @Override
         public RedstoneCoreFromPigmanAdditionsModifier read(ResourceLocation name, JsonObject object,
                                                              LootItemCondition[] conditionsIn) {

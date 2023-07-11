@@ -35,7 +35,7 @@ public class ModEventBusEvents {
         );
         event.getRegistry().registerAll(
                 new RedstoneCoreFromPigmanAdditionsModifier.Serializer().setRegistryName
-                        (new ResourceLocation(BladesEdge.MOD_ID, "redstone_core"))
+                        (new ResourceLocation(BladesEdge.MOD_ID, "redstone_core_pigman"))
         );
         event.getRegistry().registerAll(
                 new ShinyRockFromEndstoneAdditionModifier.Serializer().setRegistryName
