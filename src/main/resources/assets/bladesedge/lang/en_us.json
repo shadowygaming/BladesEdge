@@ -42,12 +42,21 @@
   "item.bladesedge.redstone_pickaxe": "Redstone Pickaxe",
   "item.bladesedge.redstone_shovel": "Redstone Shovel",
   "item.bladesedge.redstone_hoe": "Redstone Hoe",
+
   "item.bladesedge.lapis_sword": "Lapis Sword",
   "item.bladesedge.lapis_axe": "Lapis Axe",
   "item.bladesedge.lapis_pickaxe": "Lapis Pickaxe",
   "item.bladesedge.lapis_shovel": "Lapis Shovel",
   "item.bladesedge.lapis_hoe": "Lapis Hoe",
+
+  "item.bladesedge.voidium_sword": "Voidium Sword",
+  "item.bladesedge.voidium_axe": "Voidium Axe",
+  "item.bladesedge.voidium_pickaxe": "Voidium Pickaxe",
+  "item.bladesedge.voidium_shovel": "Voidium Shovel",
+  "item.bladesedge.voidium_hoe": "Voidium Hoe",
+
   "item.bladesedge.knife": "Knife",
+
   "item.bladesedge.magma_knife": "Magma Knife",
   "item.bladesedge.magma_sword": "Magma Sword",
   "item.bladesedge.magma_axe": "Magma Axe",
