@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bladesedge:heated_copper_block"
+          "name": "bladesedge:flarium_ore"
         }
       ],
       "conditions": [

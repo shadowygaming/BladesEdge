@@ -17,5 +17,11 @@ public class ModOreGeneration {
         if(event.getCategory() == Biome.BiomeCategory.THEEND) {
             base.add(ModPlacedFeatures.VOIDIUM_ORE_PLACED);
         }
+
+        base.add(ModPlacedFeatures.CRONIUM_ORE_PLACED);
+
+        if(event.getCategory() == Biome.BiomeCategory.NETHER) {
+            base.add(ModPlacedFeatures.FLARIUM_ORE_PLACED);
+        }
     }
 }

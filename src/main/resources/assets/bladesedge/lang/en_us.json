@@ -14,7 +14,7 @@
   "item.bladesedge.tool_handle": "Tool Handle",
   "item.bladesedge.flesh": "Flesh",
   "item.bladesedge.grass_fiber": "Grass Fiber",
-  "item.bladesedge.heated_copper_ingot": "Heated Copper Ingot",
+  "item.bladesedge.flarium_ingot": "Flarium Ingot",
   "item.bladesedge.charred_carrot": "Charred Carrot",
   "item.bladesedge.magma_shard": "Magma Shard",
   "item.bladesedge.shiny_rock": "Shiny Rock",
@@ -72,7 +72,7 @@
 
 
   "block.bladesedge.charcoal_block": "Block of Charcoal",
-  "block.bladesedge.heated_copper_block": "Heated Copper Block",
+  "block.bladesedge.flarium_block": "Flarium Block",
   "block.bladesedge.voidium_ore" : "Voidium Ore",
 
   "block.bladesedge.void_pepper": "Void Pepper",

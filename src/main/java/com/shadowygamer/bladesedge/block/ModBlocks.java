@@ -28,14 +28,29 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, BladesEdge.MOD_ID);
 
+
+    //ores
+    public static final RegistryObject<Block> VOIDIUM_ORE = registerBlock("voidium_ore",
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3.5f, 9f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLADESEDGE);
+
+    public static final RegistryObject<Block> CRONIUM_ORE = registerBlock("cronium_ore",
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3f, 12f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLADESEDGE);
+
+    public static final RegistryObject<Block> FLARIUM_ORE = registerBlock("flarium_ore",
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.8f, 1.8f).requiresCorrectToolForDrops().sound(SoundType.NETHER_ORE)), ModCreativeModeTab.BLADESEDGE);
+
+    //ore blocks
+    public static final RegistryObject<Block> FLARIUM_BLOCK = registerBlock("flarium_block",
+            () -> new MagmaBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3.0F, 6.0f).requiresCorrectToolForDrops().sound(SoundType.COPPER)), ModCreativeModeTab.BLADESEDGE);
+
+    public static final RegistryObject<Block> CRONIUM_BLOCK = registerBlock("cronium_block",
+            () -> new MagmaBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3.0F, 6.0f).requiresCorrectToolForDrops().sound(SoundType.COPPER)), ModCreativeModeTab.BLADESEDGE);
+
+    public static final RegistryObject<Block> VOIDIUM_BLOCK = registerBlock("voidium_block",
+            () -> new MagmaBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3.0F, 6.0f).requiresCorrectToolForDrops().sound(SoundType.COPPER)), ModCreativeModeTab.BLADESEDGE);
+
     public static final RegistryObject<Block> CHARCOAL_BLOCK = registerBlockFuel("charcoal_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(5.0f, 6.5f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLADESEDGE, 16000);
-
-    public static final RegistryObject<Block> VOIDIUM_ORE = registerBlock("voidium_ore",
-            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3f, 9f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLADESEDGE);
-
-    public static final RegistryObject<Block> HEATED_COPPER_BLOCK = registerBlock("heated_copper_block",
-            () -> new MagmaBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3.0F, 6.0f).requiresCorrectToolForDrops().sound(SoundType.COPPER)), ModCreativeModeTab.BLADESEDGE);
 
     public static final RegistryObject<Block> VOID_PEPPER = BLOCKS.register("void_pepper",
             () -> new VoidPepperBlock(BlockBehaviour.Properties.copy(Blocks.BEETROOTS).noCollission().noOcclusion()));

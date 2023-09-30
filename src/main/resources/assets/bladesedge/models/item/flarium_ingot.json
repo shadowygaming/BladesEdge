@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "bladesedge:item/heated_copper_ingot"
+    "layer0": "bladesedge:item/flarium_ingot"
   }
 }
