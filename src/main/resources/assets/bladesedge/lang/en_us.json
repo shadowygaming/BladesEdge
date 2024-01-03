@@ -14,14 +14,17 @@
   "item.bladesedge.tool_handle": "Tool Handle",
   "item.bladesedge.flesh": "Flesh",
   "item.bladesedge.grass_fiber": "Grass Fiber",
-  "item.bladesedge.flarium_ingot": "Flarium Ingot",
   "item.bladesedge.charred_carrot": "Charred Carrot",
   "item.bladesedge.magma_shard": "Magma Shard",
   "item.bladesedge.shiny_rock": "Shiny Rock",
   "item.bladesedge.void_atom": "Void Atom",
   "item.bladesedge.hardened_redstone": "Hardened Redstone",
   "item.bladesedge.bluestone": "Bluestone",
+
+
   "item.bladesedge.voidium": "Voidium",
+  "item.bladesedge.flarium_ingot": "Flarium Ingot",
+  "item.bladesedge.cronium_bar": "Cronium Bar",
 
 
   "item.bladesedge.ender_bag": "Ender Pouch",
@@ -72,8 +75,12 @@
 
 
   "block.bladesedge.charcoal_block": "Block of Charcoal",
-  "block.bladesedge.flarium_block": "Flarium Block",
+  "block.bladesedge.voidium_block": "Block of Voidium",
+  "block.bladesedge.cronium_block": "Block of Cronium",
+  "block.bladesedge.flarium_block": "Block of Flarium",
   "block.bladesedge.voidium_ore" : "Voidium Ore",
+  "block.bladesedge.cronium_ore" : "Cronium Ore",
+  "block.bladesedge.flarium_ore" : "Flarium Ore",
 
   "block.bladesedge.void_pepper": "Void Pepper",
   "item.bladesedge.void_pepper_seeds": "Void Pepper Seed",

@@ -3,17 +3,17 @@
   "pattern": [
     " # ",
     "McM",
-    " I "
+    "MIM"
   ],
   "key": {
     "#": {
-      "item": "minecraft:redstone"
+      "item": "minecraft:glass_bottle"
     },
     "M": {
       "item": "minecraft:gold_ingot"
     },
     "c": {
-      "item": "bladesedge:haste_artifact"
+      "item": "minecraft:gold_block"
     },
     "I": {
       "item": "minecraft:apple"

@@ -1,26 +1,20 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " # ",
-    "CRC",
-    " B "
+    "###",
+    "#R#",
+    "###"
   ],
   "key": {
     "#": {
-      "item": "bladesedge:hardened_redstone"
-    },
-    "C": {
-      "item": "bladesedge:lapis_core"
-    },
-    "B": {
-      "item": "bladesedge:experience_artifact"
+      "item": "minecraft:lapis_block"
     },
     "R": {
-      "item": "minecraft:furnace"
+      "item": "bladesedge:lapis_core"
     }
   },
   "result": {
     "item": "bladesedge:bluestone",
-    "count": 6
+    "count": 8
   }
 }

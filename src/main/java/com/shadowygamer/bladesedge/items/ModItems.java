@@ -64,8 +64,7 @@ public class ModItems {
     public static final RegistryObject<Item> FLESH = ITEMS.register("flesh",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).food(ModFoods.FLESH)));
 
-    public static final RegistryObject<Item> HEATED_COPPER_INGOT = ITEMS.register("heated_copper_ingot",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
 
     public static final RegistryObject<Item> MAGMA_SHARD = ITEMS.register("magma_shard",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
@@ -88,14 +87,21 @@ public class ModItems {
     public static final RegistryObject<Item> BLUESTONE = ITEMS.register("bluestone",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
-    public static final RegistryObject<Item> VOIDIUM = ITEMS.register("voidium",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
-
     public static final RegistryObject<Item> GRASS_FIBER = ITEMS.register("grass_fiber",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).food(ModFoods.GRASS_FIBER)));
 
 
+    //metals
+    public static final RegistryObject<Item> FLARIUM_INGOT = ITEMS.register("flarium_ingot",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+    public static final RegistryObject<Item> VOIDIUM = ITEMS.register("voidium",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
+    public static final RegistryObject<Item> CRONIUM = ITEMS.register("cronium_bar",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+//    public static final RegistryObject<Item> VOIDIUM = ITEMS.register("voidium",
+//            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     //special items
     public static final RegistryObject<EnderBag> ENDER_BAG = ITEMS.register("ender_bag",

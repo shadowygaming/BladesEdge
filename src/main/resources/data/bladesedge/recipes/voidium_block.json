@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "bladesedge:voidium"
+    }
+  },
+  "result": {
+    "item": "bladesedge:voidium_block",
+    "count": 1
+  }
+}

@@ -10,6 +10,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.ToolAction;
+import net.minecraftforge.common.ToolActions;
 
 import javax.annotation.Nullable;
 
@@ -34,9 +35,8 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
 
     @Nullable
     @Override
-    public BlockState getToolModifiedState(BlockState state, Level world, BlockPos pos, Player player,
-                                           ItemStack stack, ToolAction toolAction) {
-        if(stack.getItem() instanceof AxeItem) {
+    public BlockState getToolModifiedState(BlockState state, Level world, BlockPos pos, Player player, ItemStack stack, ToolAction toolAction) {
+        if(ToolActions.AXE_STRIP == toolAction) {
             if(state.is(ModBlocks.LIGHT_OAK_LOG.get())) {
                 return ModBlocks.STRIPPED_LIGHT_OAK_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }

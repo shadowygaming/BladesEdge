@@ -6,6 +6,7 @@ import com.shadowygamer.bladesedge.items.ModItems;
 import com.shadowygamer.bladesedge.world.feature.tree.LightOakTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -34,7 +35,7 @@ public class ModBlocks {
             () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3.5f, 9f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLADESEDGE);
 
     public static final RegistryObject<Block> CRONIUM_ORE = registerBlock("cronium_ore",
-            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3f, 12f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLADESEDGE);
+            () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).strength(3f, 12f).requiresCorrectToolForDrops(), UniformInt.of(2,5)), ModCreativeModeTab.BLADESEDGE);
 
     public static final RegistryObject<Block> FLARIUM_ORE = registerBlock("flarium_ore",
             () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).strength(2.8f, 1.8f).requiresCorrectToolForDrops().sound(SoundType.NETHER_ORE)), ModCreativeModeTab.BLADESEDGE);
@@ -44,10 +45,10 @@ public class ModBlocks {
             () -> new MagmaBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3.0F, 6.0f).requiresCorrectToolForDrops().sound(SoundType.COPPER)), ModCreativeModeTab.BLADESEDGE);
 
     public static final RegistryObject<Block> CRONIUM_BLOCK = registerBlock("cronium_block",
-            () -> new MagmaBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3.0F, 6.0f).requiresCorrectToolForDrops().sound(SoundType.COPPER)), ModCreativeModeTab.BLADESEDGE);
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3.0F, 6.0f).requiresCorrectToolForDrops().sound(SoundType.METAL)), ModCreativeModeTab.BLADESEDGE);
 
     public static final RegistryObject<Block> VOIDIUM_BLOCK = registerBlock("voidium_block",
-            () -> new MagmaBlock(BlockBehaviour.Properties.of(Material.METAL).strength(3.0F, 6.0f).requiresCorrectToolForDrops().sound(SoundType.COPPER)), ModCreativeModeTab.BLADESEDGE);
+            () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(3.0F, 6.0f).requiresCorrectToolForDrops().sound(SoundType.METAL)), ModCreativeModeTab.BLADESEDGE);
 
     public static final RegistryObject<Block> CHARCOAL_BLOCK = registerBlockFuel("charcoal_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(5.0f, 6.5f).requiresCorrectToolForDrops()), ModCreativeModeTab.BLADESEDGE, 16000);
