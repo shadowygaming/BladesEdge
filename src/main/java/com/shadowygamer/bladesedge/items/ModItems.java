@@ -6,7 +6,6 @@ import com.shadowygamer.bladesedge.items.Artifacts.*;
 import com.shadowygamer.bladesedge.items.Cores.CoreItem;
 import com.shadowygamer.bladesedge.items.Cores.MagmaCore;
 import com.shadowygamer.bladesedge.items.Gear.Magma.*;
-import com.shadowygamer.bladesedge.items.Modifiers.Darkness;
 import com.shadowygamer.bladesedge.items.Special.EnderBag;
 import com.shadowygamer.bladesedge.items.Modifiers.Shiny;
 import com.shadowygamer.bladesedge.items.Gear.KnifeItem;
@@ -42,7 +41,7 @@ public class ModItems {
     public static final RegistryObject<Item> VOID_PEPPER = ITEMS.register("void_pepper",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).food(ModFoods.VOID_PEPPER)));
 
-    //cores
+    //cores MARKED FOR DELETION
     public static final RegistryObject<CoreItem> REDSTONE_CORE = ITEMS.register("redstone_core",
             () -> new CoreItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).rarity(Rarity.RARE)));
 
@@ -78,8 +77,6 @@ public class ModItems {
     public static final RegistryObject<Item> VOID_ATOM = ITEMS.register("void_atom",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
-    public static final RegistryObject<Darkness> DARKNESS = ITEMS.register("darkness",
-            () -> new Darkness(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> HARDENED_REDSTONE = ITEMS.register("hardened_redstone",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
@@ -126,7 +123,7 @@ public class ModItems {
             () -> new BerserkerArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(1).rarity(Rarity.UNCOMMON)));
 
     public static final RegistryObject<NullingArtifact> NULLING_ARTIFACT = ITEMS.register("nulling_artifact",
-            () -> new NullingArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(1).rarity(Rarity.UNCOMMON)));
+            () -> new NullingArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(4).rarity(Rarity.UNCOMMON)));
 
     //Artifacts t2
 
@@ -159,11 +156,11 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
     
     public static final RegistryObject<Item> VOIDIUM_SWORD = ITEMS.register("voidium_sword",
-            () -> new SwordItem(ModTiers.VOIDIUM, 4,-2.4f,
+            () -> new SwordItem(ModTiers.VOIDIUM, 5,-2.4f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> VOIDIUM_AXE = ITEMS.register("voidium_axe",
-            () -> new AxeItem(ModTiers.VOIDIUM, 6,-3.0f,
+            () -> new AxeItem(ModTiers.VOIDIUM, 7,-3.0f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> VOIDIUM_PICKAXE = ITEMS.register("voidium_pickaxe",
@@ -183,26 +180,16 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)){
                 @Override
                 public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-                    if(Screen.hasShiftDown()) {
-                        pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_kill.tooltip.shift"));
-                    }
-                    else{
-                        pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_kill.tooltip"));
-                    }
+                    pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_kill.tooltip"));
                 }
             });
 
     public static final RegistryObject<Item> LAPIS_AXE = ITEMS.register("lapis_axe",
-            () -> new AxeItem(ModTiers.LAPIS, 6,-2.4f,
+            () -> new AxeItem(ModTiers.LAPIS, 6,-3.1f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)){
                 @Override
                 public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-                    if(Screen.hasShiftDown()) {
-                        pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_kill.tooltip.shift"));
-                    }
-                    else{
-                        pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_kill.tooltip"));
-                    }
+                    pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_kill.tooltip"));
                 }
             });
 
@@ -211,12 +198,7 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)){
                 @Override
                 public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-                    if(Screen.hasShiftDown()) {
-                        pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_pickaxe.tooltip.shift"));
-                    }
-                    else{
-                        pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_pickaxe.tooltip"));
-                    }
+                    pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_pickaxe.tooltip"));
                 }
             });
 
@@ -226,12 +208,7 @@ public class ModItems {
             {
                 @Override
                 public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-                    if(Screen.hasShiftDown()) {
-                        pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_break.tooltip.shift"));
-                    }
-                    else{
-                        pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_break.tooltip"));
-                    }
+                    pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_break.tooltip"));
                 }
             });
 
@@ -240,7 +217,7 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
     
     public static final RegistryObject<Item> MAGMA_SWORD = ITEMS.register("magma_sword",
-            () -> new SwordItem(ModTiers.MAGMA, 5,-2.4f,
+            () -> new SwordItem(ModTiers.MAGMA, 4,-2.4f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()){
                 @Override
                 public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
@@ -250,7 +227,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> MAGMA_AXE = ITEMS.register("magma_axe",
-            () -> new AxeItem(ModTiers.MAGMA, 11,-2.6f,
+            () -> new AxeItem(ModTiers.MAGMA, 7,-2.7f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()){
                 @Override
                 public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {

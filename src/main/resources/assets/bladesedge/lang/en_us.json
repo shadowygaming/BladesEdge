@@ -106,31 +106,24 @@
   "enchantment.bladesedge.storm_crossbow": "Bolt",
 
 
-  "tooltip.bladesedge.artifact.tooltip": "Hold Shift for a description",
-  "tooltip.bladesedge.berserker_artifact.tooltip.shift": "Get buffs to increase your effectiveness in combat",
-  "tooltip.bladesedge.char_artifact.tooltip.shift": "Burns longer than lava",
-  "tooltip.bladesedge.exp_artifact.tooltip.shift": "Gives the user a large sum of experience once",
-  "tooltip.bladesedge.haste_artifact.tooltip.shift": "No Beacon Required",
-  "tooltip.bladesedge.fire_artifact.tooltip.shift": "Useful in the Nether",
-  "tooltip.bladesedge.null_artifact.tooltip.shift": "Fully blocks a single hit of damage",
-  "tooltip.bladesedge.gold_altar.tooltip.shift": "Better Golden Apple",
-  "tooltip.bladesedge.shadow_altar.tooltip.shift": "Better Berserker Artifact",
+  "tooltip.bladesedge.berserker_artifact.tooltip": "Get buffs to increase your effectiveness in combat",
+  "tooltip.bladesedge.char_artifact.tooltip": "Burns longer than lava",
+  "tooltip.bladesedge.exp_artifact.tooltip": "Gives the user a large sum of experience once",
+  "tooltip.bladesedge.haste_artifact.tooltip": "No Beacon Required",
+  "tooltip.bladesedge.fire_artifact.tooltip": "Useful in the Nether",
+  "tooltip.bladesedge.null_artifact.tooltip": "Fully blocks a single hit of damage",
+  "tooltip.bladesedge.gold_altar.tooltip": "Better Golden Apple",
+  "tooltip.bladesedge.shadow_altar.tooltip": "Better Berserker Artifact",
 
 
 
-  "tooltip.bladesedge.lapis_pickaxe.tooltip": "Press Shift for more details",
-  "tooltip.bladesedge.lapis_pickaxe.tooltip.shift": "The LOWER the tool durability, the more Exp from ores.",
-  "tooltip.bladesedge.lapis_break.tooltip": "Press Shift for more details",
-  "tooltip.bladesedge.lapis_break.tooltip.shift": "The HIGHER the tool durability, get Exp from Blocks.",
-  "tooltip.bladesedge.lapis_kill.tooltip": "Press Shift for more details",
-  "tooltip.bladesedge.lapis_kill.tooltip.shift": "The HIGHER the tool durability, the more Exp from mobs.",
+  "tooltip.bladesedge.lapis_pickaxe.tooltip": "The LOWER the tool durability, the more Exp from ores.",
+  "tooltip.bladesedge.lapis_break.tooltip": "The HIGHER the tool durability, get Exp from Blocks.",
+  "tooltip.bladesedge.lapis_kill.tooltip": "The HIGHER the tool durability, the more Exp from mobs.",
 
-  "tooltip.bladesedge.shiny.tooltip": "Press Shift for more details",
-  "tooltip.bladesedge.shiny.tooltip.shift": "Shiny...",
-  "tooltip.bladesedge.darkness.tooltip": "Hold Shift to learn more about the darkness",
-  "tooltip.bladesedge.darkness.tooltip.shift": "§khtruhaiozpqiuenrgft",
-  "tooltip.bladesedge.magma_core.tooltip": "Press Shift for more details",
-  "tooltip.bladesedge.magma_core.tooltip.shift": "Unlimited flint and steel",
+  "tooltip.bladesedge.shiny.tooltip": "Shiny...",
+  "tooltip.bladesedge.darkness.tooltip": "§khtruhaiozpqiuenrgft",
+  "tooltip.bladesedge.magma_core.tooltip": "Unlimited flint and steel",
 
 
 

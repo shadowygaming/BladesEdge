@@ -68,13 +68,7 @@ public class ModEvents {
     public static void blockBreak(BlockEvent.BreakEvent event) {
         Player player = event.getPlayer();
 
-        int levelThirty;
-
-        if ((player.totalExperience) >= 1395){
-            levelThirty = 1;
-        } else {
-            levelThirty = 2;
-        }
+        int levelThirty = (player.totalExperience>=1395) ? 1 : 2;
 
         if ((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_PICKAXE.get().getRegistryName())
                 && event.getState().getBlock() instanceof OreBlock) {
@@ -96,13 +90,8 @@ public class ModEvents {
     public static void entityKill(LivingExperienceDropEvent event) {
         if (event.getAttackingPlayer()!= null) {
             Player player = event.getAttackingPlayer();
-            int levelThirty;
 
-            if ((player.totalExperience) >= 1395) {
-                levelThirty = 1;
-            } else {
-                levelThirty = 2;
-            }
+            int levelThirty = (player.totalExperience>=1395) ? 1 : 2;
 
             if ((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_SWORD.get().getRegistryName())
                     || (player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_AXE.get().getRegistryName())) {

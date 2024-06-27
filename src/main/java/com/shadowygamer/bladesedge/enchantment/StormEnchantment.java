@@ -21,26 +21,7 @@ public class StormEnchantment extends Enchantment {
                 ServerPlayer player = ((ServerPlayer) pAttacker);
                 BlockPos position = pTarget.blockPosition();
 
-                if (pLevel == 1) {
-                    EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
-                            MobSpawnType.TRIGGERED, true, true);
-                    EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
-                            MobSpawnType.TRIGGERED, true, true);
-                    EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
-                            MobSpawnType.TRIGGERED, true, true);
-                }
-
-                if (pLevel == 2) {
-                    EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
-                            MobSpawnType.TRIGGERED, true, true);
-                    EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
-                            MobSpawnType.TRIGGERED, true, true);
-                    EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
-                            MobSpawnType.TRIGGERED, true, true);
-                    EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
-                            MobSpawnType.TRIGGERED, true, true);
-                    EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
-                            MobSpawnType.TRIGGERED, true, true);
+                for (int i = 0; i < pLevel; i++) {
                     EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
                             MobSpawnType.TRIGGERED, true, true);
                     EntityType.LIGHTNING_BOLT.spawn(world, null, player, position,
@@ -52,6 +33,6 @@ public class StormEnchantment extends Enchantment {
     }
     @Override
     public int getMaxLevel() {
-        return 2;
+        return 3;
     }
 }

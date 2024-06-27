@@ -23,11 +23,6 @@ public class NullingArtifact extends ArtifactItem{
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        if(Screen.hasShiftDown()) {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.null_artifact.tooltip.shift"));
-        }
-        else{
-            pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.artifact.tooltip"));
-        }
+        pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.null_artifact.tooltip"));
     }
 }

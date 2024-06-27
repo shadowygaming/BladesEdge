@@ -24,19 +24,14 @@ public class BerserkerArtifact extends ArtifactItem {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        if(Screen.hasShiftDown()) {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.berserker_artifact.tooltip.shift"));
-        }
-        else{
-            pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.artifact.tooltip"));
-        }
+        pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.berserker_artifact.tooltip"));
     }
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
-        if (pPlayer.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 1))) {
-            if (pPlayer.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 1))) {
-                if (pPlayer.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 600, 0))) {
+        if (pPlayer.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 1, false, true))) {
+            if (pPlayer.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 1, false, true))) {
+                if (pPlayer.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 600, 0, false, true))) {
                     hurtItem(pPlayer.getItemInHand(pUsedHand));
                     pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.VEX_CHARGE, SoundSource.PLAYERS, (float) 0.9, (float) 1);
                     pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.ANVIL_LAND, SoundSource.PLAYERS, (float) 0.25, (float) 1);

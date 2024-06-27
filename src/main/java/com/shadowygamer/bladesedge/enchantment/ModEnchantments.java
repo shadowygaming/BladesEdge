@@ -22,6 +22,10 @@ public class ModEnchantments {
             ENCHANTMENTS.register("wither_aspect", () -> new WitherAspectEnchantment(
                     Enchantment.Rarity.UNCOMMON, EnchantmentCategory.WEAPON));
 
+    public static RegistryObject<Enchantment> DEATH_MARK =
+            ENCHANTMENTS.register("death_mark", () -> new DeathMarkEnchantment(
+                    Enchantment.Rarity.UNCOMMON, EnchantmentCategory.WEAPON));
+
     public static RegistryObject<Enchantment> LAST_STAND =
             ENCHANTMENTS.register("last_stand", () -> new LastStandEnchantment(
                     Enchantment.Rarity.VERY_RARE, EnchantmentCategory.ARMOR_LEGS));

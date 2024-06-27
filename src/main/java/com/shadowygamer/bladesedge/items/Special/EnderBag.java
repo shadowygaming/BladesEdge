@@ -17,6 +17,7 @@ import net.minecraft.world.level.Level;
 public class EnderBag extends Item {
 
     //Code made by CodescripterSD https://github.com/CodeScripterSD
+    //this applies to the whole mod wtf is the point of this comment?
     private static final Component CONTAINER_TITLE = new TranslatableComponent("container.bladesedge.ender_bag");
 
     public EnderBag(Properties pProperties) {

@@ -90,11 +90,6 @@ public class MagmaCore extends CoreItem {
     }
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        if(Screen.hasShiftDown()) {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.magma_core.tooltip.shift"));
-        }
-        else{
-            pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.magma_core.tooltip"));
-        }
+        pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.magma_core.tooltip"));
     }
 }

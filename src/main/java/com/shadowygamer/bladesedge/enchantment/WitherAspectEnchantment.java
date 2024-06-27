@@ -16,20 +16,8 @@ public class WitherAspectEnchantment extends Enchantment {
     public void doPostAttack(LivingEntity pAttacker, Entity pTarget, int pLevel) {
         if (!pAttacker.level.isClientSide()) {
 
-            if (pLevel == 1) {
-                if (pAttacker instanceof LivingEntity) {
-                    ((LivingEntity) pTarget).addEffect(new MobEffectInstance(MobEffects.WITHER, 100, 0));
-                }
-            }
-            if (pLevel == 2) {
-                if (pAttacker instanceof LivingEntity) {
-                    ((LivingEntity) pTarget).addEffect(new MobEffectInstance(MobEffects.WITHER, 100, 1));
-                }
-            }
-            if (pLevel == 3) {
-                if (pAttacker instanceof LivingEntity) {
-                    ((LivingEntity) pTarget).addEffect(new MobEffectInstance(MobEffects.WITHER, 200, 1));
-                }
+            if (pAttacker instanceof LivingEntity) {
+                ((LivingEntity) pTarget).addEffect(new MobEffectInstance(MobEffects.WITHER, pLevel*80, pLevel-1));
             }
         }
     }
