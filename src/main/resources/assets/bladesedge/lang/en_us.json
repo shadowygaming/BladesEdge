@@ -13,6 +13,7 @@
   "item.bladesedge.darkness": "Darkness",
   "item.bladesedge.tool_handle": "Tool Handle",
   "item.bladesedge.flesh": "Flesh",
+  "item.bladesedge.cronium_apple": "Cronium Apple",
   "item.bladesedge.grass_fiber": "Grass Fiber",
   "item.bladesedge.charred_carrot": "Charred Carrot",
   "item.bladesedge.magma_shard": "Magma Shard",
@@ -100,10 +101,15 @@
 
   "enchantment.bladesedge.blazing": "Blazing",
   "enchantment.bladesedge.wither_aspect": "Wither Aspect",
-  "enchantment.bladesedge.combo": "Combo",
   "enchantment.bladesedge.last_stand": "Last Stand",
-  "enchantment.bladesedge.storm": "Storm",
-  "enchantment.bladesedge.storm_crossbow": "Bolt",
+  "enchantment.bladesedge.storm": "Bolt",
+  "enchantment.bladesedge.death_mark": "Death Mark",
+
+  "enchantment.bladesedge.blazing.desc": "Lights enemies who attack you on fire for a random duration\n(reduced effect on players)",
+  "enchantment.bladesedge.wither_aspect.desc": "Inflicts the wither effect on entities you attack",
+  "enchantment.bladesedge.last_stand.desc": "When on the verge of death, gain multiple stat buffs\n while you slowly wither away",
+  "enchantment.bladesedge.storm.desc": "On hit, Strike enemies with lightning",
+  "enchantment.bladesedge.death_mark.desc": "Inflict enemies with a status effect that increases your damage\n the longer it has been applied on them for",
 
 
   "tooltip.bladesedge.berserker_artifact.tooltip": "Get buffs to increase your effectiveness in combat",
@@ -112,7 +118,7 @@
   "tooltip.bladesedge.haste_artifact.tooltip": "No Beacon Required",
   "tooltip.bladesedge.fire_artifact.tooltip": "Useful in the Nether",
   "tooltip.bladesedge.null_artifact.tooltip": "Fully blocks a single hit of damage",
-  "tooltip.bladesedge.gold_altar.tooltip": "Better Golden Apple",
+  "tooltip.bladesedge.gold_altar.tooltip": "More versatile Golden Apple",
   "tooltip.bladesedge.shadow_altar.tooltip": "Better Berserker Artifact",
 
 

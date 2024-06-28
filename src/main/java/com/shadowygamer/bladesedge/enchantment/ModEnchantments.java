@@ -1,6 +1,8 @@
 package com.shadowygamer.bladesedge.enchantment;
 
 import com.shadowygamer.bladesedge.BladesEdge;
+import net.minecraft.world.item.BowItem;
+import net.minecraft.world.item.CrossbowItem;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentCategory;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -12,7 +14,7 @@ public class ModEnchantments {
     public static final DeferredRegister<Enchantment> ENCHANTMENTS
             = DeferredRegister.create(ForgeRegistries.ENCHANTMENTS, BladesEdge.MOD_ID);
 
-
+    static EnchantmentCategory BOWS = EnchantmentCategory.create("bladesedge_ranged_category", (item -> item instanceof BowItem || item instanceof CrossbowItem));
 
     public static RegistryObject<Enchantment> BLAZING =
             ENCHANTMENTS.register("blazing", () -> new BlazingEnchantment(
@@ -32,11 +34,11 @@ public class ModEnchantments {
 
     public static RegistryObject<Enchantment> STORM =
             ENCHANTMENTS.register("storm", () -> new StormEnchantment(
-                    Enchantment.Rarity.UNCOMMON, EnchantmentCategory.BOW));
+                    Enchantment.Rarity.UNCOMMON, BOWS));
 
-    public static RegistryObject<Enchantment> STORM_CROSSBOW =
-            ENCHANTMENTS.register("storm_crossbow", () -> new StormEnchantment(
-                    Enchantment.Rarity.UNCOMMON, EnchantmentCategory.CROSSBOW));
+//    public static RegistryObject<Enchantment> STORM_CROSSBOW =
+//            ENCHANTMENTS.register("storm_crossbow", () -> new StormEnchantment(
+//                    Enchantment.Rarity.UNCOMMON, EnchantmentCategory.CROSSBOW));
 
 
 

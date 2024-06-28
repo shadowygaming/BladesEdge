@@ -13,13 +13,13 @@ public class ModPlacedFeatures {
                     PlacementUtils.countExtra( 0, 0.02f, 2)));
 
     public static final Holder<PlacedFeature> VOIDIUM_ORE_PLACED = PlacementUtils.register("voidium_ore_placed",
-            ModConfiguredFeatures.VOIDIUM_ORE, ModOrePlacement.commonOrePlacement(3, // VeinsPerChunk
+            ModConfiguredFeatures.VOIDIUM_ORE, ModOrePlacement.commonOrePlacement(5, // VeinsPerChunk
                     HeightRangePlacement.triangle(VerticalAnchor.absolute(-0), VerticalAnchor.absolute(100))));
     //i love negative zero
 
     public static final Holder<PlacedFeature> CRONIUM_ORE_PLACED = PlacementUtils.register("cronium_ore_placed",
-            ModConfiguredFeatures.CRONIUM_ORE, ModOrePlacement.commonOrePlacement(2, // VeinsPerChunk
-                    HeightRangePlacement.triangle(VerticalAnchor.absolute(5), VerticalAnchor.absolute(32))));
+            ModConfiguredFeatures.CRONIUM_ORE, ModOrePlacement.commonOrePlacement(5, // VeinsPerChunk
+                    HeightRangePlacement.triangle(VerticalAnchor.absolute(3), VerticalAnchor.absolute(36))));
     public static final Holder<PlacedFeature> FLARIUM_ORE_PLACED = PlacementUtils.register("flarium_ore_placed",
             ModConfiguredFeatures.FLARIUM_ORE, ModOrePlacement.commonOrePlacement(11, // VeinsPerChunk
                     HeightRangePlacement.triangle(VerticalAnchor.absolute(32), VerticalAnchor.absolute(72))));

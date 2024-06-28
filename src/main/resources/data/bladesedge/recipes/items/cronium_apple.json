@@ -2,19 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "###",
-    "#R#",
+    "# #",
     "###"
   ],
   "key": {
     "#": {
-      "item": "bladesedge:magma_shard"
-    },
-    "R": {
-      "item": "bladesedge:flarium_block"
+      "item": "bladesedge:cronium_bar"
     }
   },
   "result": {
-    "item": "bladesedge:magma_core",
+    "item": "bladesedge:cronium_apple",
     "count": 1
   }
 }

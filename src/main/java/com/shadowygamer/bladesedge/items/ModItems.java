@@ -63,6 +63,9 @@ public class ModItems {
     public static final RegistryObject<Item> FLESH = ITEMS.register("flesh",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).food(ModFoods.FLESH)));
 
+    public static final RegistryObject<Item> CRONIUM_APPLE = ITEMS.register("cronium_apple",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).food(ModFoods.CRONIUM_APPLE)));
+
 
 
     public static final RegistryObject<Item> MAGMA_SHARD = ITEMS.register("magma_shard",
@@ -94,7 +97,7 @@ public class ModItems {
     public static final RegistryObject<Item> VOIDIUM = ITEMS.register("voidium",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
-    public static final RegistryObject<Item> CRONIUM = ITEMS.register("cronium_bar",
+    public static final RegistryObject<Item> CRONIUM_BAR = ITEMS.register("cronium_bar",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
 //    public static final RegistryObject<Item> VOIDIUM = ITEMS.register("voidium",
@@ -160,15 +163,15 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> VOIDIUM_AXE = ITEMS.register("voidium_axe",
-            () -> new AxeItem(ModTiers.VOIDIUM, 7,-3.0f,
+            () -> new AxeItem(ModTiers.VOIDIUM, 7,-3.1f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> VOIDIUM_PICKAXE = ITEMS.register("voidium_pickaxe",
-            () -> new PickaxeItem(ModTiers.VOIDIUM, 2,-2.8f,
+            () -> new PickaxeItem(ModTiers.VOIDIUM, 1,-2.8f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> VOIDIUM_SHOVEL = ITEMS.register("voidium_shovel",
-            () -> new ShovelItem(ModTiers.VOIDIUM, 1, -3f,
+            () -> new ShovelItem(ModTiers.VOIDIUM, 0.5f, -3f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> VOIDIUM_HOE = ITEMS.register("voidium_hoe",
@@ -176,7 +179,7 @@ public class ModItems {
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
     public static final RegistryObject<Item> LAPIS_SWORD = ITEMS.register("lapis_sword",
-            () -> new SwordItem(ModTiers.LAPIS, 4,-2.4f,
+            () -> new SwordItem(ModTiers.LAPIS, 3,-2.4f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)){
                 @Override
                 public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
@@ -194,7 +197,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> LAPIS_PICKAXE = ITEMS.register("lapis_pickaxe",
-            () -> new PickaxeItem(ModTiers.LAPIS, 1,-3f,
+            () -> new PickaxeItem(ModTiers.LAPIS, 1,-2.8f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)){
                 @Override
                 public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
@@ -203,7 +206,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> LAPIS_SHOVEL = ITEMS.register("lapis_shovel",
-            () -> new ShovelItem(ModTiers.LAPIS, 4, -3f,
+            () -> new ShovelItem(ModTiers.LAPIS, 2, -3f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE))
             {
                 @Override
@@ -213,11 +216,17 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> LAPIS_HOE = ITEMS.register("lapis_hoe",
-            () -> new HoeItem(ModTiers.LAPIS, -3, 5f,
-                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+            () -> new HoeItem(ModTiers.LAPIS, -2, 0f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE))
+            {
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+                    pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_break.tooltip"));
+                }
+            });
     
     public static final RegistryObject<Item> MAGMA_SWORD = ITEMS.register("magma_sword",
-            () -> new SwordItem(ModTiers.MAGMA, 4,-2.4f,
+            () -> new SwordItem(ModTiers.MAGMA, 3,-2.4f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()){
                 @Override
                 public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
@@ -227,7 +236,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> MAGMA_AXE = ITEMS.register("magma_axe",
-            () -> new AxeItem(ModTiers.MAGMA, 7,-2.7f,
+            () -> new AxeItem(ModTiers.MAGMA, 6,-2.8f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()){
                 @Override
                 public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
@@ -237,7 +246,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> MAGMA_PICKAXE = ITEMS.register("magma_pickaxe",
-            () -> new PickaxeItem(ModTiers.MAGMA, 2,-3f,
+            () -> new PickaxeItem(ModTiers.MAGMA, 1,-2.8f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()){
                 @Override
                 public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
@@ -247,7 +256,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> MAGMA_SHOVEL = ITEMS.register("magma_shovel",
-            () -> new ShovelItem(ModTiers.MAGMA, 4, -3f,
+            () -> new ShovelItem(ModTiers.MAGMA, 1, -3f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()){
                 @Override
                 public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
@@ -257,7 +266,7 @@ public class ModItems {
             });
 
     public static final RegistryObject<Item> MAGMA_HOE = ITEMS.register("magma_hoe",
-            () -> new HoeItem(ModTiers.MAGMA, -2, 6f,
+            () -> new HoeItem(ModTiers.MAGMA, -4, 1f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()){
                 @Override
                 public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {

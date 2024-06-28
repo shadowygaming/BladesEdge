@@ -1,9 +1,9 @@
 {
-  "type": "minecraft:blasting",
+  "type": "minecraft:smelting",
   "ingredient": {
     "item": "bladesedge:cronium_ore"
   },
   "result": "bladesedge:cronium_bar",
   "experience": 2.0,
-  "cookingtime": 100
+  "cookingtime": 200
 }

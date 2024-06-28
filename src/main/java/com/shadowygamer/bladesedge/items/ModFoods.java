@@ -18,13 +18,22 @@ public class ModFoods {
             .fast()
             .build();
     public static final FoodProperties VOID_PEPPER = (new FoodProperties.Builder())
-            .nutrition(8)
-            .saturationMod(0.6f)
-            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 200, 1), 1F)
+            .nutrition(6)
+            .saturationMod(0.8f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 300, 1), 1F)
+            .alwaysEat()
             .build();
     public static final FoodProperties GRASS_FIBER = (new FoodProperties.Builder())
             .nutrition(1)
             .saturationMod(0.15f)
             .fast()
+            .build();
+
+    public static final FoodProperties CRONIUM_APPLE = (new FoodProperties.Builder())
+            .nutrition(6)
+            .saturationMod(1.2f)
+            .effect(()-> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 0), 1.0f)
+            .effect(()-> new MobEffectInstance(MobEffects.REGENERATION, 40, 2), 1.0f)
+            .alwaysEat()
             .build();
 }

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bladesedge:cronium_block"
+    }
+  ],
+  "result": {
+    "item": "bladesedge:cronium_bar",
+    "count": 9
+  }
+}

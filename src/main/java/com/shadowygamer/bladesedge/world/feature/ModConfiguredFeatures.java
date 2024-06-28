@@ -47,17 +47,17 @@ public class ModConfiguredFeatures {
     public static final List<OreConfiguration.TargetBlockState> END_VOIDIUM_ORES = List.of(
             OreConfiguration.target(new BlockMatchTest(Blocks.END_STONE), ModBlocks.VOIDIUM_ORE.get().defaultBlockState()));
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> VOIDIUM_ORE = FeatureUtils.register("voidium_ore",
-            Feature.ORE, new OreConfiguration(END_VOIDIUM_ORES, 10));
+            Feature.ORE, new OreConfiguration(END_VOIDIUM_ORES, 4));
 
     public static final List<OreConfiguration.TargetBlockState> CRONIUM_ORES = List.of(
             OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.CRONIUM_ORE.get().defaultBlockState()));
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> CRONIUM_ORE = FeatureUtils.register("cronium_ore",
-            Feature.ORE, new OreConfiguration(CRONIUM_ORES, 5));
+            Feature.ORE, new OreConfiguration(CRONIUM_ORES, 6));
 
     public static final List<OreConfiguration.TargetBlockState> FLARIUM_ORES = List.of(
             OreConfiguration.target(OreFeatures.NETHER_ORE_REPLACEABLES, ModBlocks.FLARIUM_ORE.get().defaultBlockState()));
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> FLARIUM_ORE = FeatureUtils.register("flarium_ore",
-            Feature.ORE, new OreConfiguration(FLARIUM_ORES, 7));
+            Feature.ORE, new OreConfiguration(FLARIUM_ORES, 8));
 
 
 

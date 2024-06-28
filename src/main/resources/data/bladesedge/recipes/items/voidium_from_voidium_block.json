@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bladesedge:voidium_block"
+    }
+  ],
+  "result": {
+    "item": "bladesedge:voidium",
+    "count": 9
+  }
+}
