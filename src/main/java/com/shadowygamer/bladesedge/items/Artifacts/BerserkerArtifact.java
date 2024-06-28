@@ -29,9 +29,9 @@ public class BerserkerArtifact extends ArtifactItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
-        if (pPlayer.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 600, 1, false, true))) {
-            if (pPlayer.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 1, false, true))) {
-                if (pPlayer.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 600, 0, false, true))) {
+        if (pPlayer.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 1200, 2, false, false))) {
+            if (pPlayer.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 2, false, false))) {
+                if (pPlayer.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 1200, 0, false, false))) {
                     hurtItem(pPlayer.getItemInHand(pUsedHand));
                     pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.VEX_CHARGE, SoundSource.PLAYERS, (float) 0.9, (float) 1);
                     pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.ANVIL_LAND, SoundSource.PLAYERS, (float) 0.25, (float) 1);

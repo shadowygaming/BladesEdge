@@ -22,10 +22,10 @@ public class DeathMarkEnchantment extends Enchantment {
 
             if (pAttacker instanceof LivingEntity) {
                 if(((LivingEntity) pTarget).hasEffect(ModEffects.DEATH_MARK.get())) {
-                    pTarget.hurt(DamageSource.GENERIC, 60-((LivingEntity) pTarget).getEffect(ModEffects.DEATH_MARK.get()).getDuration()/20);
+                    pTarget.hurt(DamageSource.GENERIC, 30-((LivingEntity) pTarget).getEffect(ModEffects.DEATH_MARK.get()).getDuration()/40);
                     //apply damage based on duration of effect remaining
                 } else {
-                    ((LivingEntity) pTarget).addEffect(new MobEffectInstance(ModEffects.DEATH_MARK.get(), 1200, 0));
+                    ((LivingEntity) pTarget).addEffect(new MobEffectInstance(ModEffects.DEATH_MARK.get(), 1200, 0, false, false));
                 }
             }
         }
