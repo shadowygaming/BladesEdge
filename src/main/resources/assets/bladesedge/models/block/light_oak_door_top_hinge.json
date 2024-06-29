@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_rh",
+  "textures": {
+    "top": "bladesedge:block/light_oak_door_top",
+    "bottom": "bladesedge:block/light_oak_door_bottom"
+  }
+}

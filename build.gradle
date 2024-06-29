@@ -16,7 +16,7 @@ apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '0.1.4-1.18.2-Devtest11'
+version = '0.1.4-1.18.2-Devtest12'
 group = 'com.shadowygamer.bladesedge' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'bladesedge'
 

@@ -64,6 +64,17 @@
   "item.bladesedge.voidium_leggings": "Voidium Leggings",
   "item.bladesedge.voidium_boots": "Voidium Boots",
 
+  "item.bladesedge.cronium_sword": "Cronium Sword",
+  "item.bladesedge.cronium_axe": "Cronium Axe",
+  "item.bladesedge.cronium_pickaxe": "Cronium Pickaxe",
+  "item.bladesedge.cronium_shovel": "Cronium Shovel",
+  "item.bladesedge.cronium_hoe": "Cronium Hoe",
+
+  "item.bladesedge.cronium_helmet": "Cronium Helmet",
+  "item.bladesedge.cronium_chestplate": "Cronium Chestplate",
+  "item.bladesedge.cronium_leggings": "Cronium Leggings",
+  "item.bladesedge.cronium_boots": "Cronium Boots",
+
   "item.bladesedge.knife": "Knife",
 
   "item.bladesedge.magma_knife": "Magma Knife",
@@ -101,6 +112,13 @@
   "block.bladesedge.light_oak_sapling": "Light Oak Sapling",
   "block.bladesedge.light_oak_leaves": "Light Oak Leaves",
   "block.bladesedge.light_oak_door": "Light Oak Door",
+  "block.bladesedge.light_oak_stairs": "Light Oak Stairs",
+  "block.bladesedge.light_oak_slab": "Light Oak Slab",
+  "block.bladesedge.light_oak_fence": "Light Oak Fence",
+  "block.bladesedge.light_oak_fence_gate": "Light Oak Fence Gate",
+  "block.bladesedge.light_oak_button": "Light Oak Button",
+  "block.bladesedge.light_oak_trapdoor": "Light Oak Trapdoor",
+  "block.bladesedge.light_oak_pressure_plate": "Light Oak Pressure Plate",
 
 
 

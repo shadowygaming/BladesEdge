@@ -52,7 +52,7 @@ public class ModConfiguredFeatures {
     public static final List<OreConfiguration.TargetBlockState> CRONIUM_ORES = List.of(
             OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.CRONIUM_ORE.get().defaultBlockState()));
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> CRONIUM_ORE = FeatureUtils.register("cronium_ore",
-            Feature.ORE, new OreConfiguration(CRONIUM_ORES, 6));
+            Feature.ORE, new OreConfiguration(CRONIUM_ORES, 8));
 
     public static final List<OreConfiguration.TargetBlockState> FLARIUM_ORES = List.of(
             OreConfiguration.target(OreFeatures.NETHER_ORE_REPLACEABLES, ModBlocks.FLARIUM_ORE.get().defaultBlockState()));

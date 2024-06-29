@@ -178,6 +178,26 @@ public class ModItems {
             () -> new HoeItem(ModTiers.VOIDIUM, -3, 0f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
+    public static final RegistryObject<Item> CRONIUM_SWORD = ITEMS.register("cronium_sword",
+            () -> new SwordItem(ModTiers.CRONIUM, 3,-2.4f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> CRONIUM_AXE = ITEMS.register("cronium_axe",
+            () -> new AxeItem(ModTiers.CRONIUM, 7,-3.1f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> CRONIUM_PICKAXE = ITEMS.register("cronium_pickaxe",
+            () -> new PickaxeItem(ModTiers.CRONIUM, 1,-2.8f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> CRONIUM_SHOVEL = ITEMS.register("cronium_shovel",
+            () -> new ShovelItem(ModTiers.CRONIUM, 0.5f, -3f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> CRONIUM_HOE = ITEMS.register("cronium_hoe",
+            () -> new HoeItem(ModTiers.CRONIUM, -3, 0f,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
     public static final RegistryObject<Item> LAPIS_SWORD = ITEMS.register("lapis_sword",
             () -> new SwordItem(ModTiers.LAPIS, 3,-2.4f,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)){
@@ -316,6 +336,22 @@ public class ModItems {
 
     public static final RegistryObject<Item> VOIDIUM_BOOTS = ITEMS.register("voidium_boots",
             () -> new ArmorItem(ModArmorMaterials.VOIDIUM, EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> CRONIUM_HELMET = ITEMS.register("cronium_helmet",
+            () -> new MagmaArmor(ModArmorMaterials.CRONIUM, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> CRONIUM_CHESTPLATE = ITEMS.register("cronium_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.CRONIUM, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> CRONIUM_LEGGINGS = ITEMS.register("cronium_leggings",
+            () -> new ArmorItem(ModArmorMaterials.CRONIUM, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> CRONIUM_BOOTS = ITEMS.register("cronium_boots",
+            () -> new ArmorItem(ModArmorMaterials.CRONIUM, EquipmentSlot.FEET,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
 

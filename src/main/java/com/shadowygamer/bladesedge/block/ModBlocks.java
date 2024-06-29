@@ -6,7 +6,9 @@ import com.shadowygamer.bladesedge.items.ModItems;
 import com.shadowygamer.bladesedge.world.feature.tree.LightOakTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -68,11 +70,33 @@ public class ModBlocks {
     public static final RegistryObject<Block> STRIPPED_LIGHT_OAK_WOOD = registerBlock("stripped_light_oak_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)), ModCreativeModeTab.BLADESEDGE);
 
-//    public static final RegistryObject<DoorBlock> LIGHT_OAK_DOOR = registerBlock("light_oak_door",
-//            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR).noOcclusion()), ModCreativeModeTab.BLADESEDGE);
-
     public static final RegistryObject<Block> LIGHT_OAK_SAPLING = registerBlock("light_oak_sapling",
             () -> new SaplingBlock(new LightOakTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)), ModCreativeModeTab.BLADESEDGE);
+
+    public static final RegistryObject<Block> LIGHT_OAK_STAIRS = registerBlock("light_oak_stairs",
+            () -> new StairBlock(()->ModBlocks.LIGHT_OAK_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)), ModCreativeModeTab.BLADESEDGE);
+
+    public static final RegistryObject<Block> LIGHT_OAK_SLAB = registerBlock("light_oak_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)), ModCreativeModeTab.BLADESEDGE);
+
+    public static final RegistryObject<Block> LIGHT_OAK_FENCE = registerBlock("light_oak_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)), ModCreativeModeTab.BLADESEDGE);
+
+    public static final RegistryObject<Block> LIGHT_OAK_FENCE_GATE = registerBlock("light_oak_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)), ModCreativeModeTab.BLADESEDGE);
+
+    public static final RegistryObject<Block> LIGHT_OAK_TRAPDOOR = registerBlock("light_oak_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR)), ModCreativeModeTab.BLADESEDGE);
+
+    public static final RegistryObject<Block> LIGHT_OAK_BUTTON = registerBlock("light_oak_button",
+            () -> new WoodButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON)), ModCreativeModeTab.BLADESEDGE);
+
+    public static final RegistryObject<Block> LIGHT_OAK_PRESSURE_PLATE = registerBlock("light_oak_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)), ModCreativeModeTab.BLADESEDGE);
+
+    public static final RegistryObject<Block> LIGHT_OAK_DOOR = registerBlock("light_oak_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR)), ModCreativeModeTab.BLADESEDGE);
 
 
     public static final RegistryObject<Block> LIGHT_OAK_PLANKS = registerBlock("light_oak_planks",

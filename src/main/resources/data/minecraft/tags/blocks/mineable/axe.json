@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "bladesedge:light_oak_stairs",
+    "bladesedge:light_oak_slab",
+    "bladesedge:light_oak_door",
+    "bladesedge:light_oak_trapdoor",
+    "bladesedge:light_oak_pressure_plate",
+    "bladesedge:light_oak_button",
+    "bladesedge:light_oak_fence_gate",
+    "bladesedge:light_oak_fence"
+  ]
+}

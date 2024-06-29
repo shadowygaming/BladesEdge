@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bladesedge:block/light_oak_slab"
+    },
+    "type=double": {
+      "model": "bladesedge:block/light_oak_planks"
+    },
+    "type=top": {
+      "model": "bladesedge:block/light_oak_slab_top"
+    }
+  }
+}
