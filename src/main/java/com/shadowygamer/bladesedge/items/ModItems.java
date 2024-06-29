@@ -193,6 +193,7 @@ public class ModItems {
                 @Override
                 public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
                     pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_kill.tooltip"));
+                    pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.lapis_break.tooltip"));
                 }
             });
 

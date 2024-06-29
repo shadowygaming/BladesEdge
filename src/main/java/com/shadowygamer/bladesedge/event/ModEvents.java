@@ -79,14 +79,13 @@ public class ModEvents {
             event.setExpToDrop(levelThirty*((512-player.getMainHandItem().getDamageValue())/256));
         }
         if ((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_HOE.get().getRegistryName())){
-                if (event.getState().getBlock().defaultBlockState().is(BlockTags.MINEABLE_WITH_HOE)
+            if (event.getState().getBlock().defaultBlockState().is(BlockTags.MINEABLE_WITH_HOE)
                 || event.getState().getBlock().defaultBlockState().is(BlockTags.CROPS)) {
                     event.setExpToDrop(levelThirty*((512-player.getMainHandItem().getDamageValue())/256));
         }
-        if ((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_AXE.get().getRegistryName())) {
-            if (event.getState().getBlock().defaultBlockState().is(BlockTags.MINEABLE_WITH_AXE)) {
-                event.setExpToDrop(levelThirty * ((512 - player.getMainHandItem().getDamageValue()) / 256));
-            }
+        if ((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_AXE.get().getRegistryName()
+                && event.getState().getBlock().defaultBlockState().is(BlockTags.MINEABLE_WITH_AXE))) {
+            event.setExpToDrop(levelThirty*((512-player.getMainHandItem().getDamageValue())/256));
         }
     }
 }

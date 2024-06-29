@@ -129,8 +129,8 @@
 
 
   "tooltip.bladesedge.lapis_pickaxe.tooltip": "The LOWER the tool durability, the more Exp from ores.",
-  "tooltip.bladesedge.lapis_break.tooltip": "The HIGHER the tool durability, get Exp from Blocks.",
-  "tooltip.bladesedge.lapis_kill.tooltip": "The HIGHER the tool durability, the more Exp from mobs.",
+  "tooltip.bladesedge.lapis_break.tooltip": "The HIGHER the tool durability, the more Exp from Blocks.",
+  "tooltip.bladesedge.lapis_kill.tooltip": "The HIGHER the weapon durability, the more Exp from kills.",
 
   "tooltip.bladesedge.shiny.tooltip": "Shiny...",
   "tooltip.bladesedge.darkness.tooltip": "§khtruhaiozpqiuenrgft",
