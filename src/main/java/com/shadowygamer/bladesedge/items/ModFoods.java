@@ -7,10 +7,11 @@ import net.minecraft.world.food.FoodProperties;
 public class ModFoods {
 
     public static final FoodProperties FLESH = (new FoodProperties.Builder())
-            .nutrition(2)
-            .saturationMod(0.2f)
-            .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 500, 0), 0.1F)
+            .nutrition(4)
+            .saturationMod(0.5f)
+            //.effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 500, 0), 0.1F)
             .meat()
+            .fast()
             .build();
     public static final FoodProperties CHARRED_CARROT = (new FoodProperties.Builder())
             .nutrition(6)

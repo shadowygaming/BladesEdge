@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "bladesedge:flarium_ingot"
+      "item": "bladesedge:voidium"
     }
   },
   "result": {
-    "item": "bladesedge:magma_chestplate",
+    "item": "bladesedge:voidium_chestplate",
     "count": 1
   }
 }

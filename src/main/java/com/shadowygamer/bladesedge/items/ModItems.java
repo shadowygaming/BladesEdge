@@ -301,6 +301,21 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.MAGMA, EquipmentSlot.FEET,
                     new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).fireResistant()));
 
+    public static final RegistryObject<Item> VOIDIUM_HELMET = ITEMS.register("voidium_helmet",
+            () -> new MagmaArmor(ModArmorMaterials.VOIDIUM, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> VOIDIUM_CHESTPLATE = ITEMS.register("voidium_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.VOIDIUM, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> VOIDIUM_LEGGINGS = ITEMS.register("voidium_leggings",
+            () -> new ArmorItem(ModArmorMaterials.VOIDIUM, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> VOIDIUM_BOOTS = ITEMS.register("voidium_boots",
+            () -> new ArmorItem(ModArmorMaterials.VOIDIUM, EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
 
 //    public static final RegistryObject<Item> LAPIS_HELMET = ITEMS.register("lapis_helmet",

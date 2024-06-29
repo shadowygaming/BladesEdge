@@ -10,7 +10,7 @@ public class ModTiers {
             2.0f, 12, BlockTags.NEEDS_IRON_TOOL,
             () -> Ingredient.of(ModItems.HARDENED_REDSTONE.get()));
 
-    public static final ForgeTier LAPIS = new ForgeTier(3, 512, 6.8f,
+    public static final ForgeTier LAPIS = new ForgeTier(3, 512, 7f,
             2.2f, 48, BlockTags.NEEDS_STONE_TOOL,
             () -> Ingredient.of(ModItems.BLUESTONE.get()));
 
@@ -19,7 +19,7 @@ public class ModTiers {
             () -> Ingredient.of(ModItems.BLUESTONE.get()));
 
     public static final ForgeTier VOIDIUM = new ForgeTier(4, 4096, 11f,
-            5.5f, 20, BlockTags.NEEDS_IRON_TOOL,
+            5.5f, 20, BlockTags.NEEDS_DIAMOND_TOOL,
             () -> Ingredient.of(ModItems.VOIDIUM.get()));
 
     //TODO: change magma tiered stuff to be flarium

@@ -1,9 +1,7 @@
 {
   "replace": false,
   "values": [
-    "bladesedge:voidium_ore",
     "bladesedge:flarium_block",
-    "bladesedge:cronium_block",
-    "bladesedge:voidium_block"
+    "bladesedge:cronium_block"
   ]
 }
