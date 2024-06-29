@@ -18,7 +18,7 @@ public class ModPlacedFeatures {
     //i love negative zero
 
     public static final Holder<PlacedFeature> CRONIUM_ORE_PLACED = PlacementUtils.register("cronium_ore_placed",
-            ModConfiguredFeatures.CRONIUM_ORE, ModOrePlacement.commonOrePlacement(6, // VeinsPerChunk
+            ModConfiguredFeatures.CRONIUM_ORE, ModOrePlacement.commonOrePlacement(4, // VeinsPerChunk
                     HeightRangePlacement.triangle(VerticalAnchor.absolute(3), VerticalAnchor.absolute(42))));
     public static final Holder<PlacedFeature> FLARIUM_ORE_PLACED = PlacementUtils.register("flarium_ore_placed",
             ModConfiguredFeatures.FLARIUM_ORE, ModOrePlacement.commonOrePlacement(6, // VeinsPerChunk
