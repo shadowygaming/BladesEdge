@@ -1,0 +1,50 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "botanytrees"
+        }
+      ],
+      "recipe": {
+        "type": "botanypots:crop",
+        "seed": {
+          "item": "bladesedge:light_oak_sapling"
+        },
+        "categories": [
+          "dirt"
+        ],
+        "growthTicks": 2400,
+        "display": {
+          "block": "bladesedge:light_oak_sapling"
+        },
+        "drops": [
+          {
+            "chance": 1.00,
+            "output": {
+              "item": "bladesedge:light_oak_log"
+            },
+            "minRolls": 2,
+            "maxRolls": 4
+          },
+          {
+            "chance": 0.1,
+            "output": {
+              "item": "minecraft:stick"
+            },
+            "minRolls": 1,
+            "maxRolls": 2
+          },
+          {
+            "chance": 0.15,
+            "output": {
+              "item": "bladesedge:light_oak_sapling"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
