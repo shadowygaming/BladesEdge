@@ -16,7 +16,7 @@ public class ModTiers {
 
     public static final ForgeTier CRONIUM = new ForgeTier(3, 768, 8.5f,
             3f, 19, BlockTags.NEEDS_STONE_TOOL,
-            () -> Ingredient.of(ModItems.BLUESTONE.get()));
+            () -> Ingredient.of(ModItems.CRONIUM_BAR.get()));
 
     public static final ForgeTier VOIDIUM = new ForgeTier(4, 4096, 11f,
             5.5f, 20, BlockTags.NEEDS_DIAMOND_TOOL,
