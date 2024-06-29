@@ -26,13 +26,14 @@ public class ShadowArtifact extends ArtifactItem{
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
-        if (pPlayer.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 800, 3, true, false))) {
-            if (pPlayer.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2000, 1, true, false))) {
-                if (pPlayer.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 1000, 0, true, false))) {
-                    hurtItem(pPlayer.getItemInHand(pUsedHand));
-                }
-            }
-        }
+        pPlayer.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 12000, 3, true, false));
+        pPlayer.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 12000, 3, true, false));
+        pPlayer.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 12000, 0, true, false));
+        pPlayer.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 12000, 1, true, false));
+        pPlayer.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 12000, 1, true, false));
+        pPlayer.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 12000, 0, true, false));
+
+        hurtItem(pPlayer.getItemInHand(pUsedHand));
         return InteractionResultHolder.success(pPlayer.getItemInHand(pUsedHand));
     }
 }

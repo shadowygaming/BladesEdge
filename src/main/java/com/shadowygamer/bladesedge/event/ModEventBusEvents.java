@@ -30,14 +30,6 @@ public class ModEventBusEvents {
                         (new ResourceLocation(BladesEdge.MOD_ID, "magma_shard"))
         );
         event.getRegistry().registerAll(
-                new RedstoneCoreFromBarterAdditionsModifier.Serializer().setRegistryName
-                        (new ResourceLocation(BladesEdge.MOD_ID, "redstone_core_barter"))
-        );
-        event.getRegistry().registerAll(
-                new RedstoneCoreFromPigmanAdditionsModifier.Serializer().setRegistryName
-                        (new ResourceLocation(BladesEdge.MOD_ID, "redstone_core_pigman"))
-        );
-        event.getRegistry().registerAll(
                 new ShinyRockFromEndstoneAdditionModifier.Serializer().setRegistryName
                         (new ResourceLocation(BladesEdge.MOD_ID, "shiny_rock"))
         );

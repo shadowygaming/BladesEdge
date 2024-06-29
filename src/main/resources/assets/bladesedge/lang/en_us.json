@@ -105,11 +105,11 @@
   "enchantment.bladesedge.storm": "Bolt",
   "enchantment.bladesedge.death_mark": "Death Mark",
 
-  "enchantment.bladesedge.blazing.desc": "Lights enemies who attack you on fire for a random duration\n(reduced effect on players)",
+  "enchantment.bladesedge.blazing.desc": "Lights enemies who attack you on fire for a random duration(reduced effect on players)",
   "enchantment.bladesedge.wither_aspect.desc": "Inflicts the wither effect on entities you attack",
-  "enchantment.bladesedge.last_stand.desc": "When on the verge of death, gain multiple stat buffs\n while you slowly wither away",
+  "enchantment.bladesedge.last_stand.desc": "When on the verge of death, gain multiple stat buffs while you slowly wither away",
   "enchantment.bladesedge.storm.desc": "On hit, Strike enemies with lightning",
-  "enchantment.bladesedge.death_mark.desc": "Inflict enemies with a status effect that increases your damage\n the longer it has been applied on them for",
+  "enchantment.bladesedge.death_mark.desc": "Inflict enemies with a status effect that increases your damage the longer it has been applied on them for",
 
 
   "tooltip.bladesedge.berserker_artifact.tooltip": "Get buffs to increase your effectiveness in combat",

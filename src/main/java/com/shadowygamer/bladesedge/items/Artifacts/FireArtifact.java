@@ -30,10 +30,9 @@ public class FireArtifact extends ArtifactItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
-        if (pPlayer.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 2400, 0))) {
-            hurtItem(pPlayer.getItemInHand(pUsedHand));
-            pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.FIRECHARGE_USE, SoundSource.PLAYERS, (float) 1, (float) 1);
-        }
+        pPlayer.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 2400, 0));
+        hurtItem(pPlayer.getItemInHand(pUsedHand));
+        pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.FIRECHARGE_USE, SoundSource.PLAYERS, (float) 1, (float) 1);
         return InteractionResultHolder.success(pPlayer.getItemInHand(pUsedHand));
     }
 }

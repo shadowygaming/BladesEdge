@@ -27,7 +27,7 @@ public class ExperienceArtifact extends ArtifactItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
-        pPlayer.giveExperiencePoints(1400);
+        pPlayer.giveExperiencePoints(1395);
         hurtItem(pPlayer.getItemInHand(pUsedHand));
         pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.EXPERIENCE_ORB_PICKUP, SoundSource.PLAYERS, (float) 1, (float) 1);
         pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.EXPERIENCE_BOTTLE_THROW, SoundSource.PLAYERS, (float) 0.1, (float) 1);

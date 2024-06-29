@@ -15,10 +15,7 @@ public class WitherAspectEnchantment extends Enchantment {
     @Override
     public void doPostAttack(LivingEntity pAttacker, Entity pTarget, int pLevel) {
         if (!pAttacker.level.isClientSide()) {
-
-            if (pAttacker instanceof LivingEntity) {
-                ((LivingEntity) pTarget).addEffect(new MobEffectInstance(MobEffects.WITHER, pLevel*80, pLevel-1));
-            }
+            ((LivingEntity) pTarget).addEffect(new MobEffectInstance(MobEffects.WITHER, pLevel*80, pLevel-1));
         }
     }
     @Override

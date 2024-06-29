@@ -2,22 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     " # ",
-    "cMc",
-    " c "
+    " # ",
+    " R "
   ],
   "key": {
     "#": {
-      "item": "minecraft:nether_wart"
-    },
-    "M": {
-      "item": "bladesedge:flarium_block"
-    },
-    "c": {
       "item": "bladesedge:flarium_ingot"
+    },
+    "R": {
+      "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "bladesedge:fire_artifact",
+    "item": "bladesedge:magma_hoe",
     "count": 1
   }
 }

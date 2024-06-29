@@ -30,15 +30,12 @@ public class GoldArtifact extends ArtifactItem{
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
-        if (pPlayer.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 2400, 0))) {
-            if (pPlayer.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 1))) {
-                if (pPlayer.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 0))) {
-                    hurtItem(pPlayer.getItemInHand(pUsedHand));
-                    pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.GENERIC_DRINK, SoundSource.PLAYERS, (float) 0.7, (float) 1);
-                    pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.SPLASH_POTION_BREAK, SoundSource.PLAYERS, (float) 0.5, (float) 1);
-                }
-            }
-        }
+        pPlayer.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 2400, 0));
+        pPlayer.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 1));
+        pPlayer.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 0));
+        hurtItem(pPlayer.getItemInHand(pUsedHand));
+        pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.GENERIC_DRINK, SoundSource.PLAYERS, (float) 0.7, (float) 1);
+        pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.SPLASH_POTION_BREAK, SoundSource.PLAYERS, (float) 0.5, (float) 1);
         return InteractionResultHolder.success(pPlayer.getItemInHand(pUsedHand));
     }
 }

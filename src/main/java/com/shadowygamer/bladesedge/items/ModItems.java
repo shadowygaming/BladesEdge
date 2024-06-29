@@ -120,7 +120,7 @@ public class ModItems {
             () -> new HasteArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(1).rarity(Rarity.UNCOMMON)));
 
     public static final RegistryObject<FireArtifact> FIRE_ARTIFACT = ITEMS.register("fire_artifact",
-            () -> new FireArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(2).rarity(Rarity.UNCOMMON)));
+            () -> new FireArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(3).rarity(Rarity.UNCOMMON)));
 
     public static final RegistryObject<BerserkerArtifact> BERSERKER_ARTIFACT = ITEMS.register("berserker_artifact",
             () -> new BerserkerArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(1).rarity(Rarity.UNCOMMON)));

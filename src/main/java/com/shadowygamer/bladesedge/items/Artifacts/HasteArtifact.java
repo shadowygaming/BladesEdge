@@ -30,10 +30,9 @@ public class HasteArtifact extends ArtifactItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
-        if (pPlayer.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 6000, 1))) {
-            hurtItem(pPlayer.getItemInHand(pUsedHand));
-            pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.DEEPSLATE_BREAK, SoundSource.PLAYERS, (float) 2, (float) 1);
-        }
+        pPlayer.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 6000, 1));
+        hurtItem(pPlayer.getItemInHand(pUsedHand));
+        pLevel.playSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.DEEPSLATE_BREAK, SoundSource.PLAYERS, (float) 2, (float) 1);
         return InteractionResultHolder.success(pPlayer.getItemInHand(pUsedHand));
     }
 }
