@@ -26,10 +26,6 @@ public class ModEventBusEvents {
                         (new ResourceLocation(BladesEdge.MOD_ID, "end_catalyst"))
         );
         event.getRegistry().registerAll(
-                new MagmaShardFromMagmaCubeAdditionsModifier.Serializer().setRegistryName
-                        (new ResourceLocation(BladesEdge.MOD_ID, "magma_shard"))
-        );
-        event.getRegistry().registerAll(
                 new ShinyRockFromEndstoneAdditionModifier.Serializer().setRegistryName
                         (new ResourceLocation(BladesEdge.MOD_ID, "shiny_rock"))
         );
