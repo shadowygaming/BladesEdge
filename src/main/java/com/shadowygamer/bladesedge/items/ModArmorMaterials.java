@@ -17,7 +17,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     VOIDIUM("voidium", 42, new int[]{4, 7, 9, 4}, 14, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.0F, 0.0F, () -> {
         return Ingredient.of(ModItems.VOIDIUM.get());
     }),
-    CRONIUM("cronium", 32, new int[]{2, 6, 7, 3}, 19, SoundEvents.ARMOR_EQUIP_GOLD, 1.0F, 0.0F, () -> {
+    CRONIUM("cronium", 32, new int[]{2, 6, 7, 3}, 19, SoundEvents.ARMOR_EQUIP_GOLD, 0.75F, 0.0F, () -> {
         return Ingredient.of(ModItems.CRONIUM_BAR.get());
     });
 
