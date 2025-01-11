@@ -25,4 +25,9 @@ public class NullingArtifact extends ArtifactItem{
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         pTooltipComponents.add(new TranslatableComponent("tooltip.bladesedge.null_artifact.tooltip"));
     }
+
+    @Override
+    public boolean isBookEnchantable(ItemStack stack, ItemStack book) {
+        return false;
+    }
 }

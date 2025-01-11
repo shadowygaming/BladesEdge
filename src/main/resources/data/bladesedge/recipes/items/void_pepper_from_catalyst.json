@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:wheat_seeds"
+    },
+    "X": {
+      "item": "bladesedge:end_catalyst"
+    }
+  },
+  "result": {
+    "item": "bladesedge:void_pepper_seeds",
+    "count": 8
+  }
+}

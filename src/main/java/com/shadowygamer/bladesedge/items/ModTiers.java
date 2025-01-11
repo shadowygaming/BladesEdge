@@ -6,16 +6,16 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.ForgeTier;
 
 public class ModTiers {
-    public static final ForgeTier REDSTONE = new ForgeTier(1, 768, 7f,
+    public static final ForgeTier REDSTONE = new ForgeTier(2, 768, 7f,
             2.0f, 12, BlockTags.NEEDS_IRON_TOOL,
             () -> Ingredient.of(ModItems.HARDENED_REDSTONE.get()));
 
-    public static final ForgeTier LAPIS = new ForgeTier(2, 512, 7f,
-            2.2f, 48, BlockTags.NEEDS_STONE_TOOL,
+    public static final ForgeTier LAPIS = new ForgeTier(3, 1024, 7f,
+            2.0f, 56, BlockTags.NEEDS_STONE_TOOL,
             () -> Ingredient.of(ModItems.BLUESTONE.get()));
 
-    public static final ForgeTier CRONIUM = new ForgeTier(3, 768, 8.5f,
-            2.5f, 19, BlockTags.NEEDS_STONE_TOOL,
+    public static final ForgeTier CRONIUM = new ForgeTier(3, 512, 9f,
+            2.0f, 19, BlockTags.NEEDS_STONE_TOOL,
             () -> Ingredient.of(ModItems.CRONIUM_BAR.get()));
 
     public static final ForgeTier VOIDIUM = new ForgeTier(4, 4096, 11f,

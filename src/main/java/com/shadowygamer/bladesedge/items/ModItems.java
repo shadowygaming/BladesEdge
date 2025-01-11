@@ -54,7 +54,7 @@ public class ModItems {
 
     //catalysts
     public static final RegistryObject<Item> END_CATALYST = ITEMS.register("end_catalyst",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).rarity(Rarity.EPIC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).rarity(Rarity.EPIC)));
 
 
     //items
@@ -94,6 +94,7 @@ public class ModItems {
     //metals
     public static final RegistryObject<Item> FLARIUM_INGOT = ITEMS.register("flarium_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
     public static final RegistryObject<Item> VOIDIUM = ITEMS.register("voidium",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 

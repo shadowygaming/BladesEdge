@@ -7,8 +7,10 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.enchantment.DamageEnchantment;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentCategory;
+import net.minecraft.world.item.enchantment.MendingEnchantment;
 
 public class DeathMarkEnchantment extends Enchantment {
 
@@ -30,5 +32,9 @@ public class DeathMarkEnchantment extends Enchantment {
     @Override
     public int getMaxLevel() {
         return 1;
+    }
+
+    public boolean checkCompatibility(Enchantment pEnch) {
+        return pEnch instanceof DamageEnchantment ? false : super.checkCompatibility(pEnch);
     }
 }

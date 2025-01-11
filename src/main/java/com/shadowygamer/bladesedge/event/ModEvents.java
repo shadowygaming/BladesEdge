@@ -74,6 +74,10 @@ public class ModEvents {
                 && event.getState().getBlock() instanceof OreBlock) {
             event.setExpToDrop(event.getExpToDrop() * (player.getMainHandItem().getDamageValue() / 10));
         }
+        if ((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_PICKAXE.get().getRegistryName()
+                && event.getState().getBlock().defaultBlockState().is(BlockTags.STONE_ORE_REPLACEABLES))) {
+            event.setExpToDrop(levelThirty*((512-player.getMainHandItem().getDamageValue())/256));
+        }
         if ((player.getMainHandItem().getItem().getRegistryName() == ModItems.LAPIS_SHOVEL.get().getRegistryName()
                 && event.getState().getBlock().defaultBlockState().is(BlockTags.MINEABLE_WITH_SHOVEL))) {
             event.setExpToDrop(levelThirty*((512-player.getMainHandItem().getDamageValue())/256));
