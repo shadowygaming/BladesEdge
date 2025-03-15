@@ -4,7 +4,7 @@
   "priority": 1100,
   "package": "com.shadowygamer.bladesedge.mixin",
   "compatibilityLevel": "JAVA_17",
-  "refmap": "bladesedge.refmap.json",
+  "refmap": "bladesedge.mixins.refmap.json",
   "plugin": "com.shadowygamer.bladesedge.mixin.ModMixinPlugin",
   "mixins": [
     "DeathmarkMixin"

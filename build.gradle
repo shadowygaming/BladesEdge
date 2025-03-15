@@ -23,7 +23,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
 
-version = '0.1.4-1.18.2-Devtest14'
+version = '0.1.4-1.18.2-Devtest14fix1'
 group = 'com.shadowygamer.bladesedge' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'bladesedge'
 
