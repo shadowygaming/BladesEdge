@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "minecraft:bucket"
+  },
+  "result": "bladesedge:refined_bucket",
+  "experience": 10.0,
+  "cookingtime": 201
+}

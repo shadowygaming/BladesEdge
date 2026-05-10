@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "bladesedge:item/nulling_artifact"
+    "layer0": "bladesedge:item/refined_bucket"
   }
 }

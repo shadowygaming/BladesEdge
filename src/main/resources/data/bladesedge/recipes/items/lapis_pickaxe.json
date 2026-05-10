@@ -10,7 +10,7 @@
       "item": "bladesedge:bluestone"
     },
     "/": {
-      "item": "bladesedge:tool_handle"
+      "item": "minecraft:stick"
     }
   },
   "result": {

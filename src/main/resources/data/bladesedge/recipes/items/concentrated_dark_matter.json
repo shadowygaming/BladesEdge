@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#B#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "bladesedge:darkness"
+    },
+    "B": {
+      "item": "bladesedge:refined_bucket"
+    }
+  },
+  "result": {
+    "item": "bladesedge:concentrated_dark_matter",
+    "count": 1
+  }
+}

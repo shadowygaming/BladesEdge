@@ -11,7 +11,7 @@ public class ModTiers {
             () -> Ingredient.of(ModItems.HARDENED_REDSTONE.get()));
 
     public static final ForgeTier LAPIS = new ForgeTier(3, 1024, 7f,
-            2.0f, 56, BlockTags.NEEDS_STONE_TOOL,
+            2.0f, 72, BlockTags.NEEDS_STONE_TOOL,
             () -> Ingredient.of(ModItems.BLUESTONE.get()));
 
     public static final ForgeTier CRONIUM = new ForgeTier(3, 512, 9f,

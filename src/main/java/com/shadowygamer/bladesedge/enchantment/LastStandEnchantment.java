@@ -16,12 +16,14 @@ public class LastStandEnchantment extends Enchantment {
         super(p_44676_, p_44677_, p_44678_);
     }
 
+    boolean used = false;
+
     @Override
     public void doPostHurt(LivingEntity pAttacker, Entity pTarget, int pLevel) {
         if (!pAttacker.level.isClientSide()) {
 
             float hp = (pAttacker.getHealth());
-            boolean used = false;
+
             if (pLevel == 1) {
                 if (pAttacker.isDeadOrDying()) {
                     used = false;

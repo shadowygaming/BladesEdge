@@ -7,7 +7,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab BLADESEDGE = new CreativeModeTab("bladesedge") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.MAGMA_CHESTPLATE.get());
+            return new ItemStack(ModItems.CRONIUM_APPLE.get());
         }
     };
 }

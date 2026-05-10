@@ -1,13 +1,16 @@
 package com.shadowygamer.bladesedge.event;
 
 import com.shadowygamer.bladesedge.BladesEdge;
+import com.shadowygamer.bladesedge.items.Artifacts.NullingArtifact;
 import com.shadowygamer.bladesedge.items.ModItems;
 import com.shadowygamer.bladesedge.util.ModTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.trading.MerchantOffer;
@@ -34,24 +37,24 @@ import java.util.List;
 public class ModEvents {
     @SubscribeEvent
     public static void addCustomTrades(VillagerTradesEvent event) {
-        if(event.getType() == VillagerProfession.TOOLSMITH) {
-            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
-            ItemStack stack = new ItemStack(ModItems.TOOL_HANDLE.get(), 3);
-            int villagerLevel = 2;
-
-            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 6),
-                    stack,3,24,0.12F));
-        }
+//        if(event.getType() == VillagerProfession.TOOLSMITH) {
+//            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+//            ItemStack stack = new ItemStack(ModItems.TOOL_HANDLE.get(), 3);
+//            int villagerLevel = 2;
+//
+//            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+//                    new ItemStack(Items.EMERALD, 6),
+//                    stack,3,24,0.12F));
+//        }
 
         if(event.getType() == VillagerProfession.CLERIC) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
-            ItemStack stack = new ItemStack(ModItems.END_CATALYST.get(), 1);
+            ItemStack stack = new ItemStack(Items.EMERALD, 9);
             int villagerLevel = 5;
 
             trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(Items.EMERALD, 27),
-                    stack,2,57,0.9F));
+                    new ItemStack(ModItems.END_CATALYST.get(), 1),
+                    stack,3,31,0.9F));
         }
         if(event.getType() == VillagerProfession.CLERIC) {
             Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
@@ -111,13 +114,17 @@ public class ModEvents {
     public static void BlockHit(LivingDamageEvent event) {
         if (event.getEntityLiving() instanceof Player){
             Player player = (Player) event.getEntityLiving();
-            if ((player.getOffhandItem().getItem().getRegistryName() == ModItems.NULLING_ARTIFACT.get().getRegistryName())) {
-                event.setAmount(-1);
-                player.getOffhandItem().hurtAndBreak(1, player, (player1)->{player1.broadcastBreakEvent(player1.getUsedItemHand());});
-            }
-            if ((player.getMainHandItem().getItem().getRegistryName() == ModItems.NULLING_ARTIFACT.get().getRegistryName())) {
-                event.setAmount(-1);
-                player.getMainHandItem().hurtAndBreak(1, player, (player1)->{player1.broadcastBreakEvent(player1.getUsedItemHand());});
+            ItemStack Mainhand = player.getMainHandItem();
+            ItemStack Offhand = player.getOffhandItem();
+
+            if (Offhand.is(ModItems.NULLING_ARTIFACT.get()) || Mainhand.is(ModItems.NULLING_ARTIFACT.get())) {
+                ItemStack UsedHand = (Mainhand.is(ModItems.NULLING_ARTIFACT.get())) ? Mainhand : Offhand;
+                if (UsedHand.getDamageValue() < UsedHand.getMaxDamage() - 1) {
+                    event.setAmount(-1);
+                    UsedHand.hurtAndBreak(1, player, (player1) -> {
+                        player1.broadcastBreakEvent(player1.getUsedItemHand());
+                    });
+                }
             }
         }
     }

@@ -3,10 +3,13 @@ package com.shadowygamer.bladesedge;
 import com.shadowygamer.bladesedge.block.ModBlocks;
 import com.shadowygamer.bladesedge.effects.ModEffects;
 import com.shadowygamer.bladesedge.enchantment.ModEnchantments;
+import com.shadowygamer.bladesedge.entities.DarkGolemRenderer;
+import com.shadowygamer.bladesedge.entities.ModEntityTypes;
 import com.shadowygamer.bladesedge.items.ModItems;
 import com.shadowygamer.bladesedge.sound.ModSounds;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.BlockSource;
 import net.minecraft.core.Direction;
@@ -46,6 +49,7 @@ public class BladesEdge
         ModSounds.register(eventBus);
         ModEnchantments.register(eventBus);
         ModEffects.register((eventBus));
+        ModEntityTypes.register(eventBus);
         MinecraftForge.EVENT_BUS.register(this);
     }
     private void clientSetup(final FMLClientSetupEvent event) {
@@ -55,15 +59,13 @@ public class BladesEdge
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.VOID_PEPPER.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.LIGHT_OAK_TRAPDOOR.get(), RenderType.cutout());
 
+        EntityRenderers.register(ModEntityTypes.DARK_GOLEM.get(), DarkGolemRenderer::new);
     }
-    private void setup(final FMLCommonSetupEvent event)
-    {
+    private void setup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {ComposterBlock.COMPOSTABLES.put(ModItems.VOID_PEPPER.get(), 0.5F);});
         event.enqueueWork(() -> {ComposterBlock.COMPOSTABLES.put(ModItems.VOID_PEPPER_SEEDS.get(), 0.3F);});
         event.enqueueWork(() -> {ComposterBlock.COMPOSTABLES.put(ModItems.GRASS_FIBER.get(), 0.5F);});
         event.enqueueWork(() -> {ComposterBlock.COMPOSTABLES.put(ModBlocks.LIGHT_OAK_LEAVES.get().asItem(), 0.3F);});
         event.enqueueWork(() -> {ComposterBlock.COMPOSTABLES.put(ModBlocks.LIGHT_OAK_SAPLING.get().asItem(), 0.3F);});
-
-
     }
 }

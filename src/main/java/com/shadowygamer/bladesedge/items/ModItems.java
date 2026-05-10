@@ -87,6 +87,16 @@ public class ModItems {
     public static final RegistryObject<Item> BLUESTONE = ITEMS.register("bluestone",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
+    public static final RegistryObject<Item> DARKNESS = ITEMS.register("darkness",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> CONCENTRATED_DARK_MATTER = ITEMS.register("concentrated_dark_matter",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+    public static final RegistryObject<Item> REFINED_BUCKET = ITEMS.register("refined_bucket",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
+
     public static final RegistryObject<Item> GRASS_FIBER = ITEMS.register("grass_fiber",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).food(ModFoods.GRASS_FIBER)));
 
@@ -106,7 +116,7 @@ public class ModItems {
 
     //special items
     public static final RegistryObject<EnderBag> ENDER_BAG = ITEMS.register("ender_bag",
-            () -> new EnderBag(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(256).rarity(Rarity.EPIC)));
+            () -> new EnderBag(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).rarity(Rarity.EPIC)));
 
 
 
@@ -134,8 +144,8 @@ public class ModItems {
     public static final RegistryObject<GoldArtifact> GOLD_ALTAR = ITEMS.register("gold_altar",
             () -> new GoldArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(3).rarity(Rarity.RARE)));
 
-//    public static final RegistryObject<ShadowArtifact> SHADOW_ALTAR = ITEMS.register("shadow_altar",
-//            () -> new ShadowArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(1).rarity(Rarity.RARE)));
+    public static final RegistryObject<ShadowArtifact> SHADOW_ALTAR = ITEMS.register("shadow_altar",
+            () -> new ShadowArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(1).rarity(Rarity.RARE)));
 
 
     //tools
