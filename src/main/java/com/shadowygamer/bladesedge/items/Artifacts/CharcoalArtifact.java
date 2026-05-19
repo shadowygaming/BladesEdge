@@ -22,6 +22,6 @@ public class CharcoalArtifact extends ArtifactItem{
     @Override
     public int getBurnTime(ItemStack itemStack, RecipeType<?> recipeType) {
         // TODO Auto-generated method stub
-        return 400;
+        return 200;
     }
 }

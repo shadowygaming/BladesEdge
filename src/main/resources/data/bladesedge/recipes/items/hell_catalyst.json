@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bbb",
+    "B#B",
+    "BCB"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:nether_star"
+    },
+    "C": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "B": {
+      "item": "minecraft:blaze_powder"
+    },
+    "b": {
+      "item": "bladesedge:flarium_ingot"
+    }
+  },
+  "result": {
+    "item": "bladesedge:hell_catalyst",
+    "count": 1
+  }
+}

@@ -25,7 +25,7 @@ public class EndCatalystFromEndermenAdditionsModifier extends LootModifier {
     @Nonnull
     @Override
     protected List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
-        if(context.getRandom().nextFloat() < 0.1f) {
+        if(context.getRandom().nextFloat() < 0.025f) {
             generatedLoot.add(new ItemStack(addition, 1));
         }
         return generatedLoot;

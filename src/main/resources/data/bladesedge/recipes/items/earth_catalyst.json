@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bbb",
+    "S#G",
+    "FCB"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "B": {
+      "item": "minecraft:bone"
+    },
+    "S": {
+      "item": "minecraft:spider_eye"
+    },
+    "G": {
+      "item": "minecraft:gunpowder"
+    },
+    "F": {
+      "item": "minecraft:rotten_flesh"
+    },
+    "C": {
+      "item": "minecraft:dirt"
+    },
+    "b": {
+      "item": "bladesedge:cronium_bar"
+    }
+  },
+  "result": {
+    "item": "bladesedge:earth_catalyst",
+    "count": 1
+  }
+}

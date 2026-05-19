@@ -12,7 +12,7 @@ import java.util.List;
 
 public class ModEntityGeneration {
     public static void onEntitySpawn(final BiomeLoadingEvent event) {
-        addEntityToAllBiomesEnd(event, ModEntityTypes.DARK_GOLEM.get(), 500, 1, 1);
+        addEntityToAllBiomesEnd(event, ModEntityTypes.DARK_GOLEM.get(), 5, 1, 1);
     }
 
     private static void addEntityToAllBiomesExceptThese(BiomeLoadingEvent event, EntityType<?> type,
@@ -56,6 +56,7 @@ public class ModEntityGeneration {
     private static void addEntityToAllBiomesNoEnd(BiomeLoadingEvent event, EntityType<?> type,
                                                   int weight, int minCount, int maxCount) {
         if(!event.getCategory().equals(Biome.BiomeCategory.THEEND)) {
+
             List<MobSpawnSettings.SpawnerData> base = event.getSpawns().getSpawner(type.getCategory());
             base.add(new MobSpawnSettings.SpawnerData(type,weight, minCount, maxCount));
         }

@@ -6,9 +6,9 @@
   "item.bladesedge.experience_artifact": "Experience Artifact",
   "item.bladesedge.fire_artifact": "Fire Artifact",
   "item.bladesedge.berserker_artifact": "Berserker Artifact",
-  "item.bladesedge.gold_altar": "Altar of Gold",
+  "item.bladesedge.gold_artifact": "Gold Artifact",
   "item.bladesedge.shadow_altar": "Altar of Chaos",
-  "item.bladesedge.null_artifact": "Nulling Artifact",
+  "item.bladesedge.nulling_artifact": "Nulling Artifact",
 
   "entity.bladesedge.dark_golem": "Dark Golem",
 
@@ -26,6 +26,7 @@
   "item.bladesedge.bluestone": "Bluestone",
   "item.bladesedge.refined_bucket": "Refined Bucket",
   "item.bladesedge.concentrated_dark_matter": "Concentrated Dark Matter",
+  "item.bladesedge.obsidian_crucible": "Obsidian Crucible",
 
 
   "item.bladesedge.voidium": "Voidium",
@@ -43,6 +44,9 @@
   "item.bladesedge.magma_core": "Magma Stone",
 
   "item.bladesedge.end_catalyst": "End Catalyst",
+  "item.bladesedge.hell_catalyst": "Hell Catalyst",
+  "item.bladesedge.earth_catalyst": "Earth Catalyst",
+
 
 
 

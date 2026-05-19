@@ -3,6 +3,7 @@ package com.shadowygamer.bladesedge;
 import com.shadowygamer.bladesedge.block.ModBlocks;
 import com.shadowygamer.bladesedge.effects.ModEffects;
 import com.shadowygamer.bladesedge.enchantment.ModEnchantments;
+import com.shadowygamer.bladesedge.entities.DarkGolemEntity;
 import com.shadowygamer.bladesedge.entities.DarkGolemRenderer;
 import com.shadowygamer.bladesedge.entities.ModEntityTypes;
 import com.shadowygamer.bladesedge.items.ModItems;
@@ -16,6 +17,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.dispenser.OptionalDispenseItemBehavior;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -23,6 +25,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.gameevent.GameEvent;
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -67,5 +70,6 @@ public class BladesEdge
         event.enqueueWork(() -> {ComposterBlock.COMPOSTABLES.put(ModItems.GRASS_FIBER.get(), 0.5F);});
         event.enqueueWork(() -> {ComposterBlock.COMPOSTABLES.put(ModBlocks.LIGHT_OAK_LEAVES.get().asItem(), 0.3F);});
         event.enqueueWork(() -> {ComposterBlock.COMPOSTABLES.put(ModBlocks.LIGHT_OAK_SAPLING.get().asItem(), 0.3F);});
+        event.enqueueWork(() -> {SpawnPlacements.register(ModEntityTypes.DARK_GOLEM.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, DarkGolemEntity::checkDarkGolemSpawnRules);});
     }
 }

@@ -9,7 +9,6 @@ import com.shadowygamer.bladesedge.items.Gear.Magma.*;
 import com.shadowygamer.bladesedge.items.Special.EnderBag;
 import com.shadowygamer.bladesedge.items.Modifiers.Shiny;
 import com.shadowygamer.bladesedge.items.Gear.KnifeItem;
-import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -56,6 +55,12 @@ public class ModItems {
     public static final RegistryObject<Item> END_CATALYST = ITEMS.register("end_catalyst",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(16).rarity(Rarity.EPIC)));
 
+    public static final RegistryObject<Item> EARTH_CATALYST = ITEMS.register("earth_catalyst",
+            () -> new CoreItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).defaultDurability(512).rarity(Rarity.EPIC)));
+
+    public static final RegistryObject<Item> HELL_CATALYST = ITEMS.register("hell_catalyst",
+            () -> new CoreItem(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).defaultDurability(64).rarity(Rarity.EPIC)));
+
 
     //items
     public static final RegistryObject<Item> TOOL_HANDLE = ITEMS.register("tool_handle",
@@ -93,6 +98,9 @@ public class ModItems {
     public static final RegistryObject<Item> CONCENTRATED_DARK_MATTER = ITEMS.register("concentrated_dark_matter",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
+    public static final RegistryObject<Item> OBSIDIAN_CRUCIBLE = ITEMS.register("obsidian_crucible",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
+
     public static final RegistryObject<Item> REFINED_BUCKET = ITEMS.register("refined_bucket",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE)));
 
@@ -122,7 +130,7 @@ public class ModItems {
 
     //artifacts
     public static final RegistryObject<CharcoalArtifact> CHARCOAL_ARTIFACT = ITEMS.register("charcoal_artifact",
-            () -> new CharcoalArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(64).rarity(Rarity.UNCOMMON)));
+            () -> new CharcoalArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(192).rarity(Rarity.UNCOMMON)));
 
     public static final RegistryObject<ExperienceArtifact> EXPERIENCE_ARTIFACT = ITEMS.register("experience_artifact",
             () -> new ExperienceArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(1).rarity(Rarity.UNCOMMON)));
@@ -141,7 +149,7 @@ public class ModItems {
 
     //Artifacts t2
 
-    public static final RegistryObject<GoldArtifact> GOLD_ALTAR = ITEMS.register("gold_altar",
+    public static final RegistryObject<GoldArtifact> GOLD_ARTIFACT = ITEMS.register("gold_artifact",
             () -> new GoldArtifact(new Item.Properties().tab(ModCreativeModeTab.BLADESEDGE).stacksTo(1).defaultDurability(3).rarity(Rarity.RARE)));
 
     public static final RegistryObject<ShadowArtifact> SHADOW_ALTAR = ITEMS.register("shadow_altar",
